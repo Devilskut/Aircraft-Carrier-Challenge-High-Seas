@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+filetype.unity3d filter=lfs diff=lfs merge=lfs -text
+[200~C:UsersDevilDesktop7 filter=lfs diff=lfs merge=lfs -text
+Days filter=lfs diff=lfs merge=lfs -text
+To filter=lfs diff=lfs merge=lfs -text
+DieModsAircraftCarrierGunsAssets filter=lfs diff=lfs merge=lfs -text
+usersdevildesktop7 filter=lfs diff=lfs merge=lfs -text
