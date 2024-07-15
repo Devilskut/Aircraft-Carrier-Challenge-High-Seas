@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
-		<Name value="Apocalypse Now Mod" />
-		<Author value="Killerbunny264" />
-		<Version value="3.5"/>
-	</ModInfo>
+	
+		<Name value="AircraftcarrierGuns" />
+	    <DisplayName value="Aircraft carrier Guns" />
+	    <Version value="3.5"/>
+	    <Description value="Aircraft carrier Guns" />
+	    <Author value="Killerbunny264" />
+	    <website value="" />
+	
 </xml>

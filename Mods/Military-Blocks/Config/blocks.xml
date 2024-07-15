@@ -1,5 +1,5 @@
-<Config>
-
+<configs>
+	
 		<append xpath="/blocks">
 			<block name="ApacheBlock">
 				<property name="Material" value="Mmetal"/>
@@ -745,5 +745,4 @@
 		</block>	
 
 	</append>
-
-</Config>
+</configs>
