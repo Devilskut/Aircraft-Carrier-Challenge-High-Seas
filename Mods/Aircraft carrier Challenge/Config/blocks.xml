@@ -88,8 +88,14 @@
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
             <property name="ModelOffset" value="0,0,0"/>
         </block>
-
+		
 </insertafter>
+	
+    <!--  <insertafter xpath="/blocks/block[@name]/property[1]">
+		<property name="CreativeMode" value="None"/>
+	</insertafter>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> -->
+	
 
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	
@@ -127,7 +133,7 @@
 	<append xpath="/blocks/block[@name='treePlant02']">  <!-- Potted Plant -->
 		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
 		<drop event="Harvest" name="resourceClayLump" count="3" tag="oreWoodHarvest"/>
-		<drop event="Harvest" name="treePlantedOak1m" count="1" prob="0.1" tag="allHarvest"/>
+		<drop event="Harvest" name="treePlantedOak1m" count="1" prob="0.2" tag="allHarvest"/>
 	</append>
 	  
 	<append xpath="/blocks/block[@name='terrDestroyedStone']">  <!-- Destroyed Stone -->
@@ -139,7 +145,16 @@
 		<drop event="Destroy" name="resourceHeadlight" count="1" prob="1" tag="salvageHarvest"/>
 	</append>
 	
-    <set xpath="//block[contains(@name,'Door')]/property[@name='StabilitySupport']/@value">true</set>
+	<append xpath="/blocks/block[contains(@name,'vaultDoor')]">
+		<property name="MaxDamage" value= "1500" />
+		<property name="MeshDamage" value="
+		Door/DMG0, 1500,
+		Door/DMG1, 100,
+		Door/DMG2, 50,
+		-, 1
+		"/>
+	</append>
+	
     <append xpath="/blocks/block[contains(@name,'Door')]">
         <property name="StabilitySupport" value="true" />
     </append>
@@ -148,4 +163,58 @@
 	<append xpath="/blocks/block[contains(@name,'mattressFlatThin')]">
 		<property name="StabilitySupport" value="true" />
 	</append>
+
+<remove xpath="/blocks/block[@name='corrugatedMetalShapes']"></remove>
+
+	<insertafter xpath="/blocks/block[@name='awningShapes']">
+
+		<block name="corrugatedMetalShapes" shapes="All">
+			<property name="DescriptionKey" value="scrapIronGroupDesc"/>
+			<property name="Material" value="Mmetal_shapes"/>
+			<property name="Shape" value="New"/>
+			<property name="Texture" value="194"/>
+			<property name="UiBackgroundTexture" value="194"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="MaxDamage" value="1200"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="12"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cobblestoneShapes"/>
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<property name="SortOrder1" value="S060"/>
+			<!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="MC_Shapes"/>
+		</block>
+
+	</insertafter>
+	
+		<!-- Millitary Pallets-->
+
+		<append xpath="/blocks/block[@name='palletCartonMilitaryBase']">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="ACmunitions"/>
+		</append>
+		<append xpath="/blocks/block[@name='palletCartonMilitaryCap']">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="ACmunitions"/>
+		</append>
+		<append xpath="/blocks/block[@name='palletCartonMilitaryTile']">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="ACmunitions"/>
+		</append>
+		<append xpath="/blocks/block[@name='palletCartonMilitaryTileCovered']">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="ACmunitions"/>
+		</append>
+
 </configs>
