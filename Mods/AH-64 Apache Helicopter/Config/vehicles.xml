@@ -133,7 +133,50 @@
 			<property name="IKFootRPosition" value=".11, .5, .38"/>
 			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
 		</property>
-
+		<property class="seat2">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="51"/>
+			<property name="position" value="0, .7, 1.2"/> <!-- Left/Right, Down/Up, Back/Front -->
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="IKFootLPosition" value="-.11, .5, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .5, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+		</property>
+		<property class="seat3">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="51"/>
+			<property name="position" value="0, .4, 1.2"/>  <!-- Left/Right, Down/Up, Back/Front -->
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="IKFootLPosition" value="-.11, .5, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .5, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+		</property>
+		<property class="seat4">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="51"/>
+			<property name="position" value="0, .4, 1.2"/> <!-- Left/Right, Down/Up, Back/Front -->
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="IKFootLPosition" value="-.11, .5, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .5, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+		</property>
+		<property class="seat5">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="51"/>
+			<property name="position" value="0, .4, 1.2"/>  <!-- Left/Right, Down/Up, Back/Front -->
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="IKFootLPosition" value="-.11, .5, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .5, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+		</property>
 		<property class="fuelTank">
 			<property name="class" value="FuelTank"/>
 			<property name="capacity" value="500"/>

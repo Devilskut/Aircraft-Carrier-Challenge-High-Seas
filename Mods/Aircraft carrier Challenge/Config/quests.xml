@@ -10,47 +10,25 @@
 
 		<remove xpath="/quests/quest[@id='challengegroup_reward_homesteading']"/>
 		<remove xpath="/quests/quest[@template='challengegroup_reward_homesteading']"/>
+
+	    <remove xpath="/quests/quest_list/quest[@id='intro_buried_supplies']" />
+	
+	    <remove xpath="/quests/quest[contains(@id,'_fetch') or
+									 contains(@id,'_clear') or
+									 contains(@id,'supplies') or
+									 contains(@id,'_restore_power') or
+									 contains(@id,'_test_turnin') or
+									 contains(@id,'_reward_quest_')
+									 ]/reward[@type='LootItem']"/>
+	    <remove xpath="/quests/quest[contains(@id,'_fetch') or
+									contains(@id,'_clear') or
+									contains(@id,'supplies') or
+									contains(@id,'_restore_power') or
+									contains(@id,'_test_turnin') or
+									contains(@id,'_reward_quest_')
+									]/reward[@type='Item']"/>
 		
-		<remove xpath="/quests/quest[@id='treasure_taylor']"/>
-		<remove xpath="/quests/quest[@template='treasure_taylor']"/>
-
-		<remove xpath="/quests/quest[@id='tier1_fetch']"/>
-		<remove xpath="/quests/quest[@template='tier1_fetch']"/>
-
-		<remove xpath="/quests/quest[@id='tier1_clear']"/>
-		<remove xpath="/quests/quest[@template='tier1_clear']"/>
-
-		<remove xpath="/quests/quest[@id='tier2_clear_infested']"/>
-		<remove xpath="/quests/quest[@template='tier2_clear_infested']"/>
-
-		<remove xpath="/quests/quest[@id='tier2_restore_power']"/>
-		<remove xpath="/quests/quest[@template='tier2_restore_power']"/>
-
-		<remove xpath="/quests/quest[@id='tier2_fetch_clear']"/>
-		<remove xpath="/quests/quest[@template='tier2_fetch_clear']"/>
-
-		<remove xpath="/quests/quest[@id='intro_buried_supplies']"/>
-		<remove xpath="/quests/quest[@id='tier1_buried_supplies']"/>
-		<remove xpath="/quests/quest[@template='tier1_buried_supplies']"/>
-
-		<remove xpath="/quests/quest[@id='tier2_nexttrader']"/>
-		<remove xpath="/quests/quest[@id='tier3_nexttrader']"/>
-		<remove xpath="/quests/quest[@id='tier4_nexttrader']"/>
-		<remove xpath="/quests/quest[@id='tier5_nexttrader']"/>
-
-		<remove xpath="/quests/quest[@id='quest_tier1complete']"/>
-		<remove xpath="/quests/quest[@id='quest_tier2complete']"/>
-		<remove xpath="/quests/quest[@id='quest_tier3complete']"/>
-		<remove xpath="/quests/quest[@id='quest_tier4complete']"/>
-		<remove xpath="/quests/quest[@id='quest_tier5complete']"/>
-		<remove xpath="/quests/quest[@id='quest_tier6complete']"/>
-
-		<remove xpath="/quests/quest_list[@id='trader_rekt_quests']"/>
-		<remove xpath="/quests/quest_list[@id='trader_jen_quests']"/>
-		<remove xpath="/quests/quest_list[@id='trader_bob_quests']"/>
-		<remove xpath="/quests/quest_list[@id='trader_hugh_quests']"/>
-		<remove xpath="/quests/quest_list[@id='trader_joel_quests']"/>
-
+		
 <!-- END removal of ALL vanillia quests -->
 
 <!-- BEGIN Aircraft Carrier Challenge main quest line -->
@@ -130,8 +108,8 @@
 			<property name="repeatable" value="false"/>
 			<property name="category_key" value="challenge"/>
 			<property name="difficulty" value="medium"/>
-			<property name="difficulty_tier" value="5"/>
-			<property name="offer_key" value="quest_CarrierChallenge01" param1="offer" />
+			<property name="difficulty_tier" value="2"/>
+			<property name="offer_key" value="quest_CarrierChallenge01" />
 			<property name="response_key" value="Fetch supplies"/>
 			<property name="reward_choices_count" value="5" />
 			<property name="login_rally_reset" value="true"/>
@@ -190,30 +168,29 @@
 			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
 			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedIron" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="100" phase="1"/>
 			
 			<objective type="Craft" id="ApacheS4" value="1" phase="2"/>
 			<objective type="Craft" id="Mission_3_Bridge supplies" value="1" phase="3"/>
 
 			<reward type="Exp" value="2500"/>	
 		</quest>
-
-		<!-- AH-64 Supplies for Canopy -->
-
+		
 		<quest id="quest_CarrierChallenge03">
 			<property name="name_key" value="quest_CarrierChallenge03"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge03_subtitle"/>
 			<property name="description_key" value="quest_CarrierChallenge03_description"/>
 			<property name="repeatable" value="false"/>
 			<property name="category_key" value="quest" />
+			<property name="difficulty_tier" value="5" param1="difficulty"/>
 			<property name="offer_key" value="quest_CarrierChallenge03_offer" />
+			<property name="statement_key" value="quest_restore_power_statement"/>
+		    <property name="response_key" value="quest_restore_power_response"/>
 			<property name="difficulty" value="medium" />
 			<property name="shareable" value="true"/>
 
 			<property name="login_rally_reset" value="true"/>
-
-			<action type="TrackQuest"/>
-
+	
 			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
 				<property name="completion_distance" value="50" />
 				<property name="phase" value="1" />
@@ -226,7 +203,6 @@
 				<property name="allowed_start_hour" value="22"/>
 				<property name="allowed_end_hour" value="4"/>
 			</objective>
-			
 			<objective type="POIBlockActivate" >
 				<property name="phase" value="3"/>
 				<property name="block_index" value="QuestRestorePower"/>
@@ -260,11 +236,11 @@
 
 			<action type="TrackQuest"/>
 
-			<objective type="FetchKeep" id="resourceClayLump" value="8" phase="1"/>
-			<objective type="FetchKeep" id="resourceScrapLead" value="12" phase="1"/>
-			<objective type="FetchKeep" id="resourceBrokenGlass" value="14" phase="1"/>
-			<objective type="FetchKeep" id="resourceScrapIron" value="25" phase="1"/>
-			<objective type="FetchKeep" id="resourceSpring" value="8" phase="1"/>
+			<objective type="FetchKeep" id="resourceClayLump" value="80" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapLead" value="120" phase="1"/>
+			<objective type="FetchKeep" id="resourceBrokenGlass" value="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="250" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapBrass" value="80" phase="1"/>
 
 			<objective type="Craft" id="ApacheHelicopterCanopy" value="1" phase="2"/>
 
@@ -283,11 +259,11 @@
 			<property name="difficulty" value="medium" />
 			<property name="shareable" value="true"/>
 
-			<objective type="FetchKeep" id="resourceElectricParts" value="14" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="4" phase="1"/>
-			<objective type="FetchKeep" id="officeChair01" value="5" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="12" phase="1"/>
-			<objective type="FetchKeep" id="resourceSpring" value="5" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
+			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceDuctTape" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" value="25" phase="1"/>
 
 			<objective type="Craft" id="ApacheHelicopterCockpit" value="1" phase="2"/>
 
@@ -362,7 +338,8 @@
 			<objective type="FetchKeep" id="resourceForgedSteel" count="16" phase="1"/>
 			<objective type="FetchKeep" id="resourceMechanicalParts" count="6" phase="1"/>
 			<objective type="FetchKeep" id="resourceSpring" count="3" phase="1"/>
-			<objective type="FetchKeep" id="resourceLegendaryParts" count="5" phase="1"/>
+			<objective type="FetchKeep" id="resourceDuctTape" count="2" phase="1"/>
+			<objective type="FetchKeep" id="resourceLegendaryParts" count="1" phase="1"/>
 
 			<objective type="Craft" id="meleeToolSalvageT3ImpactDriverAC" value="1" phase="2"/>
 
@@ -489,11 +466,6 @@
 		<action type="UnlockPOI" >
 			<property name="phase" value="4"/>
 		</action>
-
-<!--    <objective type="ReturnToNPC">
-			<property name="phase" value="5" />
-			<property name="nav_object" value="return_to_trader" />
-		</objective> -->
 		
 	     <objective type="Goto" id="trader" value="1" phase="4">
 			<property name="biome_filter_type" value="any"/>

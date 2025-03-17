@@ -56,7 +56,7 @@
 			<property name="Class" value="CarExplodeLoot"/>
 			<!-- cars explode when destroyed by a tool without harvest settings -->
 			<!-- <property name="CustomIcon" value=""/> -->
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="ItemTypeIcon" value="AH-64 Apache"/>
 			<property name="LootList" value="cars"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -228,13 +228,13 @@
 		</block>
 
 		<block name="ApacheS4">
-			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="DescriptionKey" value="AH-64ApacheHelicopter2Desc"/>
 			<property name="CustomIcon" value="apacheS4"/>
 			<property name="Material" value="Mmetal"/>
             <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage5.prefab"/>
-			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="MultiBlockDim" value="18,5,8"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property class="RepairItems">
 			<property name="resourceScrapIron" value="30"/>
@@ -266,7 +266,7 @@
 		</block>
 		
 		<block name="atvpuma">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="cars"/>
@@ -339,7 +339,7 @@
 		</block>
 
 		<block name="BTR80">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="cars"/>
@@ -392,7 +392,7 @@
 		</block>
 
 		<block name="MilitaryTrailer">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="cars"/>
@@ -445,7 +445,7 @@
 		</block> 
 			
 		<block name="U-Boat">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
@@ -479,24 +479,23 @@
 		</block>
 		
 		<!-- CF SHIPS Planes -->
-		
-			<block name="F15">
-			<property name="CreativeMode" value="None"/>
+
+		<block name="F15">
 			<property name="CustomIcon" value="F15" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+			<property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
-				
+				<!-- which prefab/particle is used -->
 				<property name="RadiusBlocks" value="7"/>
-				
+				<!-- damage radius for blocks -->
 				<property name="BlockDamage" value="1500"/>
-				
+				<!-- damage for blocks in the center of the explosion -->
 				<property name="RadiusEntities" value="12"/>
-				
+				<!-- damage radius for entities -->
 				<property name="EntityDamage" value="600"/>
-				
-			</property> -->
+				<!-- damage for entities in the center of the explosion -->
+			</property>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -540,22 +539,11 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 		</block>
 		<block name="CH47">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="Chinook" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
-				<property name="ParticleIndex" value="5"/>
-				
-				<property name="RadiusBlocks" value="7"/>
-				
-				<property name="BlockDamage" value="1500"/>
-				
-				<property name="RadiusEntities" value="12"/>
-				
-				<property name="EntityDamage" value="600"/>
-				
-			</property> -->
+			
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -598,22 +586,11 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 		</block>
 		<block name="M113">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="M113" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
-				<property name="ParticleIndex" value="5"/>
-				
-				<property name="RadiusBlocks" value="7"/>
-				
-				<property name="BlockDamage" value="1500"/>
-				
-				<property name="RadiusEntities" value="12"/>
-				
-				<property name="EntityDamage" value="600"/>
-				
-			</property> -->
+			
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -656,22 +633,11 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 		</block>
 		<block name="M1A1">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="M1A1" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
-				<property name="ParticleIndex" value="5"/>
-				
-				<property name="RadiusBlocks" value="7"/>
-				
-				<property name="BlockDamage" value="1500"/>
-				
-				<property name="RadiusEntities" value="12"/>
-				
-				<property name="EntityDamage" value="600"/>
-				
-			</property> -->
+			
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -714,22 +680,11 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 		</block>
 		<block name="Stryker">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="Stryker" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
-				<property name="ParticleIndex" value="5"/>
-				
-				<property name="RadiusBlocks" value="7"/>
-				
-				<property name="BlockDamage" value="1500"/>
-				
-				<property name="RadiusEntities" value="12"/>
-				
-				<property name="EntityDamage" value="600"/>
-				
-			</property> -->
+		
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -778,18 +733,7 @@
 				<property name="IndexName" value="challenge_cars"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="cars"/>
-				<!-- <property class="Explosion">
-					<property name="ParticleIndex" value="30"/>
-					
-					<property name="RadiusBlocks" value="3.5"/>
-					
-					<property name="BlockDamage" value="500"/>
-					
-					<property name="RadiusEntities" value="5"/>
-					
-					<property name="EntityDamage" value="250"/>
-					
-				</property> -->
+				
 				<property name="CustomIcon" value="cntCar03SedanDamage0Master"/>
 				<property name="ItemTypeIcon" value="explosion"/>
 				<property name="TintColor" value="B0B0B0"/>
@@ -823,7 +767,7 @@
 			<block name="CF_CWIS_Base">
 				<property name="CustomIcon" value="CF_CWIS_Base"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Base"/>
@@ -835,7 +779,7 @@
 			<block name="CF_CWIS_Turret_Up_60">
 				<property name="CustomIcon" value="CF_CWIS_Turret_Up_60"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Turret_Up_60"/>
@@ -846,7 +790,7 @@
 			<block name="CF_CWIS_Turret_Up_30">
 				<property name="CustomIcon" value="CF_CWIS_Turret_Up_30"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Turret_Up_30"/>
@@ -857,7 +801,7 @@
 			<block name="CF_CWIS_Turret_Straight">
 				<property name="CustomIcon" value="CF_CWIS_Turret_Straight"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Turret_Straight"/>
@@ -868,7 +812,7 @@
 			<block name="CF_CWIS_Turret_Down_65">
 				<property name="CustomIcon" value="CF_CWIS_Turret_Down_65"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Turret_Down_65"/>
@@ -879,7 +823,7 @@
 			<block name="CF_CWIS_Turret_Down_45">
 				<property name="CustomIcon" value="CF_CWIS_Turret_Down_45"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_CWIS_Turret_Down_45"/>
@@ -890,7 +834,7 @@
 				<property name="CustomIcon" value="CF_HEMTT_CIWIS"/>
 				<property name="TerrainAlignment" value="Vehicle"/>
 				<property name="Extends" value="CFCarMili" param1="MultiBlockDim"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_HEMTT_CIWIS"/>
@@ -900,7 +844,7 @@
 				<property name="CustomIcon" value="CF_HEMTT_Patriot"/>
 				<property name="TerrainAlignment" value="Vehicle"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_HEMTT_Patriot"/>
@@ -909,7 +853,7 @@
 			<block name="CF_HEMTT_Patriot_Launcher">
 				<property name="CustomIcon" value="CF_HEMTT_Patriot_Launcher"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_HEMTT_Patriot_Launcher"/>
@@ -923,7 +867,7 @@
 				<property name="CustomIcon" value="CF_HEMTT_Patriot_Trailer"/>
 				<property name="TerrainAlignment" value="Vehicle"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_HEMTT_Patriot_Trailer"/>
@@ -934,7 +878,7 @@
 				<property name="CustomIcon" value="CF_HEMTT_Patriot_Trailer_Full"/>
 				<property name="TerrainAlignment" value="Vehicle"/>
 				<property name="Extends" value="CFCarMili"/>
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="armyTruck"/>
 				<property name="Model" value="#@modfolder:Resources/CF_Surplus_2.unity3d?CF_HEMTT_Patriot_Trailer_Full"/>
@@ -945,7 +889,7 @@
 			<!-- Missiles by Shrader971-->
 			
 		<block name="AIM-9 Sidewinder">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -960,7 +904,7 @@
 		</block>	
 
 		<block name="AIM-7 Sparrow">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -975,7 +919,7 @@
 		</block>	
 
 		<block name="AGM-114 Hellfire">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -990,7 +934,7 @@
 		</block>	
 
 		<block name="AGM-65Maverick">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -1005,7 +949,7 @@
 		</block>	
 
 		<block name="HJ-10">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -1020,7 +964,7 @@
 		</block>	
 
 		<block name="JDAM">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -1035,7 +979,7 @@
 		</block>	
 
 		<block name="JDAMs2">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -1050,7 +994,7 @@
 		</block>	
 
 		<block name="PL-11 (2)">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="ACmunitions"/>
@@ -1069,7 +1013,7 @@
         <block name="APposter">
 			<property name="DescriptionKey" value="hiddenSafePaintingGroupDesc"/>
 			<property name="CustomIcon" value=""/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="Mglass"/>
 			<property name="StabilitySupport" value="false"/>
 			<property name="Shape" value="ModelEntity"/>

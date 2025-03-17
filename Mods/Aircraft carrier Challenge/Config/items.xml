@@ -835,16 +835,7 @@
 	</insertafter>
 
 	<append xpath="/items">
-	
-		<item name="Mission_Start_Carrier">
-			<property name="Extends" value="adminQuestTicketMaster"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIconTint" value="fff900"/>
-			<property class="Action0">
-			<property name="QuestGiven" value="quest_whiteRiverCitizen1"/>
-		</property>
-		</item>
-		
+			
 		<item name="Mission_1_Retrieve Apache information">
 			<property name="Extends" value="adminQuestTicketMaster"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -858,38 +849,23 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIconTint" value="ff00bf"/>
 			<property class="Action0">
-				<property name="QuestGiven" value="quest_CarrierChallenge03"/>
+			<property name="QuestGiven" value="quest_CarrierChallenge03"/>
 			</property>
 		</item>
-		<item name="Mission_5_Help Support Ship">
-			<property name="Extends" value="adminQuestTicketMaster"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIconTint" value="ff3155"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="quest_CarrierChallenge05"/>
-			</property>
-		</item>
-		<item name="Mission_6_Assist Trader Joel">
-			<property name="Extends" value="adminQuestTicketMaster"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIconTint" value="2daefd"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="quest_CarrierChallenge06"/>
-			</property>
-		</item>	
-	
+
 		<item name="ApacheHelicopterCanopy">
 		    <property name="Extends" value="gunMGT1AK47Parts"/>
 			<property name="CustomIcon" value="ApacheHelicopterCanopy"/>
+			<property name="DescriptionKey" value="AH-64ApacheHelicopterDesc"/>
 			<property name="Tags" value="parts,harvestingSkill,repairingSkill,salvagingSkill"/>
 			<property name="Material" value="MmeleeToolAllSteel"/>
 			<property name="EconomicValue" value="200"/>
 		</item>
 		
-
 		<item name="ApacheHelicopterCockpit">
 			<property name="Extends" value="gunMGT1AK47Parts"/>
 			<property name="CustomIcon" value="ApacheHelicopterCockpit"/>
+			<property name="DescriptionKey" value="AH-64ApacheHelicopterDesc"/>
 			<property name="Tags" value="parts,harvestingSkill,repairingSkill,salvagingSkill"/>
 			<property name="Material" value="MmeleeToolAllSteel"/>
 			<property name="EconomicValue" value="200"/>
