@@ -213,7 +213,7 @@ animalBear,angeleyes_1971
 animalBearSmall,Baby angeleyes_1971
 
 zombieUtilityWorker,Seamen
-zombieUtilityWorker,Feral,Private Willie
+zombieUtilityWorkerFeral,Private Willie
 zombieUtilityWorkerRadiated,Major Johnson
 
 zombieArlene,JynxdGinger79
@@ -311,8 +311,8 @@ quest_CarrierChallenge01_subtitle,"Find Bob's Blueprint"
 quest_CarrierChallenge01_description,"Bob told me he found plans for a chopper in the Army Depot, maybe you can head down there, he may have left it."
 
 quest_CarrierChallenge02,"Gather AH-64 Parts 1/5 "
-quest_CarrierChallenge02_subtitle,"How to build a helicopter"
-quest_CarrierChallenge02_description,"Gather parts and craft a Starting helicopter"
+quest_CarrierChallenge02_subtitle,"Build Apache Canopy"
+quest_CarrierChallenge02_description,"Gather parts and craft an Apache Canopy."
 
 quest_CarrierChallenge03,"Restore Power to the bridge"
 quest_CarrierChallenge03_subtitle,"Restore Bridge Operation Systems"
@@ -320,20 +320,20 @@ quest_CarrierChallenge03_description,"Just had a thought, we're going to need ra
 quest_CarrierChallenge03_offer,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems?"
 
 quest_CarrierChallenge04,"Gather AH-64 Parts 2/5 "
-quest_CarrierChallenge04_subtitle,"Build Apache Canopy"
-quest_CarrierChallenge04_description,"Gather parts and craft an Apache Canopy in a forge!."
+quest_CarrierChallenge04_subtitle,"Build Apache Cockpit"
+quest_CarrierChallenge04_description,"Gather parts and craft an Apache Cockpit in a workbench."
 
 quest_CarrierChallenge05,"Gather AH-64 Parts 3/5 "
-quest_CarrierChallenge05_subtitle,"Build Apache Cockpit"
-quest_CarrierChallenge05_description,"Gather parts and craft an Apache Cockpit in a workbench."
+quest_CarrierChallenge05_subtitle,"Build Apache Accessories"
+quest_CarrierChallenge05_description,"Gather parts and craft two Apache accessories in a workbench."
 
 quest_CarrierChallenge06,"Gather AH-64 Parts 4/5 "
-quest_CarrierChallenge06_subtitle,"Build Apache Accessories"
-quest_CarrierChallenge06_description,"Gather parts and craft two Apache accessories in a workbench."
+quest_CarrierChallenge06_subtitle,"Build Apache Chassis"
+quest_CarrierChallenge06_description,"Gather parts and craft an Apache Chassis in a workbench."
 
 quest_CarrierChallenge07,"Gather AH-64 Parts 5/5 "
-quest_CarrierChallenge07_subtitle,"Build Apache Chassis"
-quest_CarrierChallenge07_description,"Gather parts and craft an Apache Chassis in a workbench."
+quest_CarrierChallenge07_subtitle,"How to build a helicopter"
+quest_CarrierChallenge07_description,"Gather parts and craft a Starting helicopter"
 
 quest_CarrierChallenge08,"Apache Impact Driver "
 quest_CarrierChallenge08_subtitle," Craft Apache Impact Driver"

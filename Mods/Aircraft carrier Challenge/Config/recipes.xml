@@ -21,11 +21,11 @@
 	  <ingredient name="vehicleWheels" count="3"/>
 	</recipe>
 
-	  <recipe name="ApacheHelicopterCanopy" count="1" craft_area="forge" craft_time="60" tags="forgeCrafting">
-		  <ingredient name="resourceScrapBrass" count="80"/>
-		  <ingredient name="resourceForgedIron" count="125"/>
-		  <ingredient name="resourceBrokenGlass" count="40"/>
-		  <ingredient name="resourceScrapLead" count="120"/>
+	  <recipe name="ApacheHelicopterCanopy" count="1" craft_time="60" tags="forgeCrafting">
+		  <ingredient name="resourceBrokenGlass" count="110"/>
+		  <ingredient name="resourceScrapBrass" count="180"/>
+		  <ingredient name="resourceScrapLead" count="140"/>
+		  <ingredient name="resourceScrapIron" count="250"/>
 		  <ingredient name="resourceClayLump" count="80"/>
 	  </recipe>
 

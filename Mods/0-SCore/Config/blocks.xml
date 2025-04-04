@@ -569,21 +569,21 @@
             <property name="TickRate" value="10"/>
         </block>
 
-        <block name="portalMaster">
+		<!--     <block name="portalMaster">
             <property name="Class" value="Portal, SCore"/>
             <property name="CooldownBuff" value="buffTeleportCooldown"/>
-            <property name="Delay" value="2000"/>
+            <property name="Delay" value="2000"/> -->
 
-            <!-- Uncomment to hard code the portal ID-->
-            <!--property name="Location" value="Portal01" /-->
+		<!-- Uncomment to hard code the portal ID-->
+		<!--property name="Location" value="Portal01" /-->
 
-            <!-- determines if the name of the portal is displayed -->
-            <property name="Display" value="true"/>
+		<!-- determines if the name of the portal is displayed -->
+		<!-- <property name="Display" value="true"/> -->
 
-            <!-- If the player has this buff, they will be able to see the portal name. -->
-            <!--property name="DisplayBuff" value="buffyours" /-->
+		<!-- If the player has this buff, they will be able to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" /-->
 
-            <property name="Material" value="Mstone"/>
+		<!--   <property name="Material" value="Mstone"/>
             <property name="Shape" value="ModelEntity"/>
             <property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/>
             <property name="IsTerrainDecoration" value="true"/>
@@ -607,19 +607,19 @@
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
 			<property name="CustomIcon" value="MagicPortal01" />
-			<property name="Location" value="" />
-			<!-- Legacy and default -->
-			<property name="Display" value="true" />
-			<property name="RequiredPower" value="0" />
-			<!-- Does not require power to operate -->
-			<!-- Uncomment to hide the portal name
+			<property name="Location" value="" /> -->
+		<!-- Legacy and default -->
+		<!--	<property name="Display" value="true" />
+			<property name="RequiredPower" value="0" /> -->
+		<!-- Does not require power to operate -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" /-->
+		<!-- </block> -->
 
-		<block name="samplePortal01b">
+		<!--	<block name="samplePortal01b">
 			<property name="Extends" value="portalMaster"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="MultiBlockDim" value="1,1,1"/>
@@ -627,15 +627,15 @@
 			<property name="CustomIcon" value="MagicPortal01" />
 			<property name="Location" value="source=samplePortal01cb,destination=samplePortal01b" />
 			<property name="Display" value="true" />
-			<property name="RequiredPower" value="0" />
-			<!-- Does not require power to operate -->
-			<!-- Uncomment to hide the portal name
+			<property name="RequiredPower" value="0" /> -->
+		<!-- Does not require power to operate -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
-		<block name="Portal02">
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" />
+		</block> -->
+		<!--	<block name="Portal02">
 			<property name="Extends" value="portalMaster"/>
 			<property name="Class" value="PoweredPortal, SCore" />
 			<property name="DisplayType" value="blockMulti"/>
@@ -648,15 +648,15 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Tags" value="electricianSkill"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
-			<!-- Uncomment to hide the portal name
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/> -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" />
+		</block> -->
 
-		<block name="ReturnPortal">
+		<!--	<block name="ReturnPortal">
 			<property name="Extends" value="portalMaster"/>
 			<property name="Class" value="PoweredPortal, SCore" />
 			<property name="DisplayType" value="blockMulti"/>
@@ -669,15 +669,15 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Tags" value="electricianSkill"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
-			<!-- Uncomment to hide the portal name
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/> -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" />
+		</block> -->
 
-		<block name="CampPortal">
+		<!--	<block name="CampPortal">
 			<property name="Extends" value="portalMaster"/>
 			<property name="Class" value="PoweredPortal, SCore" />
 			<property name="DisplayType" value="blockMulti"/>
@@ -690,15 +690,15 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Tags" value="electricianSkill"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/> -->
 
-			<!-- <property name="Display" value="false" /> -->
+		<!-- <property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" /
+		</block> -->
 
-		<block name="Portal05">
+		<!--	<block name="Portal05">
 			<property name="Extends" value="portalMaster"/>
 			<property name="Class" value="PoweredPortal, SCore" />
 			<property name="DisplayType" value="blockMulti"/>
@@ -711,15 +711,15 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Tags" value="electricianSkill"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
-			<!-- Uncomment to hide the portal name
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/> -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" /
+		</block> -->
 
-		<block name="Portal06">
+		<!--	<block name="Portal06">
 			<property name="Extends" value="portalMaster"/>
 			<property name="Class" value="PoweredPortal, SCore" />
 			<property name="DisplayType" value="blockMulti"/>
@@ -733,13 +733,14 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Tags" value="electricianSkill"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
-			<!-- Uncomment to hide the portal name
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/> -->
+		<!-- Uncomment to hide the portal name
 			<property name="Display" value="false" /> -->
 
-			<!-- Uncomment to require a specified buff to see the portal name. -->
-			<!--property name="DisplayBuff" value="buffyours" /-->
-		</block>
+		<!-- Uncomment to require a specified buff to see the portal name. -->
+		<!--property name="DisplayBuff" value="buffyours" /
+		</block> -->
+
 
 		<block name="cntSphereDropBoxTest">
             <!-- Doesn't need to be signed container, but might make the most sense -->

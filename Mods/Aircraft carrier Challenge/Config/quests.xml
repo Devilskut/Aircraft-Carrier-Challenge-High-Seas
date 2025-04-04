@@ -59,10 +59,10 @@
 				<property name="target_tags" value="crawler,walker,feral,radiated" />
 			</objective>
 			
-			<reward type="Item" id="armorFarmerHelmet" value="1"/>
-			<reward type="Item" id="armorFarmerOutfit" value="1"/>
-			<reward type="Item" id="armorFarmerGloves" value="1"/>
-			<reward type="Item" id="armorFarmerBoots" value="1"/>
+			<reward type="Item" id="armorPrimitiveHelmet" value="2"/>
+			<reward type="Item" id="armorPrimitiveOutfit" value="2"/>
+			<reward type="Item" id="armorPrimitiveGloves" value="2"/>
+			<reward type="Item" id="armorPrimitiveBoots" value="2"/>
 			<reward type="Item" id="modArmorHelmetLight" value="1"/>
 			
 			<reward type="SkillPoints" value="4" />
@@ -164,13 +164,13 @@
 
 			<action type="TrackQuest"/>
 
-			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
-			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
-			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
-			<objective type="FetchKeep" id="resourceForgedIron" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceElectricParts" value="100" phase="1"/>
-			
-			<objective type="Craft" id="ApacheS4" value="1" phase="2"/>
+			<objective type="Fetch" id="resourceBrokenGlass" value="110" phase="1"/>
+			<objective type="Fetch" id="resourceScrapBrass" value="180" phase="1"/>
+			<objective type="Fetch" id="resourceScrapLead" value="140" phase="1"/>
+			<objective type="Fetch" id="resourceScrapIron" value="250" phase="1"/>
+			<objective type="Fetch" id="resourceClayLump" value="80" phase="1"/>
+
+			<objective type="Craft" id="ApacheHelicopterCanopy" value="1" phase="2"/>
 			<objective type="Craft" id="Mission_3_Bridge supplies" value="1" phase="3"/>
 
 			<reward type="Exp" value="2500"/>	
@@ -181,7 +181,7 @@
 			<property name="subtitle_key" value="quest_CarrierChallenge03_subtitle"/>
 			<property name="description_key" value="quest_CarrierChallenge03_description"/>
 			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest" />
+			<property name="category_key" value="challenge" />
 			<property name="difficulty_tier" value="5" param1="difficulty"/>
 			<property name="offer_key" value="quest_CarrierChallenge03_offer" />
 			<property name="statement_key" value="quest_restore_power_statement"/>
@@ -236,13 +236,13 @@
 
 			<action type="TrackQuest"/>
 
-			<objective type="FetchKeep" id="resourceClayLump" value="80" phase="1"/>
-			<objective type="FetchKeep" id="resourceScrapLead" value="120" phase="1"/>
-			<objective type="FetchKeep" id="resourceBrokenGlass" value="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceScrapIron" value="250" phase="1"/>
-			<objective type="FetchKeep" id="resourceScrapBrass" value="80" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
+			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceDuctTape" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" value="25" phase="1"/>
 
-			<objective type="Craft" id="ApacheHelicopterCanopy" value="1" phase="2"/>
+			<objective type="Craft" id="ApacheHelicopterCockpit" value="1" phase="2"/>
 
 			<reward type="Exp" value="5000"/>
 			<reward type="Quest" id="quest_CarrierChallenge05"/>
@@ -259,13 +259,14 @@
 			<property name="difficulty" value="medium" />
 			<property name="shareable" value="true"/>
 
-			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
-			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceDuctTape" value="20" phase="1"/>
-			<objective type="FetchKeep" id="resourceMetalPipe" value="25" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="66" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="4" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" value="100" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceSpring" value="8" phase="1"/>
 
-			<objective type="Craft" id="ApacheHelicopterCockpit" value="1" phase="2"/>
+			<objective type="Craft" id="vehicleApacheHelicopterAccessories" value="2" phase="2"/>
+			
 
 			<reward type="Exp" value="5000"/>
 			<reward type="Quest" id="quest_CarrierChallenge06">
@@ -284,14 +285,14 @@
 			<property name="shareable" value="false"/>
 
 			<action type="TrackQuest"/>
+			<objective type="FetchKeep" id="resourceForgedSteel" count="400" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" count="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceDuctTape" count="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceLeather" count="25" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" count="50" phase="1"/>
 
-			<objective type="FetchKeep" id="resourceElectricParts" value="66" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="4" phase="1"/>
-			<objective type="FetchKeep" id="resourceMetalPipe" value="100" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1"/>
-			<objective type="FetchKeep" id="resourceSpring" value="8" phase="1"/>
-
-			<objective type="Craft" id="vehicleApacheHelicopterAccessories" value="2" phase="2"/>
+			<objective type="Craft" id="vehicleApacheHelicopterChassis" value="1" phase="2"/>
+			
 
 			<reward type="Exp" value="5000"/>
 			<reward type="Quest" id="quest_CarrierChallenge07"/>
@@ -310,13 +311,14 @@
 
 			<action type="TrackQuest"/>
 
-			<objective type="FetchKeep" id="resourceForgedSteel" count="400" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" count="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceDuctTape" count="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceLeather" count="25" phase="1"/>
-			<objective type="FetchKeep" id="resourceMetalPipe" count="50" phase="1"/>
+			
+			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
+			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
+			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
+			<objective type="FetchKeep" id="resourceForgedIron" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="100" phase="1"/>
 
-			<objective type="Craft" id="vehicleApacheHelicopterChassis" value="1" phase="2"/>
+			<objective type="Craft" id="ApacheS4" value="1" phase="2"/>
 
 			<reward type="Exp" value="5000"/>
 			<reward type="Quest" id="quest_CarrierChallenge08"/>
@@ -442,7 +444,7 @@
 		<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
 			<property name="completion_distance" value="50" />
 			<property name="phase" value="1" />
-			<property name="PrefabName" value="trder_joel_1" />
+			<property name="PrefabName" value="ACCENDINGJOEL" />
 			<property name="nav_object" value="quest" />
 		</objective>
 

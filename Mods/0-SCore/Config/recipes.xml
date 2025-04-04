@@ -1,6 +1,6 @@
 <configs>
 
-	<append xpath="/recipes">
+<!--	<append xpath="/recipes">
 
 		<recipe name="Portal02" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="15"/>
@@ -41,6 +41,6 @@
 			<ingredient name="resourceScopeLens" count="1"/>
 		</recipe>
 
-	</append>
+	</append> -->
 	
 </configs>
