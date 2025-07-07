@@ -5,7 +5,7 @@
             <Description>
 				A mini overhaul mod for Release Ver. 2.1(b5)
 				
-				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ redesigned by Devilskut for Release Ver. 1.3 with code help from Techgeek_20 
+				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ redesigned by Devilskut for Release Ver. 2.1(b5) with code help from Techgeek_20 
 				and "bug  hunting" from AngelacusGaming.
 
 				Notes about this mini-mod:
@@ -24,7 +24,7 @@
 				Slight increase in oil shale from cement mixer loot.
 				Increased chance of antibiotics from nurses per perk point spent in Physician, up to a max chance of 35%.
 				Base chance of skill magazines from radiated zombies increased from 10% to 13%.
-				Changed the quest requirements for gathering AH-64 Apache parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
+				Changed the quest requirements for gathering UH-60 parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
 				Antibiotics loot probability from nurses now tied to Physician perk.
 				Player placed workstations can be picked up with no need for a land claim block. (Workstation MUST be empty of all tools, items, and materials for this to work)
 
@@ -65,16 +65,16 @@
 				7: You must survive until you are able to build an AH-64 Apache Helicopter and complete your final mission and reach your settlement.
 
 				Contributors:
-				DishongGameOptions 			-Author: w00kien00kie
+			
 				DishongLootBags 			-Author: w00kien00kie
-				DishongPickupWorkstations 		-Author: w00kien00kie
-				WMMRespawnLoot				-Author: w00kien00kie
-
+				DishongPickupWorkstations   -Author: w00kien00kie
+				
 				Additional thanks for permission to use following modlets by their respective creator(s):
 
-				Khelldon Custom Menu 					-Author: Khelldon
+				Khelldon Custom Menu 				-Author: Khelldon
 				Military Blocks						-Author: Cannon_Fodder83,Shrader971
-				0-Score							-Author: Spherii
+				0-Score							    -Author: Spherii
+				UH-60                               -Author: Bdubyah
 				AircraftcarrierGuns					-author: Killerbunny264
 				
 				Shout outs and thanks to the mod authors and Hells_Janitor for the Dishong Tower Challenge and allowing usage of their mods and code.
