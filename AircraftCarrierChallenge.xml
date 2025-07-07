@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-    <ServerGroup Name="Aircraft Carrier Challenge" Logo="" Description="Can you escape the Aircraft Carrier?">
+    <ServerGroup Name="Aircraft Carrier Challenge High Seas" Logo="" Description="Can you escape the Aircraft Carrier?">
         <Server Name="Aircraft Carrier Challenge" Logo="">
             <Description>
 				A mini overhaul mod for Release Ver. 2.1(b5)
@@ -83,7 +83,7 @@
 				For full details, check the forum post here: *No post*
 
 
-		    	Found a bug or poi stability issue and wish to let us know?  Head to https://github.com/Techgeek20/7D2D-V1_Aircraft_Carrier_Challenge/issues and open an issues ticket.
+		    	Found a bug or poi stability issue and wish to let us know?  Head to https://github.com/Devilskut/Destroyer_of_Dreams_High_Seas/issues and open an issues ticket.
 
 			</Description>
            	
@@ -93,7 +93,7 @@
             <Donate></Donate>
             <DownloadMode>Clone</DownloadMode>
             <Downloads>
-                <Download>https://github.com/Techgeek20/7D2D-V1_Aircraft_Carrier_Challenge</Download>
+                <Download>https://github.com/Devilskut/Destroyer_of_Dreams_High_Seas</Download>
             </Downloads>
 
         </Server>
