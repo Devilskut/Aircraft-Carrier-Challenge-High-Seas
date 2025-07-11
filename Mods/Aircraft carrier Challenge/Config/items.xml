@@ -1,8 +1,8 @@
 ﻿<configs>
-    <insertafter xpath="/items/item[@name]/property[1]">
+     <insertafter xpath="/items/item[@name]/property[1]">
 		<property name="CreativeMode" value="none"/> 
 	</insertafter>
-	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set>
+	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
 	
 	<insertAfter xpath="/items/item[@name='ammoBundleMaster']">
 	<item name="Backpack">
@@ -30,9 +30,103 @@
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
 	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
 
-	<append xpath="/items/item[starts-with(@name,'foodCan')]">
+	<remove xpath="/items/item[@name='ammoProjectileZombieBoulder']" />
+
+	<insertbefore xpath="/items/item[@name='meleeHandAnimalZombieDog']">
+
+		<item name="ammoProjectileZombieBoulder">
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Boulder/BoulderThrownPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="50"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="Explosion.ParticleIndex" value="36"/>
+				<property name="Explosion.RadiusBlocks" value="2.5"/>
+				<property name="Explosion.RadiusEntities" value="3.9"/>
+				<property name="Explosion.EntityDamage" value="70"/>
+				<property name="Explosion.BlockDamage" value="100"/>
+				<property name="Explosion.DamageBonus.earth" value="0"/>
+				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property name="FlyTime" value="-5"/>
+			<!--	value calculates ballistic velocity to target over this +duration -->
+				<property name="Velocity" value="50"/>
+				<!-- ballistic max distance for duration -->
+		<property name="Gravity" value="-8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="CollisionRadius" value=".22"/>
+				<property name="Buff" value="buffInjuryStunned03"/>
+			</property>
+			<effect_group name="ammoProjectileZombieBoulder" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
+				<!--AbrasionRegular-->
+			</effect_group>
+			</item>
+	</insertbefore>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarBoiledWater')]">
 		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
+		<property name="SpoiledItem" value="drinkJarRiverWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarRedTea')]">
+		<property name="Spoilable" value="true" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarGoldenRodTea')]">
+		<property name="Spoilable" value="true" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarYuccaJuice')]">
+		<property name="Spoilable" value="true" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarCoffee')]">
+		<property name="Spoilable" value="true" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkJarBlackStrapCoffee')]">
+		<property name="Spoilable" value="true" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
+		<property name="TickPerLoss" value="500" />
+		<property name="ShowQuality" value="false"/>
+		<property name="SpoilageMax" value="1000" />
+		<property name="SpoilagePerTick" value="5" />
+	</append>
+
+	<append xpath="/items/item[starts-with(@name,'drinkCanMegaCrush')]">
+		<property name="Spoilable" value="false" />
+		<property name="SpoiledItem" value="drinkJarBoiledWater" />
 		<property name="TickPerLoss" value="500" />
 		<property name="ShowQuality" value="false"/>
 		<property name="SpoilageMax" value="1000" />
@@ -130,7 +224,7 @@
 	</append>
 
 	<append xpath="/items/item[starts-with(@name,'foodHoboStew')]">
-		<property name="Spoilable" value="true" />
+		<property name="Spoilable" value="false" />
 		<property name="SpoiledItem" value="foodRottingFlesh" />
 		<property name="TickPerLoss" value="500" />
 		<property name="ShowQuality" value="false"/>
@@ -202,7 +296,7 @@
 	</append>
 
 	<append xpath="/items/item[starts-with(@name,'foodTunaFishGravyToast')]">
-		<property name="Spoilable" value="true" />
+		<property name="Spoilable" value="False" />
 		<property name="SpoiledItem" value="foodRottingFlesh" />
 		<property name="TickPerLoss" value="500" />
 		<property name="ShowQuality" value="false"/>
@@ -245,7 +339,7 @@
 		<property name="SpoilageMax" value="1000" />
 		<property name="SpoilagePerTick" value="1" />
 	</append>
-
+	
 	<append xpath="/items/item[starts-with(@name,'foodCornMeal')]">
 		<property name="Spoilable" value="true" />
 		<property name="SpoiledItem" value="foodRottingFlesh" />
@@ -263,7 +357,7 @@
 		<property name="SpoilageMax" value="1000" />
 		<property name="SpoilagePerTick" value="2" />
 	</append>
-	
+
 	<set xpath="//item[@name='resourceCoal']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
 	<set xpath="//item[@name='resourceAcid']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
 	<insertbefore xpath="//item[@name='resourceAcid']//property[1]">
@@ -1221,7 +1315,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorLumberjackBoots,armorLumberjackGloves,armorLumberjackOutfit,armorLumberjackHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1242,7 +1336,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorPreacherBoots,armorPreacherGloves,armorPreacherOutfit,armorPreacherHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1263,7 +1357,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRogueBoots,armorRogueGloves,armorRogueOutfit,armorRogueHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1284,7 +1378,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorAthleticBoots,armorAthleticGloves,armorAthleticOutfit,armorAthleticHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1305,7 +1399,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorEnforcerBoots,armorEnforcerGloves,armorEnforcerOutfit,armorEnforcerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1326,7 +1420,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorFarmerBoots,armorFarmerGloves,armorFarmerOutfit,armorFarmerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1347,7 +1441,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorBikerBoots,armorBikerGloves,armorBikerOutfit,armorBikerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1368,7 +1462,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorScavengerBoots,armorScavengerGloves,armorScavengerOutfit,armorScavengerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1389,7 +1483,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRangerBoots,armorRangerGloves,armorRangerOutfit,armorRangerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1430,8 +1524,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="Weapon,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorAssassinBoots,armorAssassinGloves,armorAssassinOutfit,armorAssassinHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorAssassinBoots,armorAssassinGloves,armorAssassinOutfit,armorAssassinHelmet"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1451,8 +1545,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="Weapon,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorMinerBoots,armorMinerGloves,armorMinerOutfit,armorMinerHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorMinerBoots,armorMinerGloves,armorMinerOutfit,armorMinerHelmet"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1472,8 +1566,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="Weapon,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorNomadBoots,armorNomadGloves,armorNomadOutfit,armorNomadHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorNomadBoots,armorNomadGloves,armorNomadOutfit,armorNomadHelmet"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1494,7 +1588,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorNerdBoots,armorNerdGloves,armorNerdOutfit,armorNerdHelmet"/>
-				<property name="Create_item_count" value="1,1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1515,24 +1609,11 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRaiderBoots,armorRaiderGloves,armorRaiderOutfit,armorRaiderHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
 		<!-- WEAPON SETS -->
-
-	<!--	<item name="Weapon">
-			<property name="CreativeMode" value="Dev"/>
-			<property name="HoldType" value="21"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mpaper"/>
-			<property name="CustomIcon" value="backpackMedium"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="EconomicValue" value="60"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Special Items"/>
-		</item> -->
 
 		<item name="Perception">
 			<property name="CreativeMode" value="Dev"/>
@@ -1640,169 +1721,3 @@
 		</item> 
 	</append>	
 </configs>
-
-
-
-
-<!-- <item name="meleeHandZombieFrostclaw">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property class="Action0">
-		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="100"/>
-	</property>
-	<property class="Action1"> -->
-		<!-- UseAction -->
-<!--		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
-		<property name="AnimType" value="3"/>
-		<property name="WarningMax" value="0"/>
-		<property name="Delay" value=".27"/> -->
-		<!-- obsolete if rounds per minute exists -->
-<!--		<property name="Range" value="100"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="ammoProjectileZombieBoulder"/>
-	</property>
-	<effect_group tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".05,.05,.05,.2,.2,.05,.4"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"> -->
-			<!--InfectionRegular-->
-<!--		<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
-		<!--AbrasionRegular-->
-<!--	</effect_group>
-</item>
-
-<item name="meleeHandZombieFrostclawFeral">
-	<property name="Extends" value="meleeHandZombieFrostclaw"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="200"/>
-	</property>
-	<effect_group tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".05,.05,.05,.2,.2,.05,.4"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"> -->
-			<!--InfectionRegular-->
-<!--		<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
-		<!--AbrasionRegular-->
-<!--	</effect_group>
-</item>
-
-<item name="meleeHandZombieFrostclawCharged">
-	<property name="Extends" value="meleeHandZombieFrostclaw"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="60"/>
-		<property name="DamageBlock" value="150"/>
-	</property>
-	<effect_group tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".05,.05,.05,.2,.2,.05,.4"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"> -->
-			<!--InfectionRegular-->
-<!--		<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
-		<!--AbrasionRegular-->
-<!--	</effect_group>
-</item>
-
-<item name="meleeHandZombieFrostclawInfernal">
-	<property name="Extends" value="meleeHandZombieFrostclaw"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="45"/>
-		<property name="DamageBlock" value="250"/>
-	</property>
-	<effect_group tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".05,.05,.05,.2,.2,.05,.4"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"> -->
-			<!--InfectionRegular-->
-<!--			<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
-		<!--AbrasionRegular-->
-<!--	</effect_group>
-</item>
-
-<item name="ammoProjectileZombieBoulder">
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Boulder/BoulderThrownPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="CustomIcon" value="missingIcon"/>
-	<property class="Action1">
-		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="50"/>
-		<property name="DamageBlock" value="50"/>
-		<property name="Explosion.ParticleIndex" value="36"/>
-		<property name="Explosion.RadiusBlocks" value="2.5"/>
-		<property name="Explosion.RadiusEntities" value="3.9"/>
-		<property name="Explosion.EntityDamage" value="80"/>
-		<property name="Explosion.BlockDamage" value="750"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="FlyTime" value="-5"/>
-		 value calculates ballistic velocity to target over this +duration 
-    	<property name="Velocity" value="50"/> 
-		< ballistic max distance for duration 
-		<property name="Gravity" value="-8"/>
-		<property name="LifeTime" value="7"/>
-		<property name="CollisionRadius" value=".22"/>
-		<property name="Buff" value="buffInjuryStunned03"/>
-	</property>
-	<effect_group name="ammoProjectileZombieBoulder" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
-		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
-		<!--AbrasionRegular-->
-<!--	</effect_group>
-</item> 
-
--->

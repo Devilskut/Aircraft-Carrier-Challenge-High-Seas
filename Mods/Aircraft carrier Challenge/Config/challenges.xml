@@ -6,6 +6,7 @@
 
 	<remove xpath="/challenges/challenge_category[@name='Basics']"/>
 	<remove xpath="/challenges/challenge_category[@name='Advanced']"/>
+	<remove xpath="/challenges/challenge_category[@name='Biome Progression']"/>
 	<remove xpath="/challenges/challenge[@group='Basics']"/>
 	<remove xpath="/challenges/challenge[@group='Homesteading']"/>
 	<remove xpath="/challenges/challenge[@group='AdvancedSurvival']"/>
@@ -18,6 +19,7 @@
 	<remove xpath="/challenges/challenge[@group='Survivor']"/>
 	<remove xpath="/challenges/challenge[@group='Hunter']"/>
 	<remove xpath="/challenges/challenge[@group='Zombies']"/>
+	<remove xpath="/challenges/challenge[@group='Burnt Survival']"/>
 	<remove xpath="/challenges/challenge[@group='LearnTwitch']"/>
 	<remove xpath="/challenges/challenge[@group='Twitch']"/>
 	<remove xpath="/challenges/challenge[@group='Silly']"/>

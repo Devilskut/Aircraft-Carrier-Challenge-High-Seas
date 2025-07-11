@@ -88,82 +88,102 @@
     </recipe>
 	  
     <recipe name="LumberJack" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="LumberJackDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
 	<recipe name="Preacher" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="PreacherDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
 	<recipe name="Rogue" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="RogueDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Athletic" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="AthleticDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Enforcer" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="EnforcerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Farmer" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="FarmerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Biker" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="BikerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Scavenger" count="1" craft_time="1" is_trackable="false">
+	  <property name="DescriptionKey" value="ScavengerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Ranger" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="RangerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Commando" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="CommandoDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Assassin" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="AssassinDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Miner" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="MinerDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Nomad" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="NomadDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 	
     <recipe name="Nerd" count="1" craft_time="1" is_trackable="false">
+		<property name="DescriptionKey" value="NerdDesc"/>
 	  <ingredient name="Armor" count="1"/>
     </recipe>
 
 	  <recipe name="Raider" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="RaiderDesc"/>
 		  <ingredient name="Armor" count="1"/>
 	  </recipe>
 	  
 	  <recipe name="Perception" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="PerceptionDesc"/>
 		  <ingredient name="Weapon" count="1"/>
 	  </recipe>
 
 	  <recipe name="Strength" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="StrengthDesc"/>
 		  <ingredient name="Weapon" count="1"/>
 	  </recipe>
 
 	  <recipe name="Fortitude" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="FortitudeDesc"/>
 		  <ingredient name="Weapon" count="1"/>
 	  </recipe>
 
 	  <recipe name="Agility" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="AgilityDesc"/>
 		  <ingredient name="Weapon" count="1"/>
 	  </recipe>
 
 	  <recipe name="Intellect" count="1" craft_time="1" is_trackable="false">
+		  <property name="DescriptionKey" value="IntellectDesc"/>
 		  <ingredient name="Weapon" count="1"/>
 	  </recipe>
   </append>

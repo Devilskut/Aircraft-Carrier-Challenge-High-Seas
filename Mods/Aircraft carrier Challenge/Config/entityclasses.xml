@@ -397,12 +397,11 @@
 	</entity_class>
 
 	</append>
-	
+		
 	<remove xpath="//entity_class[@name='animalDireWolf']"/>
 	
 	<append xpath="/entity_classes">
-
-		<entity_class name="animalDireWolf" extends="animalWolf">
+			<entity_class name="animalDireWolf" extends="animalWolf">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="EntityFlags" value="animal,zombie"/>
 			<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT05"/>

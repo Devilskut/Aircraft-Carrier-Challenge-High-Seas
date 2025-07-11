@@ -98,7 +98,6 @@
 	</insertafter>
 	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
 
-
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	
 	<set xpath="//block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
@@ -130,6 +129,10 @@
 	  
 	<append xpath="/blocks/block[@name='treeMaster']">
 		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[starts-with(@name, 'plantHanging')]">
+		<drop event="Harvest" name="treePlantedOak1m" count="1" prob="0.4" tag="allHarvest"/>
 	</append>
 
 	<append xpath="/blocks/block[@name='treePlant02']">  <!-- Potted Plant -->

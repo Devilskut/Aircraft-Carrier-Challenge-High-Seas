@@ -121,8 +121,8 @@
       <property name="AutoHire" value="true" />
       <property name="EntityName" value="John Wayne" />
     </item>
-	  <!-- Example of an item that can spoil, when the foot spoilage is turned on 
-		  <item name="foodSpoilageTest">
+	  <!-- Example of an item that can spoil, when the foot spoilage is turned on -->
+<!--		  <item name="foodSpoilageTest">
 			  <property name="Extends" value="foodShamSandwich"/>
 			  <property name="DisplayType" value="melee"/>
 			  <property name="Tags" value="perkMasterChef"/> 	 

@@ -11,6 +11,44 @@ TheBridge80,Bridge
 Trader_Jen_2,Trader Dawnrox
 UUSS_Arleigh_Burke_Destroyer_02,USS Arleigh Burke DDG 51
 
+
+PerceptionDesc,"Perception Tree: Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs with additional related magazines."
+StrengthDesc,"Strength Tree: Pack gives Shotgun, Wooden Club, and a Stone Sledge hammer with additional related magazines."
+AgilityDesc,"Agility Tree: Pack gives Pipe Pistol, Bone Knife, and a Wooden Bow with additional related magazines."
+IntellectDesc,"Intellect Tree: Pack gives Pipe Baton, and a Robotic Sledge with additional related magazines."
+FortitudeDesc,"Fortitude Tree: Pack gives Pipe Machine Gun and Knuckle wraps with additional related magazines"
+
+LumberJackDesc,"Head-Wood harvest, Outfit-Backpack slots, Gloves-Axe Dmg+, Boots-Stamina Regen (run), Bonus- Less Stam W Axe."
+
+PreacherDesc,"Head-Discount (buy),Outfit-Dam Resist (zom),Gloves-Dam (zom),Boots-Crit heal (treated), Bonus-Crit Resist."
+
+RogueDesc,"Head-Loot stage +,Outfit-Noise-/Crouch speed+,Gloves-Pick Speed+/Break,Boots-Fall Distance+, Bonus-Cash+/Dukes+ (loot)."
+
+AthleticDesc,"Head-Buy Discount (consume),Outfit-Max Health,Gloves-Max stamina,Boots-Run Speed, Bonus-Food/Water use-."
+
+FarmerDesc,"Head-Seed chance+ (loot),Outfit-Extra Crop Chance, Gloves-Rifle Dmg+, Boots-Seed harvest chance, Bonus-Health from food+."
+
+EnforcerDesc,"Head-Barter (buy/sell),Outfit-Crit Resist,Gloves-Less fuel in vehicle,Boots-Run Speed, Bonus-44 Reload/DMG."
+
+BikerDesc,"Head-Stun resist,Outfit-Max Health,Gloves-Melee DMG+, Boots-Stamin Use (melee), Bonus-Armor+/Fuel use."
+
+ScavengerDesc,"Head-XP+ (Salvaging),Outfit-Backpack slots+,Gloves- Salvage Harvest, Boots-Salvage Stamina, Bonus-Loot Stage+."
+
+RangerDesc,"Head-Barter (buy/sell),Outfit-Max Health,Gloves-Revolver/Lever DMG+, Boots-Max stamina+, Bonus-Revolver/Lever Reload."
+
+CommandoDesc,"Head-Stun Resist,Outfit-Crit Heal, Gloves-Ranged Damage+,Boots-Run Speed+, Bonus-Recovery Item speed."
+
+AssassinDesc,"Head-Sneak Damage,Outfit-Sneak Effectiveness,Gloves-Attack Speed+(Knife, Pistol),Boots-Noise 100%, Bonus-Enemy Search."
+
+MinerDesc,"Head-Mining Harvest+,Outfit-Stamin loss-(Tools),Gloves-Block Damage (Tools),Boots-Fall Distance, Bonus-Tool Degredation."
+
+NomadDesc,"Head-Food/Water loss,Outfit-Backpack Slots+,Gloves-Damage to RADS+,Boots-Run Speed+, Bonus-Samina Recovery Cost-."
+
+NerdDesc,"Head-XP Gain,Outfit-Magazing point chance,Gloves-Baton Damage+,Boots-Fall Distance+, Bonus-Weapon/Tool Degredation."
+
+RaiderDesc,"Head-Stun Resist,Outfit-Crit Heal,Gloves-Melee Damage+,Boots-Fall Distance+, Bonus-Crit Resist+."
+
+
 adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
 
 resourcePaper,"Classified Document" 
