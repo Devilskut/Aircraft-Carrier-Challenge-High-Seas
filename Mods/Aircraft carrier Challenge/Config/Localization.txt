@@ -2,6 +2,7 @@ Key,English
 
 goGameWorld,[FF4F00]Select 'Aircraft  (biome)'[-]
 goLootRespawnDays,Loot Respawn-[FF4F00]Select 7 Days '[-]
+goAirDropFrequency,Air Drops. Set to [ffd700]DISABLED[-].
 
 ACCENDINGJOEL,Trader Shadow Floodlight
 Aircraft_1,USS San Paulo CV 80

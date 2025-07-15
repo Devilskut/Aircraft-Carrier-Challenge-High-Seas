@@ -121,8 +121,14 @@ public class EntityNPCBandit : EntityBandit, IEntityOrderReceiverSDX
             IsSleeping = true;
             ConditionalTriggerSleeperWakeUp();
         }
-    }
 
+        // Potential work around for NPC stuck for 3 seconds in crouch after being stunned
+        if (bodyDamage.CurrentStun is EnumEntityStunType.Getup or EnumEntityStunType.Prone) 
+        {
+            SetHeight(this.physicsBaseHeight);
+        }
+    }
+    
     public override void OnAddedToWorld()
     {
         base.OnAddedToWorld();

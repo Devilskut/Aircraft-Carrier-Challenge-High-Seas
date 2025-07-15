@@ -164,7 +164,7 @@
                 <!-- Only way to kill them is through head shots -->
                 <property name="RandomSize" value="true"/>
                 <!-- Give them random sizes for more variety -->
-                <property name="RandomWalk" value="false"/>
+                <property name="RandomWalk" value="true"/>
 
                 <!-- Give them random walks. -->
 
@@ -176,7 +176,9 @@
                 <property name="LowerResolutionUMA" value="false"/>    <!-- Lower resolution on UMAs drastically -->
 
                 <property name="EntityPooling" value="false"/>
-
+                
+                <!-- Vanilla is default to 30. -1 disables this patch. -->
+                <propert name="EnemyActiveMax" value="-1" />
             </property>
 
             <property class="AdvancedProgression">
@@ -308,6 +310,9 @@
                 <!-- To enable this, you must also enable Disable Trader Protection -->
                 <property name="AllowBuildingInTraderArea" value="false"/>
 
+                <!-- Disables the invisible wall behind traders -->
+                <property name="DisableWallVolume" value="false" />
+                
                 <property name="DisableFlickeringLights" value="false"/>
                 
                 <!-- Property to check if the prefab name has a no building flag on it. Goes by prefab name. -->

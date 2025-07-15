@@ -18,22 +18,223 @@ Summary for 2.0 Update:
 This release of 0-SCore introduces significant enhancements across several core systems, with a strong emphasis on **Shared Reading**, **NPC behaviors (including farming and combat)**, **block placement controls within POIs**, and **performance optimizations**.
 **Key Highlights:**
 
-* **Shared Reading System:** A major new feature allowing party members to share unlocked content from books and items. This includes new localization entries and fixes for server and client-side issues.
-* **Improved NPC AI and Behaviors:**
-	* **Farming:** Reworked Utility AI for farming tasks, making farmers more reliable, preventing task locks and accidental destruction of farm blocks, and keeping them closer to their farms. Sprinklers can now be individually controlled and detect water sources more effectively, and can even extinguish fires.
-	* **Combat/General:** Fixed issues with NPC bandit weapon handling, enabled patrol points for EntityEnemySDX, and exposed more configuration options for NPC movement (e.g., `BlockTimeToJump`, `BlockedTime`).
-	* **Dialog:** Patches for improved dialog functionality, including displaying statements in the subtitle window for EntityAliveSDX and allowing dialogs to inherit and combine from multiple sources using an "extends" property.
-* **POI Building Restrictions:** Introduced a new patch and configuration options to prevent players from placing blocks within specific POI bounds, based on prefab names or tags. This aims to maintain the integrity of designed POIs.
-* **Performance and Refactoring:**
-	* **Fire Manager V2 & Food Spoilage V2:** Both systems underwent significant AI-assisted refactoring to improve performance, breaking down classes into helper classes and cleaning up code.
-* **Localization Enhancements:** Added a new localization method to ensure localized entries are always retrieved, even if the direct key is missing (checking for `Name` or `Desc` suffixes). Also added support for `<include>` tags in Localization files, allowing for better organization.
-* **Bug Fixes and Stability:** Addressed various null reference errors, spamming issues with spoiled items, durability bar disappearing, and general migration/refactoring for broken references and changed parameters.
+* Shared Reading System: A major new feature allowing party members to share unlocked content from books and items. This includes new localization entries and fixes for server and client-side issues.
+* Improved NPC AI and Behaviors:
+	* Farming: Reworked Utility AI for farming tasks, making farmers more reliable, preventing task locks and accidental destruction of farm blocks, and keeping them closer to their farms. Sprinklers can now be individually controlled and detect water sources more effectively, and can even extinguish fires.
+	* Combat/General: Fixed issues with NPC bandit weapon handling, enabled patrol points for EntityEnemySDX, and exposed more configuration options for NPC movement (e.g., `BlockTimeToJump`, `BlockedTime`).
+	* Dialog: Patches for improved dialog functionality, including displaying statements in the subtitle window for EntityAliveSDX and allowing dialogs to inherit and combine from multiple sources using an "extends" property.
+* POI Building Restrictions: Introduced a new patch and configuration options to prevent players from placing blocks within specific POI bounds, based on prefab names or tags. This aims to maintain the integrity of designed POIs.
+* Performance and Refactoring:
+	* Fire Manager V2 & Food Spoilage V2: Both systems underwent significant AI-assisted refactoring to improve performance, breaking down classes into helper classes and cleaning up code.
+* Localization Enhancements: Added a new localization method to ensure localized entries are always retrieved, even if the direct key is missing (checking for `Name` or `Desc` suffixes). Also added support for `<include>` tags in Localization files, allowing for better organization.
+* Bug Fixes and Stability: Addressed various null reference errors, spamming issues with spoiled items, durability bar disappearing, and general migration/refactoring for broken references and changed parameters.
+
 
 
 [ Change Log ]
-Version: 2.0.11.921
+Version: 2.1.2.1825
+
+	[ Audio Patch ]
+		- Fixed an issue with score running against 2.1
+
+	[ ItemActionLauncherSDX ]
+		- Fixed an issue where the NPC's with rocket launchers was not shooting past 1 or 2 rockets.
+
+	[ UAITaskAttackTargetEntitySDX ]
+		- Fixed an issue where the NPC's IsReloading() was being incorrectly checked. That functionality does not work on NPCs.
+
+	[ Particles On Blocks ]
+		- Fixed an issue where biomeProvider was null.
+
+	[ Documentation ]
+		- Restructed XPath and Conditionals documentation.
+
+	[ onSelfItemRepaired ]
+		- Added a Harmony patch to trigger the minevent effects on an item being repaired.
+			- Patched via the QuestManager's event.
+
+	[ MinEvent Action ]
+		- Added a new MinEventAction that handles modifying the quality of items.
+				<triggered_effect trigger="onSelfItemRepaired" action="ModifyItem, SCore" >
+		- Added new Requirement to check against the quality of an item.
+			<requirement name="CompareItemProperty, SCore" property="Quality" operation="Equals" value="1"/>
+
+		[ See More ](Features/ItemRepairDegradation/ReadMe.md)
+
+
+Version: 2.0.24.1245
+	[ Spawn Cube ]
+		- Cleaned up SpawnCube2SDX
+		- Added new BlockSpawnCubeRepeater, that will tick and spawn entities over time.
+	        <block name="DeamonPortal2">
+    	        <property name="Extends" value="DeamonPortal"/>
+        	    <property name="Class" value="SpawnCubeRepeater, SCore"/>
+	            <property name="Model" value="@:Entities/Vehicles/TraderVehicles/traderMountainBikeStaticPrefab.prefab"/>
+	            <property name="ModelOffset" value="0,0,0"/>
+	            <property name="MaxDamage" value="250"/>
+
+	            <property name="EntityGroup" value="ZombiesAll"/>
+	            <property name="SpawnRadius" value="5"/>
+	            <property name="SpawnArea" value="15"/>
+	            <!-- Spawn 2 each tick -->
+	            <property name="NumberToSpawn" value="2"/>
+	            <!-- Total number of ticksbefore the block self-destructs -->
+	            <property name="MaxSpawned" value="10"/>
+
+	            <!-- How many ticks between the spawn times-->
+	            <!-- NumberToSpawn spawns each time it block ticks. -->
+	            <property name="TickRate" value="10"/>
+	        </block>
+
+	[ Documentation ]
+		- Added new Examples documentation that shows examples on how to accomplish 0-SCore features.
+
+Version: 2.0.23.1213
+	[ EntityMoveHelper ]
+		- Removed old StartJump block based on BlockedTime, which caused NPCs not to jump.
+
+	[ MinEventActionChangeFactionSDX ]
+		- Added code to reset attack target, removing temporarily the aggro switch.
+
+	- Added documentation 
+		
+Version: 2.0.22.1718
+
+	[ Recipes ]
+		- Added support for generateing a MinEvenParams package, which allows more MinEvents to be used on the onSelfItemCrafted.
+		- These seem to only trigger when looking in a workstation and an item is creted.
+		- Now will respect requirements.
+		Examples:
+
+		<effect_group name="Sphere Testing">
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="ammoRocketHE" count="2">
+			    <requirement name="HasBuff" buff="god"/>
+		    </triggered_effect>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="PlaySound" sound="player#painsm">
+			    <requirement name="!HasBuff" buff="god"/>
+		    </triggered_effect>
+		    
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddBuff" buff="buffDrugEyeKandy"/>
+
+	[ EntityAliveSDX ]
+		- Changed a walk type from 4 to 21 for crawler.
+
+Version: 2.0.21.1719
+	[ Fire Manager ]
+		- Fixed a Crash To Desktop ( CTD ) when adding fire particles off main thread.
+		- Added support for random fire particles, using "," as a delimiter.
+
+	[ Drop Box ]
+		- Fixed another 2 issues with Drop Box eating items when nearby storage was opened.
+
+	[ A Better Life ]
+		- Fixed entityclasse references for Fish
+
+	[ Recipes ]
+		- Added a new feature to trigger multiple outputs when crafting a recipe.
+		- Example: in addition to ammo45ACPCase, this will also produce grass fibres and duct tape.
+    <recipe name="ammo45ACPCase" count="30" craft_time="5" craft_area="MillingMachine" tags="workbenchCrafting,PerkHOHMachineGuns">
+        <ingredient name="resourceBrassIngot" count="5"/>
+        <effect_group name="Additional Output">
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceDuctTape" count="1"/>
+		</effect_group>
+    </recipe>
+
+		- Note: The AddAdditionalOutput MinEvent is only usable by this recipes hook. It will do nothing in any other context.
+		
+Version: 2.0.20.1639
+	[ ItemAction Repair ]
+		- Fixed multiple null references when attempting to repair an item while the player was wearing it. 
+
+	[ Challenges ]
+		- Fixed an issue with the StartFire challenge when there was no fire manager.
+		- Fixed an issue with ExtinguishFire
+
+	[ Drop Box ]
+		- Fixed an issue where the DropBox was distributing items to containers that was opened by another player, and disappearing.
+
+	[ Trader Currency ]
+		- Fixed an issue where the currency wouldn't refresh.
+
+	[ ItemActionMelee ]
+		- Added two events for when a zombie misses its hit.
+			onSelfPrimaryActionEnd
+			onSelfPrimaryActionMissEntity
+
+
+Version: 2.0.19.1555
+	[ Blocks.xml ]
+		- Updated a reference to a vanilla block for a mesh
+
+	[ Shared Reading ]
+		- Fixed an issue where a connecting player would not share their reading with a player that is hosting.
+
+	[ Blooms Family Farm ]
+		- Added conditional for NPC farm to only be available if NPC Core is loaded.
+
+	[ Blood Moon Tweak ]
+		- Added new property to AdvancedZombieFeatures configuration block that allows you to increase the default enemy active during blood moons
+		- Previously, it was fixed to max out at 30.
+                <!-- Vanilla is default to 30. -1 disables this patch. -->
+                <propert name="EnemyActiveMax" value="-1" />
+
+	[ SCoreLocalization Helper ]
+		- Fixed a dumb implementation in a less dumb way.
+
+EnemyActiveMax
+
+Version: 2.0.17.1140
+	[ TileEntity IsAlwaysActive ]
+		- Fixed an issue where isAlwaysActive was blocking regular tile entities from showing they are Active.
+
+Version: 2.0.16.2016
+	[ Fire Manager ]
+		- Fixed an issue where Challenge Objectives related to Fire would null ref if used.
+
+Version: 2.0.15.1644
+	[ EntityAliveSDX , EntityNPCBandit ]
+		- Removed the Walk Type 8 filter from the Crouch after stun reset.
+		- Fixed an issue where the NPC wouldn't use the right/left hand as they were supposed too for the various weapons.
+
+Version: 2.0.14.1511
+	[ Block ]
+		- Updated block Model reference to support new format.
+
+	[ Fire Manager ]
+		- Cleaned up an error when game is exiting and fire manager is not enabled.
+
+	[ Trader Currency ]
+		- Added a check to see if the trader was already in the dictionary.
+		- Added a check to store the original currency, and use in place of casinoCoin
+
+	[ NPC Core ]
+		- Fixed an issue where NPCs would get stuck in a crouch after stun
+		- Updated code in EntityAliveSDX and EntityBanditSDX for GetEyeHeight() checks
+
+
+Version: 2.0.12.1509
+	[ Disable Trader Protection ]
+		- When DisableWallVolume is enabled, the invisible wall volumes will be removed.
+		- New property under AdvancedPrefabFeature to enable it:
+			<!-- Disables the invisible wall behind traders -->
+			<property name="DisableWallVolume" value="false" />
+
+	[ Fire Manager ]
+		- Fixed an issue where a POI reset would cause it to fill with extinguished smoke.
+		- Updated reference to the SCoreMedium loop for sounds.
+
+	[ Trader Currency ]
+		- Added the ability to change a particular trader's currency, using the alt_currency attribute.
+				<trader_info id="8" reset_interval="3" open_time="4:05" close_time="21:50" alt_currency="oldCash">
+		- When a player talks with a trader, with the alt_currency, it will update the backpack's currency display to use that value.
+
 	[ SphereII Peace of Mind ]
 		- Replaced a few new hanging corpses with empty pillar
+		- Fixed issue here zombiePartyGirlCharged was throwing warnings
 
 
  Version: 2.0.11.824
