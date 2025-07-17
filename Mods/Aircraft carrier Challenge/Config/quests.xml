@@ -565,10 +565,10 @@
 
 		<quest id="quest_eliminatezombies10">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="10 Zombies" />
 			<property name="subtitle_key" value="10 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -588,10 +588,10 @@
 
 		<quest id="quest_eliminatezombies15">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="15 Zombies" />
 			<property name="subtitle_key" value="15 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -611,10 +611,10 @@
 
 		<quest id="quest_eliminatezombies25">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="25 Zombies" />
 			<property name="subtitle_key" value="25 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -634,10 +634,10 @@
 
 		<quest id="quest_eliminatezombies50">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="50 Zombies" />
 			<property name="subtitle_key" value="50 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -657,10 +657,10 @@
 
 		<quest id="quest_eliminatezombies75">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="75 Zombies" />
 			<property name="subtitle_key" value="75 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -680,10 +680,10 @@
 
 		<quest id="quest_eliminatezombies125">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="125 Zombies" />
 			<property name="subtitle_key" value="125 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -703,10 +703,10 @@
 
 		<quest id="quest_eliminatezombies200">
 
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="name_key" value="200 Zombies" />
 			<property name="subtitle_key" value="200 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and Flamethrower. This Quest repeats in an endless loop." />
+			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
@@ -718,7 +718,7 @@
 			</objective>
 
 			<reward type="SkillPoints" value="2" chainreward="false"/>
-			<reward type="Item" id="gunT4Flamethrower" value="1-6"/>
+			<reward type="Item" id="gunMGT3M60" value="3-6"/>
 
 			<reward type="Quest" id="quest_eliminatezombies10">
 				<property name="chainquest" value="false"/>
