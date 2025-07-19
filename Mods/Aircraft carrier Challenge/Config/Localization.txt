@@ -12,6 +12,8 @@ TheBridge80,Bridge
 Trader_Jen_2,Trader Dawnrox
 UUSS_Arleigh_Burke_Destroyer_02,USS Arleigh Burke DDG 51
 
+drinkCanMegaCrush,Golden Swallows
+
 
 PerceptionDesc,"Perception Tree: Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs with additional related magazines."
 StrengthDesc,"Strength Tree: Pack gives Shotgun, Wooden Club, and a Stone Sledge hammer with additional related magazines."
@@ -363,7 +365,7 @@ quest_CarrierChallenge06,"Gather UH-60 Parts 3/3 "
 quest_CarrierChallenge06_subtitle,"Build UH-60 helicopter"
 quest_CarrierChallenge06_description,"Gather parts and craft UH-60 helicopter."
 
-quest_CarrierChallenge07,"Gather AH-64 Parts 5/5 "
+quest_CarrierChallenge07,"Gather UH-60 Parts 5/5 "
 quest_CarrierChallenge07_subtitle,"How to build a helicopter"
 quest_CarrierChallenge07_description,"Gather parts and craft a Starting helicopter"
 

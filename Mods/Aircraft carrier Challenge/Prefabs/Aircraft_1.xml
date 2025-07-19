@@ -39,7 +39,7 @@
   <property name="SVS39" value="spawn zombieBikerRadiated 2^waitalive 1^spawn zombieScreamer 6^waitalive 1^spawn zombieZombieDog 2^" />
   <property name="SVS5" value="spawn GroupZomPoliceCarHorde 6^waitalive 2^spawn GroupZomBadass 6^waitalive 1^spawn zombieScreamerRadiated 2^" />
   <property class="Stats">
-    <property name="LightsVolume" value="256838.3" />
+    <property name="LightsVolume" value="256838.5" />
     <property name="TotalVertices" value="12941049" />
     <property name="TotalTriangles" value="5001748" />
     <property class="BlockEntities">

@@ -271,8 +271,8 @@
 			<property name="shareable" value="true"/>
 
 			<action type="ShowMessageWindow">
-				<property name="title" value="MultiPlayer1"/>
-				<property name="message" value="tutorialChallenge04"/>
+				<property name="title" value="MultiPlayer"/>
+				<property name="message" value="ONLY ONE PLAYER HAS TO COMPLETE THE UH-60 CRAFTING QUESTS"/>
 				<property name="delay" value="2"/>
 			</action>
 

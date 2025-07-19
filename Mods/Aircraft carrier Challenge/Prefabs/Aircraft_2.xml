@@ -45,7 +45,7 @@
   <property name="SVS40" value="spawn zombieUtilityWorker 3^waitalive 2^spawn zombieJanitor 3^^" />
   <property name="SVS39" value="spawn animalZombieVulture 6^waitalive 2^spawn animalZombieDog 2^waitalive 0^spawn animalZombieVultureRadiated 1^waitalive 0^" />
   <property class="Stats">
-    <property name="LightsVolume" value="185763.8" />
+    <property name="LightsVolume" value="185763.9" />
     <property name="TotalVertices" value="13044819" />
     <property name="TotalTriangles" value="4957639" />
     <property class="BlockEntities">
