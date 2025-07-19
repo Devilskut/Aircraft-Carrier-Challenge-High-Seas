@@ -13,12 +13,12 @@
   <property name="Zoning" value="any" />
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="wilderness, trader" />
-  <property name="ThemeTags" value="wildernesspoi, trader, traderJen, traderJoel, traderHugh" />
+  <property name="ThemeTags" value="wildernesspoi, trader, traderJoel, traderJen, traderHugh" />
   <property name="QuestTags" value="trader, restore_power" />
   <property name="SleeperVolumeSize" value="9, 3, 13#8, 2, 9#25, 2, 12#17, 2, 8#6, 3, 8#6, 2, 6#16, 2, 11#9, 1, 4#15, 4, 13#19, 4, 19#13, 4, 15#21, 3, 23#22, 4, 15#22, 5, 21#15, 10, 15#20, 3, 11" />
   <property name="SleeperVolumeStart" value="0, 28, 1#14, 24, 11#4, 29, 14#12, 29, 6#23, 25, 14#20, 40, 12#9, 36, 7#18, 40, 7#3, 39, 7#4, 46, 4#5, 43, 7#3, 51, 2#3, 55, 4#3, 59, 2#8, 66, 5#5, 32, 7" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="zombieSoldier,2,3,GroupGenericZombie,5,6,GroupGenericZombie,5,6,GroupGenericZombie,6,7,GroupZomBadass,5,6,zombieUtilityWorkerRadiated,1,1,1GroupGenericZombie,0,0,GroupZomPoliceCarHorde,3,6,GroupGhostTown,6,9,GroupZomBadass,11,15,GroupZomSoldier,6,9,GroupZomBadassOnly,8,12,zombieWightFeral,4,6,animalZombieVultureRadiated,8,10,animalZombieVultureRadiated,5,6,zombieUtilityWorker,9,10" />
+  <property name="SleeperVolumeGroup" value="zombieSoldier,2,3,GroupGenericZombie,5,6,GroupGenericZombie,5,6,GroupGenericZombie,6,7,GroupZomBadass,5,6,zombieUtilityWorkerRadiated,1,1,GroupGenericZombie,0,0,GroupZomPoliceCarHorde,3,6,GroupGhostTown,6,9,GroupZomBadass,11,15,GroupZomSoldier,6,9,GroupZomBadassOnly,8,12,zombieWightFeral,4,6,animalZombieVultureRadiated,8,10,animalZombieVultureRadiated,5,6,zombieUtilityWorker,9,10" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,2,1,2,0,3,0,0,0,0,0,3,0,0,0" />
@@ -241,6 +241,8 @@
       <property name="0" value="22, 32, 15" />
       <property name="1" value="20, 32, 16" />
       <property name="2" value="25, 7, 25" />
+      <property name="3" value="15, 20, 23" />
+      <property name="4" value="17, 26, 23" />
     </property>
     <property class="challenge_steel">
       <property name="0" value="27, 25, 15" />
@@ -271,15 +273,16 @@
     </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="1807197" />
-    <property name="TotalTriangles" value="603813" />
+    <property name="LightsVolume" value="50307.34" />
+    <property name="TotalVertices" value="2297434" />
+    <property name="TotalTriangles" value="855298" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1626479" />
-      <property name="Triangles" value="481479" />
+      <property name="Vertices" value="2115772" />
+      <property name="Triangles" value="733152" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="163670" />
-      <property name="Triangles" value="108420" />
+      <property name="Vertices" value="164624" />
+      <property name="Triangles" value="108252" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -298,8 +301,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes5">
-      <property name="Vertices" value="4278" />
-      <property name="Triangles" value="7420" />
+      <property name="Vertices" value="4268" />
+      <property name="Triangles" value="7400" />
     </property>
   </property>
 </prefab>

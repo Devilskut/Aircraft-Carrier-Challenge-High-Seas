@@ -20,6 +20,9 @@
 	<remove xpath="/challenges/challenge[@group='Hunter']"/>
 	<remove xpath="/challenges/challenge[@group='Zombies']"/>
 	<remove xpath="/challenges/challenge[@group='Burnt Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Desert Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Snow Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Wasteland Survival']"/>
 	<remove xpath="/challenges/challenge[@group='LearnTwitch']"/>
 	<remove xpath="/challenges/challenge[@group='Twitch']"/>
 	<remove xpath="/challenges/challenge[@group='Silly']"/>

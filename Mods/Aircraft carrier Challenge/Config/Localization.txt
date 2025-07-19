@@ -299,13 +299,13 @@ loadingTipAircraft7_title,Crafting
 loadingTipAircraft7,"Crafting workstations, and tools like the crucible, and vehicles themselves, take fewer magazines to read before they unlock."
 
 loadingTipAircraft8_title,Cheating
-loadingTipAircraft8,"Trying to leave the ship other than by an AH-64 Apache helicopter (Zilox mod) is not advised . The ground is SPICY and will end your challenge ...."
+loadingTipAircraft8,"Trying to leave the ship other than by an UH-60  helicopter  is not advised . The ground is SPICY and will end your challenge ...."
 
 loadingTipAircraft9_title,Lost Are We?
 loadingTipAircraft9,"If you are lost on where to travel to next, there may have been a kind soul who left directions in the quest instructions. Let's be real though, men neither ask for directions nor read instructions!"
 
 loadingTipAircraft10_title,Special Thanks
-loadingTipAircraft10,"Thanks to w00kien00kie for the custom code, Khelldon for the custom menu, Frantic_Dan for ideas & xpath help, Zilox, Midnight Designer, SphereII, and Pitchsilent for the original mod and concept."
+loadingTipAircraft10,"Thanks to w00kien00kie for the custom code, Khelldon for the custom menu, Frantic_Dan for UI ideas."
 
 loadingTipAircraft11_title,Horde Night
 loadingTipAircraft11,"Horde nights, better suck it up, buttercup."
@@ -328,7 +328,7 @@ dishongTowerBundleDesc,Starter items for the Aircraft carrier challenge.,,
 
 Welcome,"Started The Aircraft Carrier Challenge"
 
-tutorialTipQuest01,"Don't know how I got in this U-boat but I'm glad I did, the ground outside messed me up real quick! Someone had to have helped me but where are they? Looks like I'm here to stay, If I can find them, maybe we can help each other find a safe haven. No matter what, I need supplies, I have barely enough food and water for the rest of the day, glad I found this backpack with some basic tools and weapons to give me a fighting chance.\n\nYou must survive, by doing missions ,looting and crafting everything you need to build an UH-60 Helicopter to make your escape from the carrier to complete your [ff7f27]FINAL MISSION[-].\n\nIf  [ff7f27]ANYONE[-] dies, the mission is over. [cd5c5c]PERMADEATH CHALLENGE[-]" 
+tutorialTipQuest01,"Don't know how I got in this U-boat but I'm glad I did, the ground outside messed me up real quick! Someone had to have helped me but where are they? Looks like I'm here to stay, If I can find them, maybe we can help each other find a safe haven. No matter what, I need supplies, I have barely enough food and water for the rest of the day, glad I found this backpack with some basic tools and weapons to give me a fighting chance.\n\nYou must survive, by doing missions ,looting and crafting everything you need to build an UH-60 Helicopter to make your escape from the carrier to complete your [ff7f27]FINAL MISSION[-].\n\nIf  [ff7f27]ANYONE[-] dies, the mission is over. [cd5c5c]PERMADEATH CHALLENGE[-]\n\nIf  [ff7f27]ANYONE[-] dies, the mission is [ff7f27] NOT[-] over, you may come back [FFFF00]injured[-]" 
 
 challenge_StartingCarrier,"Welcome aboard Petty officer 2nd class!"
 challenge_StartingCarrier_subtitle,"Your first objective."
@@ -377,11 +377,11 @@ quest_CarrierChallenge09_description,"Place Starting helicopter, with the parts 
 
 quest_CarrierChallengeDestroyer,"Support ship needs assist!"
 quest_CarrierChallengeDestroyer_subtitle,"Night OPS: Destroyer"
-quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault. Clear the zombies, restore main power and wait for further orders. You may want to stock up and grab some missiles for that war bird!"
+quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault. Clear the zombies, restore main power and wait for further orders. You may want to stock up and gear up, now get loaded up and head out!"
 
 quest_CarrierChallengeDestroyer2,"Head over to the Trader"
 quest_CarrierChallengeDestroyer2_subtitle,"Night OPS: Trader"
-quest_CarrierChallengeDestroyer2_description,"Our Trader has come under assault! Clear the zombies, and then talk to the Trader. And Hey, try not to blow up to much with those Apache missiles."
+quest_CarrierChallengeDestroyer2_description,"Our Trader has come under assault! Clear the zombies, and then talk to the Trader. And Hey, try not to blow up to much ."
 
 Challenge_Completion,"Challenge Complete"
 Challenge_Completion_subtitle,"Congrats!"

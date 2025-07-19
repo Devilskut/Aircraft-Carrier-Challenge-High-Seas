@@ -231,7 +231,7 @@
 			<property name="DescriptionKey" value="AH-64ApacheHelicopter2Desc"/>
 			<property name="CustomIcon" value="apacheS4"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
+            <property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage5.prefab"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
@@ -480,12 +480,12 @@
 		
 		<!-- CF SHIPS Planes -->
 		
-			<block name="F15">
+<!--		<block name="F15">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="F15" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+			 <property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
 				
 				<property name="RadiusBlocks" value="7"/>
@@ -496,7 +496,7 @@
 				
 				<property name="EntityDamage" value="600"/>
 				
-			</property> -->
+			</property>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -539,12 +539,13 @@
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 		</block>
+		
 		<block name="CH47">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="Chinook" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+			<property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
 				
 				<property name="RadiusBlocks" value="7"/>
@@ -555,7 +556,7 @@
 				
 				<property name="EntityDamage" value="600"/>
 				
-			</property> -->
+			</property> 
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -602,7 +603,7 @@
 			<property name="CustomIcon" value="M113" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+			<property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
 				
 				<property name="RadiusBlocks" value="7"/>
@@ -613,7 +614,7 @@
 				
 				<property name="EntityDamage" value="600"/>
 				
-			</property> -->
+			</property> 
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -660,7 +661,7 @@
 			<property name="CustomIcon" value="M1A1" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+			 <property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
 				
 				<property name="RadiusBlocks" value="7"/>
@@ -671,7 +672,7 @@
 				
 				<property name="EntityDamage" value="600"/>
 				
-			</property> -->
+			</property> 
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -718,7 +719,7 @@
 			<property name="CustomIcon" value="Stryker" />
 			<property name="Class" value="CarExplodeLoot"/>
 			<property name="LootList" value="armyTruck"/>
-			<!-- <property class="Explosion">
+		    <property class="Explosion">
 				<property name="ParticleIndex" value="5"/>
 				
 				<property name="RadiusBlocks" value="7"/>
@@ -729,7 +730,7 @@
 				
 				<property name="EntityDamage" value="600"/>
 				
-			</property> -->
+			</property> 
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_hard"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -770,11 +771,11 @@
 			<drop event="Harvest" name="resourceScrapIron" count="70,180" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-		</block>
+		</block> -->
 			<!-- CF SHIPS WEAPONS -->
 			
 			<block name="CFCarMili">
-				<property name="CreativeMode" value="None"/>
+				<property name="CreativeMode" value="Dev"/>
 				<property name="IndexName" value="challenge_cars"/>
 				<property name="Class" value="CarExplodeLoot"/>
 				<property name="LootList" value="cars"/>
