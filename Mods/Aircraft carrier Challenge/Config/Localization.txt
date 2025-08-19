@@ -342,7 +342,7 @@ quest_CarrierChallenge_description,"Head to medical on Deck 10 just below the Me
 
 quest_CarrierChallenge01,"Mission Bob's Blueprint"
 quest_CarrierChallenge01_subtitle,"Find Bob's Blueprint"
-quest_CarrierChallenge01_description,"Bob told me he found plans for a chopper in the Army Depot, maybe you can head down there, he may have left it there. [ff7f27] Also, If you have any storage boxes or player blocks in the Army Depot area they will vanish, please make sure they are removed before you proceed with this mission.[-]"
+quest_CarrierChallenge01_description,"Bob told me he found plans for a chopper in the Army Depot, maybe you can head down there, he may have left it there.  Also, If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission."
 
 quest_CarrierChallenge02,"Gather AH-64 Parts 1/5 "
 quest_CarrierChallenge02_subtitle,"Build Apache Canopy"
@@ -350,7 +350,7 @@ quest_CarrierChallenge02_description,"Gather parts and craft an Apache Canopy."
 
 quest_CarrierChallenge03,"Restore Power to the bridge"
 quest_CarrierChallenge03_subtitle,"Restore Bridge Operation Systems"
-quest_CarrierChallenge03_description,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems? [ff7f27] Also, If you have any storage boxes or player blocks in the Bridge area they will vanish, please make sure they are removed before you proceed with this mission.[-] "
+quest_CarrierChallenge03_description,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems?  Also, If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission. "
 quest_CarrierChallenge03_offer,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems?"
 
 quest_CarrierChallenge04,"Gather UH-60 Parts 1/3 "
@@ -390,5 +390,5 @@ Challenge_Completion_subtitle,"Congrats!"
 Challenge_Completion_description,"Congrats."
 
 Congrats,"Carrier Challenge Complete"
-Congrats_message,"Congrats!  You have completed the Aircraft Carrier Challenge. GG!!"
+Congrats_message,"Congrats!  You have completed the Aircraft Carrier Challenge! GG!! Thank you for playing! If you are up for another challenge Please try the [FFFF00] Destroyer of Dreams High Seas [-] on the  7D2D Mod launcher by Sphereii"
 
