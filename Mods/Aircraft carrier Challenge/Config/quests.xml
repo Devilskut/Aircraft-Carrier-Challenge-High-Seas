@@ -370,7 +370,7 @@
 				</objective>
 				<objective type="POIStayWithin">
 					<property name="phase" value="3"/>
-					<property name="radius" value="25"/>
+					<property name="radius" value="150"/>
 				</objective>
 				<action type="UnlockPOI" >
 					<property name="phase" value="4"/>	
@@ -421,7 +421,7 @@
 		<action type="ShowMessageWindow">
 			<property name="phase" value="3"/>
 			<property name="title" value="Finale"/>
-			<property name="message" value="tutorialChallengeDestroyer2"/>
+			<property name="message" value="Jen says stay away from barrels they explode randomly."/>
 			<property name="delay" value="2"/>
 		</action>
 		

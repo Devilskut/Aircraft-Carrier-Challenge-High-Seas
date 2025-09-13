@@ -12,7 +12,7 @@ TheBridge80,Bridge
 Trader_Jen_2,Trader Dawnrox
 UUSS_Arleigh_Burke_Destroyer_02,USS Arleigh Burke DDG 51
 
-drinkCanMegaCrush,Golden Swallows
+drinkCanMegaCrush,Goldens Swallow
 
 
 PerceptionDesc,"Perception Tree: Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs with additional related magazines."
@@ -69,6 +69,21 @@ resourceAnimalFatDesc,"Fat can be eaten raw or used in cooking or other crafting
 drugAntibioticsDT,Antibiotics
 drugAntibioticsDTDesc,Antibiotics can cure infections.\n\nCan be crafted in a beaker at a campfire or at the chemistry station.
 
+perkPackMuleRank1Desc,Disorganized
+perkPackMuleRank1LongDesc,"Who has time to organize their stuff perfectly?\nCarry 5 more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 10%.\nYour pack has a 5% chance to ignore physical damage when hit."
+
+perkPackMuleRank2Desc,Bag Lady
+perkPackMuleRank2LongDesc,"You know it's in there somewhere.\nCarry an additional 5 more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 20%.\nYour pack has a 10% chance to ignore physical damage when hit."
+
+perkPackMuleRank3Desc,Neat and Tidy
+perkPackMuleRank3LongDesc,"You know exactly where everything is.\nCarry 5 additional items without being encumbered.\nIncreases the crafting speed of items from your inventory by 30%.\nYour pack has a 15% chance to ignore physical damage when hit."
+
+perkPackMuleRank4Desc,ShipShape
+perkPackMuleRank4LongDesc,"You just passed inspection, private.\nCarry 6 more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 40%.\nYour pack has a 20% chance to ignore physical damage when hit."
+
+perkPackMuleRank5Desc,Pack Mule
+perkPackMuleRank5LongDesc,"Now you're showing off! You're either part mule or strongman.\nCarry 6 more items without being encumbered.\nIncreases the crafting speed of items from your inventory by 50%.\nYour pack has a 25% chance to ignore physical damage when hit."
+
 perkGreaseMonkeyRank1Desc,Wheely good
 perkGreaseMonkeyRank1LongDesc,Congratulations - you are now as smart as a primitive human!\n\nCraft wheels 33% cheaper.\n\nRepair kits are 10 percent more effective on vehicles.
 
@@ -82,7 +97,7 @@ perkGreaseMonkeyRank4Desc,Not very basic
 perkGreaseMonkeyRank4LongDesc,"Your mechanical prowess is that of a professional pit crew!\n\nRepair kits are 40 percent more effective on vehicles."
 
 perkGreaseMonkeyRank5Desc,At last!!
-perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft AH-64 parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
+perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft UH-60 parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
 
 vehiclesT1,Tier 1: Wheels
 vehiclesT2,Tier 2: Oil
@@ -330,7 +345,7 @@ dishongTowerBundleDesc,Starter items for the Aircraft carrier challenge.,,
 
 Welcome,"Started The Aircraft Carrier Challenge"
 
-tutorialTipQuest01,"Don't know how I got in this U-boat but I'm glad I did, the ground outside messed me up real quick! Someone had to have helped me but where are they? Looks like I'm here to stay, If I can find them, maybe we can help each other find a safe haven. No matter what, I need supplies, I have barely enough food and water for the rest of the day, glad I found this backpack with some basic tools and weapons to give me a fighting chance.\n\nYou must survive, by doing missions ,looting and crafting everything you need to build an UH-60 Helicopter to make your escape from the carrier to complete your [ff7f27]FINAL MISSION[-].\n\nIf  [ff7f27]ANYONE[-] dies, the mission is over. [cd5c5c]PERMADEATH CHALLENGE[-]\n\nIf  [ff7f27]ANYONE[-] dies, the mission is [ff7f27] NOT[-] over, you may come back [FFFF00]injured[-]" 
+tutorialTipQuest01,"Don't know how I got in this U-boat but I'm glad I did, the ground outside messed me up real quick! Someone had to have helped me but where are they? Looks like I'm here to stay, If I can find them maybe we can help each other find a safe haven. No matter what, I need supplies, I have barely enough food and water for the rest of the day, glad I found this backpack with some basic tools and weapons to give me a fighting chance.\n\nYou must survive, by doing missions ,looting and crafting everything you need to build an UH-60 Helicopter to make your escape from the carrier to complete your [ff7f27]FINAL MISSION[-].\n\nIf  [ff7f27]ANYONE[-] dies the mission is over [cd5c5c]PERMADEATH CHALLENGE[-] [ff7f27] however[-], in a large group this is not practical so you may now come back [FFFF00]injured[-] to complete your mission. This is for bragging rights!" 
 
 challenge_StartingCarrier,"Welcome aboard Petty officer 2nd class!"
 challenge_StartingCarrier_subtitle,"Your first objective."
@@ -379,7 +394,7 @@ quest_CarrierChallenge09_description,"Place Starting helicopter, with the parts 
 
 quest_CarrierChallengeDestroyer,"Support ship needs assist!"
 quest_CarrierChallengeDestroyer_subtitle,"Night OPS: Destroyer"
-quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault. Clear the zombies, restore main power and wait for further orders. You may want to stock up and gear up, now get loaded up and head out!"
+quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault. Clear the zombies, restore main power and wait for further orders. You may want to stock up on AMMO and gear up, now get loaded up and head out!"
 
 quest_CarrierChallengeDestroyer2,"Head over to the Trader"
 quest_CarrierChallengeDestroyer2_subtitle,"Night OPS: Trader"

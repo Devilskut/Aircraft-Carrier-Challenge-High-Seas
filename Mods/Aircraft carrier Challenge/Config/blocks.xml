@@ -98,6 +98,30 @@
 	</insertafter>
 	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
 
+	<remove xpath="//block[@name='workbench']/drop[@event='Harvest']"></remove>
+	
+	<append xpath="/blocks/block[@name='workbench']">
+		<drop event="Destroy" name="workbench" count="1" tag="salvageHarvest,perkJunkMiner"/>
+	</append>
+
+	<remove xpath="//block[@name='cementMixer']/drop[@event='Harvest']"></remove>
+
+	<append xpath="/blocks/block[@name='cementMixer']">
+		<drop event="Destroy" name="cementMixer" count="1" tag="salvageHarvest,perkJunkMiner"/>
+	</append>
+	
+	<remove xpath="//block[@name='chemistryStation']/drop[@event='Harvest']"></remove>
+
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<drop event="Destroy" name="chemistryStation" count="1" tag="salvageHarvest,perkJunkMiner"/>
+	</append>
+
+	<remove xpath="//block[@name='forge']/drop[@event='Harvest']"></remove>
+
+	<append xpath="/blocks/block[@name='forge']">
+		<drop event="Destroy" name="forge" count="1" tag="salvageHarvest,perkJunkMiner"/>
+	</append>
+
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	
 	<set xpath="//block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
@@ -163,12 +187,47 @@
     <append xpath="/blocks/block[contains(@name,'Door')]">
         <property name="StabilitySupport" value="true" />
     </append>
+	
 	<remove xpath="/blocks/block[@name='mattressFlatThin']/property[@name='GndAlign']"/>
-	<!-- <set xpath="//block[contains(@name,'mattressFlatThin')]/property[@name='StabilitySupport']/@value">true</set> -->
 	<append xpath="/blocks/block[contains(@name,'mattressFlatThin')]">
 		<property name="StabilitySupport" value="true" />
 	</append>
+	
+	<remove xpath="/blocks/block[@name='cntBarrelMetalMaster']"></remove>
+	<insertafter xpath="/blocks/block[@name='paintingAbstract04_3x2']">
 
+		<block name="cntBarrelMetalMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="CarExplodeLoot"/>
+			<property name="LootList" value="gasBarrel"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="64"/>
+				<property name="RadiusBlocks" value="5"/>
+				<property name="BlockDamage" value="50"/>
+					
+			</property>
+			<property name="CustomIcon" value="cntBarrelAcidSingle00"/>
+			<property name="TintColor" value="575757"/>
+			<property name="ItemTypeIcon" value="explosion"/>
+			<property name="DescriptionKey" value="cntBarrelGroupDesc"/>
+			<property name="Material" value="MFuelBarrelMetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Industrial/barrelGasPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<drop event="Harvest" name="resourceScrapIron" count="3,6" tag="allToolsHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<drop event="Fall" name="scrapMetalPile" count="1,5" prob="0.75" stick_chance="1"/>
+			<property name="Tags" value="barrelExplosive"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	</insertafter>
+	
 <remove xpath="/blocks/block[@name='corrugatedMetalShapes']"></remove>
 
 	<insertafter xpath="/blocks/block[@name='awningShapes']">
