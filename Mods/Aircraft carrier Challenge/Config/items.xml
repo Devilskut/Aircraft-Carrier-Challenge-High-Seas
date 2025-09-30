@@ -2009,7 +2009,7 @@
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
 				<property name="Create_item" value="gunRifleT0PipeRifle,meleeWpnSpearT0StoneSpear,thrownAmmoPipeBomb,riflesSkillMagazine,explosivesSkillMagazine,spearsSkillMagazine,salvageToolsSkillMagazine,ammo762mmBulletBall"/>
-				<property name="Create_item_count" value="5-6,5-6,5,5,5,5,15"/>
+				<property name="Create_item_count" value="5-6,5-6,5,5,5,5,5,15"/>
 			</property>
 		</item>
 
