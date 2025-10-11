@@ -25,7 +25,7 @@
 	  <ingredient name="vehicleWheels" count="3"/>
 	</recipe>
 
-	  <recipe name="ApacheHelicopterCanopy" count="1" craft_time="60" tags="forgeCrafting">
+	<!--  <recipe name="ApacheHelicopterCanopy" count="1" craft_time="60" tags="forgeCrafting">
 		  <ingredient name="resourceBrokenGlass" count="110"/>
 		  <ingredient name="resourceScrapBrass" count="180"/>
 		  <ingredient name="resourceScrapLead" count="140"/>
@@ -47,7 +47,7 @@
 	  <ingredient name="resourceSpring" count="3"/>
 	  <ingredient name="resourceDuctTape" count="2"/>
 	  <ingredient name="resourceLegendaryParts" count="1"/>
-	</recipe>
+	</recipe> -->
 	  
 	<recipe name="ammoArrowStone" count="1">
       <ingredient name="ammoCrossbowBoltStone" count="1"/>
