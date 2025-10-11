@@ -51,6 +51,9 @@ NerdDesc,"Head-XP Gain,Outfit-Magazing point chance,Gloves-Baton Damage+,Boots-F
 
 RaiderDesc,"Head-Stun Resist,Outfit-Crit Heal,Gloves-Melee Damage+,Boots-Fall Distance+, Bonus-Crit Resist+."
 
+Mission_1_Army DepotDesc, "Did you run to far away or die trying?"
+
+Mission_2_Bridge suppliesDesc, "Did you run to far away or die trying?"
 
 adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
 

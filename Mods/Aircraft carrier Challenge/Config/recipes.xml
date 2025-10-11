@@ -8,8 +8,12 @@
     <recipe name="casinoCoin" count="1"  >
       <ingredient name="oldCash" count="1"/>
     </recipe>
+	  
+	 <recipe name="Mission_1_Army Depot" count="1" craft_time="10" >
+	  <ingredient name="casinoCoin" count="500" />
+	</recipe>
 
-	<recipe name="Mission_3_Bridge supplies" count="1" craft_time="10" >
+	<recipe name="Mission_2_Bridge supplies" count="1" craft_time="10" >
 	  <ingredient name="casinoCoin" count="1200" />
 	</recipe>
 	  
