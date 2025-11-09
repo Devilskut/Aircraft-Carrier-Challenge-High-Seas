@@ -153,7 +153,7 @@
 
 			<reward type="Exp" value="5060"/>
 			<reward type="SkillPoints" value="2" />
-			<reward type="Quest" id="quest_CarrierChallenge03"/>
+			<reward type="Quest" id="quest_CarrierChallenge04"/>
 
 			<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
@@ -165,11 +165,36 @@
 			<reward type="LootItem" id="groupQuestT1Traps" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestT1MeleeMods" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestT1RangedMods" ischosen="true" value="2"/>
-
         </quest>
+		
+		<quest id="quest_CarrierChallenge04">
+			<property name="name_key" value="quest_CarrierChallenge04"/>
+			<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
+			<property name="description_key" value="quest_CarrierChallenge04_description"/>
+			<property name="icon" value="ui_game_symbol_gyrocopter"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_CarrierChallenge04_offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="true"/>
 
-	    <!--AH-64 Supplies for Starter Helicopter-->
-	
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00] MultiPlayer [-]"/>
+				<property name="message" value="ONLY [FFFF00]ONE PLAYER [-]HAS TO COMPLETE THE [FFFF00]UH-60 CRAFTING QUESTS.[-]"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<action type="TrackQuest"/>
+
+			<objective type="FetchKeep" id="resourceForgedSteel" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
+			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="10" phase="1"/>
+
+			<reward type="Exp" value="5000"/>
+			<reward type="Quest" id="quest_CarrierChallenge03"/>
+		</quest>
 		<quest id="quest_CarrierChallenge03">
 			<property name="name_key" value="quest_CarrierChallenge03"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge03_subtitle"/>
@@ -225,7 +250,7 @@
 
 			<reward type="Exp" value="2500"/>
 			<reward type="SkillPoints" value="4" />
-			<reward type="Quest" id="quest_CarrierChallenge04">
+			<reward type="Quest" id="quest_CarrierChallenge05">
 			</reward>
 			
 			<reward type="LootItem" id="questRewardUH60PartsBundle" ischosen="true" value="2"/>
@@ -242,35 +267,6 @@
 			
 		</quest>
 		
-		<quest id="quest_CarrierChallenge04">
-			<property name="name_key" value="quest_CarrierChallenge04"/>
-			<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
-			<property name="description_key" value="quest_CarrierChallenge04_description"/>
-			<property name="icon" value="ui_game_symbol_gyrocopter"/>
-			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest"/>
-			<property name="offer_key" value="quest_CarrierChallenge04_offer"/>
-			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="true"/>
-
-			<action type="ShowMessageWindow">
-				<property name="title" value="[FFFF00] MultiPlayer [-]"/>
-				<property name="message" value="ONLY [FFFF00]ONE PLAYER [-]HAS TO COMPLETE THE [FFFF00]UH-60 CRAFTING QUESTS.[-]"/>
-				<property name="delay" value="2"/>
-			</action>
-
-			<action type="TrackQuest"/>
-
-			<objective type="FetchKeep" id="resourceForgedSteel" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
-			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="10" phase="1"/>
-
-			<reward type="Exp" value="5000"/>
-			<reward type="Quest" id="quest_CarrierChallenge05"/>
-		</quest>
-
 		<quest id="quest_CarrierChallenge05">
 			<property name="name_key" value="quest_CarrierChallenge05"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge05_subtitle"/>
@@ -287,9 +283,6 @@
 			<objective type="FetchKeep" id="resourceMechanicalParts" value="50" phase="1"/>
 			<objective type="FetchKeep" id="resourceDuctTape" value="40" phase="1"/>
 			<objective type="FetchKeep" id="resourceMetalPipe" value="50" phase="1"/>
-
-			<objective type="Craft" id="vehicleUH60chassis" value="1" phase="2"/>
-			<objective type="Craft" id="vehicleUH60accessories" value="1" phase="2"/>
 
 			<reward type="Exp" value="5000"/>
 			<reward type="Quest" id="quest_CarrierChallenge06">
@@ -314,7 +307,7 @@
 			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
 			<objective type="FetchKeep" id="vehicleUH60accessories" value="1" phase="1"/>
 
-			<objective type="Craft" id="vehicleUH60placeable" value="1" phase="2"/>
+			<objective type="FetchKeep" id="vehicleUH60placeable" value="1" phase="2"/>
 			
 
 			<reward type="Exp" value="5000"/>
