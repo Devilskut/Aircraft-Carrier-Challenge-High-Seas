@@ -14,7 +14,6 @@ UUSS_Arleigh_Burke_Destroyer_02,USS Arleigh Burke DDG 51
 
 drinkCanMegaCrush,Goldens Swallow
 
-
 PerceptionDesc,"Perception Tree: Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs with additional related magazines."
 StrengthDesc,"Strength Tree: Pack gives Shotgun, Wooden Club, and a Stone Sledge hammer with additional related magazines."
 AgilityDesc,"Agility Tree: Pack gives Pipe Pistol, Bone Knife, and a Wooden Bow with additional related magazines."
@@ -107,6 +106,11 @@ vehiclesT2,Tier 2: Oil
 vehiclesT3,Tier 3: Gas Cans
 vehiclesT4,Tier 4: Acid
 vehiclesT5,Tier 5: Flight
+
+meleeWpnBladeT1HuntingKnife,Prison shank
+meleeWpnBladeT3Machete,Devils' Blade
+gunBowT0PrimitiveBow,Techie's Silent Sentinel
+gunHandgunT1Pistol,Angelacus' Water Pistol
 
 DishongLootContainerUtilityWorkerLoot,Duffle Bag
 DishongLootContainerBusinessManLoot,Duffle Bag
@@ -212,9 +216,9 @@ zombieNurse,KatsPurr
 zombieNurseFeral,Feral Katspurr
 zombieNurseRadiated,Radiated KatsPurr
 
-zombieYo,Sarcoth
-zombieYoFeral,Feral Sarcoth
-zombieYoRadiated,Radiated Sarcoth
+zombieYo,PitchieB
+zombieYoFeral,Feral PitchieB
+zombieYoRadiated,Radiated PitchieB
 
 zombieTomClark,Devilskut
 zombieTomClarkRadiated,Radiated Devilskut
@@ -240,8 +244,10 @@ zombieSteve,Frantic_Dan
 zombieSteveFeral,Feral Frantic_Dan
 zombieSteveRadiated,Radiated Frantic_Dan
 
-zombieSteveCrawler,PitchieB
-zombieSteveCrawlerFeral,Feral PitchieB
+zombieSteveCrawler,LT Dan
+zombieSteveCrawlerFeral,Feral LT Dan
+
+animalchicken,Nugget
 
 animalWolf,Korbulas
 animalDireWolf,Raging Korbulas
@@ -249,7 +255,7 @@ animalDireWolf,Raging Korbulas
 animalRabbit,Killer Bunny
 animalZombieBear,Reclining Gamer
 
-animalZombieVulture,Phancy
+animalZombieVulture,VultureGeist
 animalZombieVultureRadiated,Spicy Dragonfly
 
 zombieWightFeral,Feral DeathAngel
@@ -280,9 +286,9 @@ zombieScreamer,MoonLuna
 zombieScreamerFeral,Feral MoonLuna
 zombieScreamerRadiated,Radiated MoonLuna
 
-zombieSkateboarder,TylerGMS
-zombieSkateboarderFeral,Feral TylerGMS
-zombieSkateboarderRadiated,Radiated TylerGMS
+zombieSkateboarder,Capp00
+zombieSkateboarderFeral,Feral Capp00
+zombieSkateboarderRadiated,Radiated Capp00
 
 zombieFatHawaiian,Shrader
 zombieFatHawaiianFeral,Feral Shrader
