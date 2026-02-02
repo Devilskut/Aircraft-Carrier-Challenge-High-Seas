@@ -93,10 +93,10 @@
 </insertafter>
 	
 
-    <!-- <insertafter xpath="/blocks/block[@name]/property[1]">
+    <insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>  -->
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>  
 
 	<remove xpath="//block[@name='workbench']/drop[@event='Harvest']"></remove>
 	
@@ -134,11 +134,9 @@
 		<drop event="Destroy" name="electricfencepost" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
 	
-	<remove xpath="//block[@name='flamethrowerTrap']/drop[@event='Harvest']"></remove>
-	
-	<append xpath="/blocks/block[@name='flamethrowerTrap']">
+	 <append xpath="/blocks/block[@name='flamethrowerTrap']">
 		<drop event="Destroy" name="flamethrowerTrap" count="1" tag="salvageHarvest,perkJunkMiner"/>
-	</append>
+	</append> 
 	
 	<remove xpath="//block[@name='bladeTrap']/drop[@event='Harvest']"></remove>
 	
@@ -151,8 +149,6 @@
 	<append xpath="/blocks/block[@name='autoTurret']">
 		<drop event="Destroy" name="autoTurret" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
-	
-	<remove xpath="//block[@name='shotgunTurret']/drop[@event='Harvest']"></remove>
 	
 	<append xpath="/blocks/block[@name='shotgunTurret']">
 		<drop event="Destroy" name="shotgunTurret" count="1" tag="salvageHarvest,perkJunkMiner"/>
@@ -182,8 +178,6 @@
 		<drop event="Destroy" name="electricwirerelay" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
 	
-	<remove xpath="//block[@name='switch']/drop[@event='Harvest']"></remove>
-	
 	<append xpath="/blocks/block[@name='switch']">
 		<drop event="Destroy" name="switch" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
@@ -199,9 +193,7 @@
 	<append xpath="/blocks/block[@name='pressureplateLong']">
 		<drop event="Destroy" name="pressureplateLong" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
-	
-	<remove xpath="//block[@name='tripwirepost']/drop[@event='Harvest']"></remove>
-	
+		
 	<append xpath="/blocks/block[@name='tripwirepost']">
 		<drop event="Destroy" name="tripwirepost" count="1" tag="salvageHarvest,perkJunkMiner"/>
 	</append>
@@ -255,6 +247,7 @@
 	  
 	<append xpath="/blocks/block[@name='treeMaster']">
 		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="treeStump" count="1"/>
 	</append>
 
 	<append xpath="/blocks/block[starts-with(@name, 'plantHanging')]">
