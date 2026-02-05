@@ -15,7 +15,7 @@
 						<sprite depth="1" name="border" color="0,0,0,150" height="46" type="sliced"/>
 						<sprite depth="2" name="background" color="0,0,0,140" type="sliced"/>
 
-						<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1"/>
+						<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="{statmodifiedmax}"/>
 
 						<filledsprite depth="4" name="BarContent" color="0,54,255,128" type="filled" fill="{statfill}"/>
 						<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="26,-24" pivot="center" foregroundlayer="true"/>
