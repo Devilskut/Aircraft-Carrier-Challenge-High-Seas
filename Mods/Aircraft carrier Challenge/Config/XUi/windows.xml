@@ -19,7 +19,7 @@
 
 						<filledsprite depth="4" name="BarContent" color="0,54,255,128" type="filled" fill="{statfill}"/>
 						<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="26,-24" pivot="center" foregroundlayer="true"/>
-						<label depth="6" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrent}" width="125" height="35"/>
+						<label depth="6" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="125" height="35"/>
 
 						<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
 						<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="1"/>

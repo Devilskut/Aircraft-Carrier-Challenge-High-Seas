@@ -21,7 +21,8 @@
 	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='LandClaimOfflineDelay']" />
 	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='BedrollDeadZoneSize']" />
 	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='BedrollExpiryTime']" />
-    <remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='LootRespawnDays']" /> 
+    <remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='LootRespawnDays']" />
+	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='JarRefund']" />
 	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='DropOnDeath']" />
 	<remove xpath="/windows/window[@name='newContinueGame']/rect/rect/rect/rect/grid/gameoption[@name='DropOnQuit']" />
 

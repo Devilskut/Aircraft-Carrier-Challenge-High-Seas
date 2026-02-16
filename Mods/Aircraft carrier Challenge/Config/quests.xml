@@ -109,7 +109,7 @@
 
 			<action type="ShowMessageWindow">
 				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
-				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission."/>
+				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission. Should you fail this mission you may craft another by using [FFFF00]Dukes."/>
 				<property name="delay" value="2"/>
 			</action>
 			
@@ -210,7 +210,7 @@
 
 			<action type="ShowMessageWindow">
 				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
-				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission."/>
+				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission.Should you fail this mission you may craft another by using [FFFF00]Dukes."/>
 				<property name="delay" value="2"/>
 			</action>
 
