@@ -39,17 +39,17 @@
   <property name="SleeperIsQuestExclude" value="False,False" />
   <property name="SleeperVolumeFlags" value="0,2" />
   <property name="SleeperVolumeTriggeredBy" value=" #8" />
-  <property name="SVS1" value="trigger 7&#xD;^spawn GroupGenericZombie 50&#xD;^spawn zombieWightFeral 2&#xD;^spawn zombieArleneRadiated 1&#xD;^waitalive 5&#xD;^trigger 8&#xD;^spawn GroupZomBadass 9&#xD;^spawn zombieFatCopFeral 2&#xD;^spawn zombieDemolition 1&#xD;^spawn zombieLabRadiated 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 4&#xD;^trigger 4&#xD;^spawn GroupHospital 15&#xD;^spawn zombieScreamerFeral 3&#xD;^spawn zombieSoldierRadiated 1&#xD;^spawn GroupGenericZombie 10&#xD;^waitalive 1&#xD;^trigger 2&#xD;^spawn GroupZomPoliceCarHorde 6&#xD;^spawn zombieSoldierFeral 1&#xD;^spawn zombieFatCopFeral 3&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 1&#xD;^spawn GroupPrison 12&#xD;^spawn zombieWightFeral 1&#xD;^spawn zombieDemolition 2&#xD;^spawn zombieArleneRadiated 1&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 3&#xD;^trigger 3&#xD;^spawn ZomFatCops 5&#xD;^spawn zombieScreamerFeral 2&#xD;^spawn zombieSpiderFeral 3&#xD;^spawn zombieSoldierRadiated 1&#xD;^spawn zombieBikerFeral 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 1&#xD;^trigger 6&#xD;^spawn GroupSpecialInfected 4&#xD;^spawn zombieSoldierFeral 3&#xD;^spawn zombieBikerFeral 3&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive1&#xD;^spawn GroupNightClub 14&#xD;^spawn zombieBikerFeral 5&#xD;^spawn zombieLumberjackRadiated 1&#xD;^spawn GroupGenericZombie 25&#xD;^waitalive 3&#xD;^trigger 1&#xD;^spawn ZomSpiderOnly 5&#xD;^spawn zombieLabRadiated 1&#xD;^spawn zombieWightFeral 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 1&#xD;^trigger 9&#xD;^spawn GroupTestChamberDecoy 3&#xD;^spawn zombieLumberjackRadiated 1&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 1&#xD;^trigger 5&#xD;^spawn zombieDemolition 6&#xD;^spawn zombieWightFeral 2&#xD;^spawn zombieLabRadiated 1&#xD;^spawn GroupGenericZombie 30&#xD;^waitalive 1&#xD;^trigger 10&#xD;^spawn zombieWightRadiated 7&#xD;^spawn GroupGenericZombie 20&#xD;^" />
+  <property name="SVS1" value="trigger 7&#xD;^spawn GroupGenericZombie 15&#xD;^spawn zombieWightFeral 1&#xD;^spawn zombieArleneRadiated 1&#xD;^&#xD;^" />
   <property class="Stats">
-    <property name="LightsVolume" value="25691.13" />
-    <property name="TotalVertices" value="1878381" />
-    <property name="TotalTriangles" value="760689" />
+    <property name="LightsVolume" value="25691.14" />
+    <property name="TotalVertices" value="1877235" />
+    <property name="TotalTriangles" value="759154" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1771220" />
-      <property name="Triangles" value="692287" />
+      <property name="Vertices" value="1769245" />
+      <property name="Triangles" value="690752" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="98109" />
+      <property name="Vertices" value="98938" />
       <property name="Triangles" value="53430" />
     </property>
     <property class="ChunkMeshes1">
