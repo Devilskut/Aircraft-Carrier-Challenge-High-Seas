@@ -1,16 +1,16 @@
 				Mod Links:
 				Downloads:
-				https://github.com/Techgeek20/7D2D-V1_Aircraft_Carrier_Challenge
+				https://github.com/Techgeek20/7D2D-V2.6_Aircraft_Carrier_Challenge
 
 
-				A mini overhaul mod for Release Ver. 1.4(b8)
+				A mini overhaul mod for Release Ver.2.6(b14)
 				
-				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ redesigned by Devilskut for Release Ver. 1.4 with code help from Techgeek_20 
-				and "bug  hunting" from AngelacusGaming.
+				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ redesigned by Devilskut for Release Ver. 2.6 with code help from Techgeek_20 
+				and "bug hunting" from AngelacusGaming.
 
 				Notes about this mini-mod:
 
-				Zombie corpses now drop an entity-specific red loot bag.
+				Zombie corpses are Lootable.
 				Removed non-essential vehicle parts from loot and crafting.
 				Beds, Bedrolls, and land claim block recipes removed.
 				Removed treasure maps from loot.
@@ -24,9 +24,9 @@
 				Slight increase in oil shale from cement mixer loot.
 				Increased chance of antibiotics from nurses per perk point spent in Physician, up to a max chance of 35%.
 				Base chance of skill magazines from radiated zombies increased from 10% to 13%.
-				Changed the quest requirements for gathering AH-64 Apache parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
+				Changed the quest requirements for gathering UH-60  parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
 				Antibiotics loot probability from nurses now tied to Physician perk.
-				Player placed workstations can be picked up with no need for a land claim block. (Workstation MUST be empty of all tools, items, and materials for this to work)
+				Player placed workstations can be destroyed to be picked up with no need for a land claim block. (Workstation MUST be empty of all tools, items, and materials for this to work)
 
 				THE AIRCRAFT CARRIER CHALLENGE:
 				Can you survive and escape the Aircraft Carrier, using nothing but what you can scavenge from the carrier itself?
@@ -34,9 +34,9 @@
 
 				This challenge places you, a lone hard core survivor, or a group of survivalists, in a menacing aircraft carrier of death incarnate.
 
-				Your only means of escape is to gather everything you need to be able to craft an AH-64 Apache Helicopter to complete your final mission and to reach your settlement.
+				Your only means of escape is to gather everything you need to be able to craft an UH-60 Helicopter to complete your final mission and to reach your settlement.
 
-				A mini overhaul mod for B1.4(b8). Designed for group or solo play on an AIRCRAFT CARRIER with traders and only one means of escape.
+				A mini overhaul mod for V2.6(b14). Designed for group or solo play on an AIRCRAFT CARRIER with traders and only one means of escape.
 
 				Five (5) custom worlds, one for each biome, so you can choose your starting "difficulty" - Forest, Burnt, Desert, Snow, or the ultimate challenge, Wasteland.
 
@@ -44,8 +44,6 @@
 
 				Custom questline, guiding you on your way.
 
-				Custom HUD, and in-game options added for toggling crosshair visibility, health bar visibility, etc.
-				Pause the game, and look for "Video", then the "Customize" tab.
 
 				CHALLENGE RULES:
 
@@ -60,27 +58,15 @@
 
 				5: All default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days and turn airdrops OFF.
 
-				6: If you die, the game is over, however  ADDED an injured option for a second chance for those that would like to finish the challenge.
+				6: If you die, the game is over, however you may an injured option for a second chance for those that would like to finish the challenge.
 
-				7: You must survive until you are able to build an AH-64 Apache Helicopter and complete your final mission and reach your settlement.
-
-				Contributors:
-				DishongGameOptions 						-Author: w00kien00kie
-				DishongLootBags 						-Author: w00kien00kie
-				DishongPickupWorkstations 				-Author: w00kien00kie
-				WMMStaminaDehydrationFix				-Author: w00kien00kie
+				7: You must survive until you are able to build an UH-60 Helicopter and complete your final mission and reach your settlement.
 
 				Additional thanks for permission to use following modlets by their respective creator(s):
 
 				Khelldon Custom Menu 					-Author: Khelldon
 				Military Blocks							-Author: Cannon_Fodder83,Shrader971
-				0-Score									-Author: Spherii
-                                AH-64 Apache Helicopter                                    -Author: Zilox
-				0-CustomParticleLoader					-Author: closer_ex
-				CustomParticleLoaderMultiExplosion		-Author: closer_ex
-				0-Quartz									-Author: closer_ex
-				CustomParticleLoaderMultiExplosion		-Author: closer_ex
-				VehicleWeapon							-Author: closer_ex
+				0-Score									-Author: Spherii		
 				AircraftcarrierGuns						-author: Killerbunny264
 				
 				Shout outs and thanks to the mod authors and Hells_Janitor for the Dishong Tower Challenge and allowing usage of their mods and code.

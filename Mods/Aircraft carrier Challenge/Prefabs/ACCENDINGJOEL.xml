@@ -31,26 +31,26 @@
   <property name="POIMarkerPartToSpawn" value="part_driveway_rural_12" />
   <property name="POIMarkerPartRotations" value="2" />
   <property name="POIMarkerPartSpawnChance" value="1" />
-  <property name="SleeperVolumeSize" value="7, 4, 1#58, 22, 58" />
-  <property name="SleeperVolumeStart" value="34, 6, 1#1, 1, 1" />
-  <property name="SleeperVolumeGroupId" value="0,0" />
-  <property name="SleeperVolumeGroup" value="GroupGenericZombie,5,6,zombieWightRadiated,0,0" />
-  <property name="SleeperIsLootVolume" value="False,False" />
-  <property name="SleeperIsQuestExclude" value="False,False" />
-  <property name="SleeperVolumeFlags" value="0,2" />
-  <property name="SleeperVolumeTriggeredBy" value=" #8" />
-  <property name="SVS1" value="trigger 7&#xD;^spawn GroupGenericZombie 15&#xD;^spawn zombieWightFeral 1&#xD;^spawn zombieArleneRadiated 1&#xD;^&#xD;^" />
+  <property name="SleeperVolumeSize" value="58, 22, 58" />
+  <property name="SleeperVolumeStart" value="1, 1, 1" />
+  <property name="SleeperVolumeGroupId" value="0" />
+  <property name="SleeperVolumeGroup" value="zombieWightRadiated,0,0" />
+  <property name="SleeperIsLootVolume" value="False" />
+  <property name="SleeperIsQuestExclude" value="False" />
+  <property name="SleeperVolumeFlags" value="2" />
+  <property name="SleeperVolumeTriggeredBy" value="8" />
+  <property name="SVS0" value="trigger 7&#xD;^spawn GroupGenericZombie 50&#xD;^spawn zombieWightFeral 2&#xD;^spawn zombieArleneRadiated 1&#xD;^waitalive 5&#xD;^trigger 8&#xD;^spawn GroupZomBadass 9&#xD;^spawn zombieFatCopFeral 2&#xD;^spawn zombieDemolition 1&#xD;^spawn GroupAllRadiated 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 4&#xD;^trigger 4&#xD;^spawn GroupHospital 15&#xD;^spawn zombieScreamerFeral 3&#xD;^spawn zombieSoldierRadiated 1&#xD;^spawn GroupGenericZombie 10&#xD;^waitalive 1&#xD;^trigger 2&#xD;^spawn GroupZomPoliceCarHorde 6&#xD;^spawn zombieSoldierFeral 1&#xD;^spawn zombieFatCopFeral 3&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 1&#xD;^spawn GroupPrison 12&#xD;^spawn zombieWightFeral 1&#xD;^spawn zombieDemolition 2&#xD;^spawn zombieArleneRadiated 1&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 3&#xD;^trigger 3&#xD;^spawn ZomFatCops 5&#xD;^spawn zombieScreamerFeral 2&#xD;^spawn zombieSpiderFeral 3&#xD;^spawn zombieSoldierRadiated 1&#xD;^spawn zombieBikerFeral 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 1&#xD;^trigger 6&#xD;^spawn GroupSpecialInfected 4&#xD;^spawn zombieSoldierFeral 3&#xD;^spawn zombieBikerFeral 3&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive1&#xD;^spawn GroupNightClub 14&#xD;^spawn zombieBikerFeral 5&#xD;^spawn zombieLumberjackRadiated 1&#xD;^spawn GroupGenericZombie 25&#xD;^waitalive 3&#xD;^trigger 1&#xD;^spawn ZomSpiderOnly 5&#xD;^spawn GroupAllRadiated 1&#xD;^spawn zombieWightFeral 1&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 1&#xD;^trigger 9&#xD;^spawn GroupTestChamberDecoy 3&#xD;^spawn zombieLumberjackRadiated 1&#xD;^spawn GroupGenericZombie 15&#xD;^waitalive 1&#xD;^trigger 5&#xD;^spawn zombieDemolition 6&#xD;^spawn zombieWightFeral 2&#xD;^spawn zombieLabRadiated 1&#xD;^spawn GroupGenericZombie 30&#xD;^waitalive 1&#xD;^trigger 10&#xD;^spawn zombieWightRadiated 7&#xD;^spawn GroupGenericZombie 20&#xD;^waitalive 1&#xD;^trigger 11&#xD;^spawn GroupGenericZombie 20&#xD;^" />
   <property class="Stats">
-    <property name="LightsVolume" value="25691.14" />
-    <property name="TotalVertices" value="1877235" />
-    <property name="TotalTriangles" value="759154" />
+    <property name="LightsVolume" value="25691.13" />
+    <property name="TotalVertices" value="1876382" />
+    <property name="TotalTriangles" value="759142" />
     <property class="BlockEntities">
       <property name="Vertices" value="1769245" />
       <property name="Triangles" value="690752" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="98938" />
-      <property name="Triangles" value="53430" />
+      <property name="Vertices" value="98085" />
+      <property name="Triangles" value="53418" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />

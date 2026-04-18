@@ -54,9 +54,10 @@
 	<remove xpath="//lootgroup[@name='groupMailbox01']//item[@name='resourcePaper']" />
 	<remove xpath="//lootgroup[@name='groupMailbox02']//item[@name='resourcePaper']" />
 	<remove xpath="//lootgroup[@name='groupCrackabookShelves01']//item[@name='resourcePaper']" />
-	<remove xpath="//lootgroup[@name='groupFileCabinet01']//item[@name='resourcePaper']" />	
+	<remove xpath="//lootgroup[@name='groupFileCabinet01']//item[@name='resourcePaper']" />
 	
 	<!-- changes to cement mixer loot -->
+	
     <set xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']">
         <item name="resourceRockSmall" count="40,120"/>
         <item name="resourceClayLump" count="40,120"/>
@@ -64,20 +65,12 @@
         <item name="resourceOilShale" count="50,100"/>
 	</set>
 
-	<!-- *** Toilet_Loot -->
-	<remove xpath="//lootgroup[@name='groupToilet01']//item[@name='resourcePaper']" />
-
-	<append xpath="//lootgroup[@name='groupToilet01']">
-		<item name="drinkJarRiverWater" count="1" loot_prob_template="veryLow"/>
-	</append>
 	
-	<!-- guaranteed battery -->
-	<set xpath="//lootgroup[@name='groupBattBank']//item[2]/@loot_prob_template">guaranteed</set>
-	<setattribute xpath="//lootcontainer[@name='collapsedBatteryBank']" name="destroy_on_close">empty</setattribute>
-			
+
 	<!-- zombie specific loot -->
 		
 	<insertafter xpath="//lootcontainers//lootgroup[@name='groupSchematicsAll']">
+
 		<lootgroup name="groupRifleBooks">	
 			<item name="bookSniperAPAmmo"/>
 			<item name="bookSniperControlledBreathing"/>
@@ -247,7 +240,7 @@
 			<item name="bookSledgeSagaConcussiveStrike"/>
 			<item name="bookSledgeSagaArmorCrusher"/>
 		</lootgroup>
-			
+		
 		<lootgroup name="groupZombieWightLoot" count="all">
 			<item name="drinkJarGrandpasForgettingElixir" prob=".1" force_prob="true" />
 			<item name="questRewardT1SkillMagazineBundle" prob=".1" force_prob="true" />			
@@ -480,7 +473,7 @@
 	<!-- zombie loot containers -->
 	
 	<insertafter xpath="//lootcontainers//lootcontainer[@name='twitch_home_run_rewardsT5']">
-
+		
 		<!-- zombieChuck -->
 		<lootcontainer name="zombieChuck" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupChuckLoot" count="1" prob="100"/>

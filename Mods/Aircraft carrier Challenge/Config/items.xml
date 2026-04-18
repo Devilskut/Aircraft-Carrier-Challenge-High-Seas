@@ -1,8 +1,8 @@
 ﻿<configs>
-    <!-- <insertafter xpath="/items/item[@name]/property[1]">
+    <insertafter xpath="/items/item[@name]/property[1]">
 		<property name="CreativeMode" value="none"/> 
 	</insertafter>
-	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> -->
+	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
 	
 	<insertAfter xpath="/items/item[@name='ammoBundleMaster']"> 
 	<item name="Backpack">
@@ -20,8 +20,8 @@
 			<property name="Delay" value="0"/>
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="UseActions/open_backpack"/>
-			<property name="Create_item" value="biomeWeatherItem1,biomeWeatherItem2,biomeWeatherItem3,biomeWeatherItem4,Armor,Weapon,modArmorHelmetLight"/>
-			<property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+			<property name="Create_item" value="biomeBadge1,biomeBadge2,biomeBadge3,biomeBadge4,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeWpnBladeT1HuntingKnife"/>
+			<property name="Create_item_count" value="1,1,1,1,5-6,2,2,2,1"/>
 		</property>
 	</item>	
 	</insertAfter>
@@ -29,7 +29,7 @@
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
 	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
-
+	
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulder']" />
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderFeral']" />
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderCharged']" />
@@ -173,294 +173,6 @@
 
 	</insertbefore>
 
-	<append xpath="/items/item[starts-with(@name,'drinkJarBoiledWater')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarRiverWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkJarRedTea')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkJarGoldenRodTea')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkJarYuccaJuice')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkJarCoffee')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkJarBlackStrapCoffee')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'drinkCanMegaCrush')]">
-		<property name="Spoilable" value="false" />
-		<property name="SpoiledItem" value="drinkJarBoiledWater" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="5" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodCornOnTheCob')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodPumpkin')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodCornBread')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodShamSandwich')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodCharredMeat')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodGrilledMeat')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodBoiledMeat')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodMeatStew')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodSteakAndPotato')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodShamChowder')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodHoboStew')]">
-		<property name="Spoilable" value="false" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodFishTacos')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodChiliDog')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodBakedPotato')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodBlueberryPie')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodGumboStew')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodShepardsPie')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodSpaghetti')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodTunaFishGravyToast')]">
-		<property name="Spoilable" value="False" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodEgg')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodBaconAndEggs')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodVegetableStew')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodRawMeat')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-	
-	<append xpath="/items/item[starts-with(@name,'foodCornMeal')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="1" />
-	</append>
-
-	<append xpath="/items/item[starts-with(@name,'foodCrop')]">
-		<property name="Spoilable" value="true" />
-		<property name="SpoiledItem" value="foodRottingFlesh" />
-		<property name="TickPerLoss" value="500" />
-		<property name="ShowQuality" value="false"/>
-		<property name="SpoilageMax" value="1000" />
-		<property name="SpoilagePerTick" value="2" />
-	</append>
-
 	<set xpath="//item[@name='resourceCoal']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
 	<set xpath="//item[@name='resourceAcid']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
 	<insertbefore xpath="//item[@name='resourceAcid']//property[1]">
@@ -483,8 +195,6 @@
 		<property name="Group" value="Resources,Chemicals"/>
 	</item>
 	</insertafter>
-
-	<!-- <property name="DescriptionKey" value="armorLeatherGroupDesc"/> -->
 	
 	<set xpath="//item[@name='resourceWaterFilter']//property[@name='Stacknumber']/@value">1</set>
 	<insertafter xpath="//item[@name='drugAntibiotics']">
@@ -513,1131 +223,28 @@
 	</item>
 	</insertafter>
 	
-	<insertafter xpath="//item[@name='masterSkillMagazine']">
-		
-	<!--Items for Magazine Chain quest-->
-		
-			<!-- *** Scrapping_Skill_Magazine -->
-		<item name="salvageToolsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Tags" value="salvageToolsCSM,csm"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CustomIcon" value="bookScrapping4Fun"/>
-			<property name="DescriptionKey" value="salvageToolsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingSalvageTools"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		
-		<!-- *** Medical_Skill_Magazine -->
-<item name="medicalSkillMagazineAC">
-	<property name="CreativeMode" value="None"/>
-	<property name="Extends" value="masterSkillMagazine"/>
-	<property name="Tags" value="medicalCSM,csm"/>
-	<property name="CustomIcon" value="bookMedicalJournal"/>
-	<property name="DescriptionKey" value="medicalSkillMagazineDesc"/>
-	<property name="Unlocks" value="craftingMedical"/>
+	<remove xpath="/items/item[@name='questRewardGyrocopterPartsBundle']" />
 	
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="1"/> <!-- level="-1" sets a perk to max level -->
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="1">
-			<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-		</triggered_effect>
-	</effect_group>
-</item>
-
-	<!-- *** Food_Skill_Magazine -->
-<item name="foodSkillMagazineAC">
-	<property name="CreativeMode" value="None"/>
-	<property name="Extends" value="masterSkillMagazine"/>
-	<property name="Tags" value="foodCSM,csm"/>
-	<property name="CustomIcon" value="bookHomeCookingWeekly"/>
-	<property name="DescriptionKey" value="foodSkillMagazineDesc"/>
-	<property name="Unlocks" value="craftingFood"/>
-	
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="1"/> <!-- level="-1" sets a perk to max level -->
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="1">
-			<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-		</triggered_effect>
-	</effect_group>
-</item>
-
-		<!-- *** Vehicle_Skill_Magazine -->
-		<item name="vehiclesSkillMagazineAC">
+	<insertafter xpath="/items/item[@name='questReward4x4PartsBundle']">
+		
+		<item name="questRewardGyrocopterPartsBundle">
+			<property name="Extends" value="questRewardBundleMaster"/>
 			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="vehiclesCSM,csm"/>
-			<property name="CustomIcon" value="bookVehicleAdventures"/>
-			<property name="DescriptionKey" value="vehiclesSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingVehicles"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
+			<property name="CustomIcon" value="bundleVehicleGyro"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine,questRewardVehiclePartsBundle"/>
+				<property name="Create_item_count" value="3,1"/>
+				<property name="Random_item" value="vehicleWheels,smallEngine,toolForgeCrucible,carBattery,resourceForgedSteel"/>
+				<property name="Random_item_count" value="3,1,1,1,10"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
 		</item>
-		
-		<!-- *** Electrician_Skill_Magazine -->
-		<item name="electricianSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="electricianCSM,csm"/>
-			<property name="CustomIcon" value="bookWiring101"/>
-			<property name="DescriptionKey" value="electricianSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingElectrician"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		
-	<!-- *** Armor_Skill_Magazine -->
-<item name="armorSkillMagazineAC">
-	<property name="CreativeMode" value="None"/>
-	<property name="Extends" value="masterSkillMagazine"/>
-	<property name="Tags" value="armorCSM,csm"/>
-	<property name="CustomIcon" value="bookArmoredUp"/>
-	<property name="DescriptionKey" value="armorSkillMagazineDesc"/>
-	<property name="Unlocks" value="craftingArmor"/>
-	
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="1"/> <!-- level="-1" sets a perk to max level -->
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="1">
-			<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-		</triggered_effect>
-	</effect_group>
-</item>
-		
-		<!-- *** Machine_Guns_Skill_Magazine -->
-		<item name="machineGunsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="machineGunsCSM,csm"/>
-			<property name="CustomIcon" value="bookTacticalWarfare"/>
-			<property name="DescriptionKey" value="machineGunsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingMachineGuns"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		
-		<!-- *** Shotguns_Skill_Magazine -->
-		<item name="shotgunsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="shotgunsCSM,csm"/>
-			<property name="CustomIcon" value="bookShotgunWeekly"/>
-			<property name="DescriptionKey" value="shotgunsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingShotguns"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		
-		<!-- *** Rifles_Skill_Magazine -->
-		<item name="riflesSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="riflesCSM,csm"/>
-			<property name="CustomIcon" value="bookRifleWorld"/>
-			<property name="DescriptionKey" value="riflesSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingRifles"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Traps_Skill_Magazine -->
-		<item name="trapsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="trapsCSM,csm"/>
-			<property name="CustomIcon" value="bookElectricalTraps"/>
-			<property name="DescriptionKey" value="trapsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingTraps"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Robotics_Skill_Magazine -->
-		<item name="roboticsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="roboticsCSM,csm"/>
-			<property name="CustomIcon" value="bookTechPlanet"/>
-			<property name="DescriptionKey" value="roboticsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingRobotics"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		<!-- *** Explosives_Skill_Magazine -->
-		<item name="explosivesSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="explosivesCSM,csm"/>
-			<property name="CustomIcon" value="bookExplosiveMagazine"/>
-			<property name="DescriptionKey" value="explosivesSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingExplosives"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Handguns_Skill_Magazine -->
-		<item name="handgunsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="handgunsCSM,csm"/>
-			<property name="CustomIcon" value="bookHandgunMagazine"/>
-			<property name="DescriptionKey" value="handgunsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingHandguns"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Harvesting_Tools_Skill_Magazine -->
-		<item name="harvestingToolsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="harvestingToolsCSM,csm"/>
-			<property name="CustomIcon" value="bookToolsDigest"/>
-			<property name="DescriptionKey" value="harvestingToolsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingHarvestingTools"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Repair_Tools_Skill_Magazine -->
-		<item name="repairToolsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="repairToolsCSM,csm"/>
-			<property name="CustomIcon" value="bookHandyLand"/>
-			<property name="DescriptionKey" value="repairToolsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingRepairTools"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Knuckles_Skill_Magazine -->
-		<item name="knucklesSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="knucklesCSM,csm"/>
-			<property name="CustomIcon" value="bookFuriousFists"/>
-			<property name="DescriptionKey" value="knucklesSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingKnuckles"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Blades_Skill_Magazine -->
-		<item name="bladesSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="bladesCSM,csm"/>
-			<property name="CustomIcon" value="bookKnifeGuy"/>
-			<property name="DescriptionKey" value="bladesSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingBlades"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Clubs_Skill_Magazine -->
-		<item name="clubsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="clubsCSM,csm"/>
-			<property name="CustomIcon" value="bookBigHitters"/>
-			<property name="DescriptionKey" value="clubsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingClubs"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Sledgehammers_Skill_Magazine -->
-		<item name="sledgehammersSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="sledgehammersCSM,csm"/>
-			<property name="CustomIcon" value="bookGetHammered"/>
-			<property name="DescriptionKey" value="sledgehammersSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingSledgehammers"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Spears_Skill_Magazine -->
-		<item name="spearsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="spearsCSM,csm"/>
-			<property name="CustomIcon" value="bookSharpSticks"/>
-			<property name="DescriptionKey" value="spearsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingSpears"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-
-		<!-- *** Bows_Skill_Magazine -->
-		<item name="bowsSkillMagazineAC">
-			<property name="CreativeMode" value="None"/>
-			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="Tags" value="bowsCSM,csm"/>
-			<property name="CustomIcon" value="bookBowHunters"/>
-			<property name="DescriptionKey" value="bowsSkillMagazineDesc"/>
-			<property name="Unlocks" value="craftingBows"/>
-
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="1"/>
-				<!-- level="-1" sets a perk to max level -->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="1">
-					<requirement name="HasBuff" buff="buffNerdOutfit"/>
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-		
-		<!--Red Loot bags-->
-		
-		<item name="harvestingToolsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="HTLoot,csm"/>
-		<property name="CustomIcon" value="bookToolsDigest"/>
-		<property name="DescriptionKey" value="harvestingToolsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingHarvestingTools"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-	    <effect_group tiered="false">
-	        <requirements compare_type="or">
-		    <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-	        <requirement name="HasBuff" buff="buffNerdOutfit"/>
-		    </requirements>
-		    <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Repair_Tools_Skill_Magazine -->
-	<item name="repairToolsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="RTLoot,csm"/>
-		<property name="CustomIcon" value="bookHandyLand"/>
-		<property name="DescriptionKey" value="repairToolsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingRepairTools"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Salvage_Tools_Skill_Magazine -->
-	<item name="salvageToolsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Tags" value="STLoot,csm"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="CustomIcon" value="bookScrapping4Fun"/>
-		<property name="DescriptionKey" value="salvageToolsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingSalvageTools"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-		
-		<!-- *** Knuckles_Skill_Magazine -->
-	<item name="knucklesSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="KnLoot,csm"/>
-		<property name="CustomIcon" value="bookFuriousFists"/>
-		<property name="DescriptionKey" value="knucklesSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingKnuckles"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Blades_Skill_Magazine -->
-	<item name="bladesSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="BlLoot,csm"/>
-		<property name="CustomIcon" value="bookKnifeGuy"/>
-		<property name="DescriptionKey" value="bladesSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingBlades"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Clubs_Skill_Magazine -->
-	<item name="clubsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="ClLoot,csm"/>
-		<property name="CustomIcon" value="bookBigHitters"/>
-		<property name="DescriptionKey" value="clubsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingClubs"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Sledgehammers_Skill_Magazine -->
-	<item name="sledgehammersSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="SHLoot,csm"/>
-		<property name="CustomIcon" value="bookGetHammered"/>
-		<property name="DescriptionKey" value="sledgehammersSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingSledgehammers"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Spears_Skill_Magazine -->
-	<item name="spearsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="SpLoot,csm"/>
-		<property name="CustomIcon" value="bookSharpSticks"/>
-		<property name="DescriptionKey" value="spearsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingSpears"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Bows_Skill_Magazine -->
-	<item name="bowsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="BowLoot,csm"/>
-		<property name="CustomIcon" value="bookBowHunters"/>
-		<property name="DescriptionKey" value="bowsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingBows"/>
-
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Handguns_Skill_Magazine -->
-	<item name="handgunsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="HGLoot,csm"/>
-		<property name="CustomIcon" value="bookHandgunMagazine"/>
-		<property name="DescriptionKey" value="handgunsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingHandguns"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Shotguns_Skill_Magazine -->
-	<item name="shotgunsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="SGLoot,csm"/>
-		<property name="CustomIcon" value="bookShotgunWeekly"/>
-		<property name="DescriptionKey" value="shotgunsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingShotguns"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Rifles_Skill_Magazine -->
-	<item name="riflesSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="RiLoot,csm"/>
-		<property name="CustomIcon" value="bookRifleWorld"/>
-		<property name="DescriptionKey" value="riflesSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingRifles"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-		
-			<effect_group tiered="false">
-		<requirements compare_type="or">
-			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-			<requirement name="HasBuff" buff="buffNerdOutfit"/>
-		</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-	</effect_group>
-
-	<effect_group tiered="false">
-		<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-	</effect_group>
-	</item>
-
-		<!-- *** Machine_Guns_Skill_Magazine -->
-	<item name="machineGunsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="MGLoot,csm"/>
-		<property name="CustomIcon" value="bookTacticalWarfare"/>
-		<property name="DescriptionKey" value="machineGunsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingMachineGuns"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Explosives_Skill_Magazine -->
-	<item name="explosivesSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="EXLoot,csm"/>
-		<property name="CustomIcon" value="bookExplosiveMagazine"/>
-		<property name="DescriptionKey" value="explosivesSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingExplosives"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Robotics_Skill_Magazine -->
-	<item name="roboticsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="RoLoot,csm"/>
-		<property name="CustomIcon" value="bookTechPlanet"/>
-		<property name="DescriptionKey" value="roboticsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingRobotics"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Armor_Skill_Magazine -->
-	<item name="armorSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="ArLoot,csm"/>
-		<property name="CustomIcon" value="bookArmoredUp"/>
-		<property name="DescriptionKey" value="armorSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingArmor"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Medical_Skill_Magazine -->
-	<item name="medicalSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="MedLoot,csm"/>
-		<property name="CustomIcon" value="bookMedicalJournal"/>
-		<property name="DescriptionKey" value="medicalSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingMedical"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-		
-			<effect_group tiered="false">
-		<requirements compare_type="or">
-			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-			<requirement name="HasBuff" buff="buffNerdOutfit"/>
-		</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-	</effect_group>
-
-	<effect_group tiered="false">
-		<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-	</effect_group>
-	</item>
-
-		<!-- *** Food_Skill_Magazine -->
-	<item name="foodSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="FoodLoot,csm"/>
-		<property name="CustomIcon" value="bookHomeCookingWeekly"/>
-		<property name="DescriptionKey" value="foodSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingFood"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-	
-		<!-- *** Electrician_Skill_Magazine -->
-	<item name="electricianSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="ElLoot,csm"/>
-		<property name="CustomIcon" value="bookWiring101"/>
-		<property name="DescriptionKey" value="electricianSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingElectrician"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Traps_Skill_Magazine -->
-	<item name="trapsSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="TrLoot,csm"/>
-		<property name="CustomIcon" value="bookElectricalTraps"/>
-		<property name="DescriptionKey" value="trapsSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingTraps"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-		<!-- *** Workstation_Skill_Magazine -->
-	<item name="workstationSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="WSLoot,csm"/>
-		<property name="CustomIcon" value="bookForgeAhead"/>
-		<property name="DescriptionKey" value="workstationSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingWorkstations"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingWorkstations" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
-
-	<!-- *** Vehicle_Skill_Magazine -->
-	<item name="vehiclesSkillMagazineDT">
-		<property name="CreativeMode" value="None"/>
-		<property name="Extends" value="masterSkillMagazine"/>
-		<property name="Tags" value="csm,GMLoot"/>
-		<property name="CustomIcon" value="bookVehicleAdventures"/>
-		<property name="DescriptionKey" value="vehiclesSkillMagazineDesc"/>
-		<property name="Unlocks" value="craftingVehicles"/>
-		
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="1"/> <!-- level="-1" sets a perk to max level -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="3"/>
-				<requirement name="HasBuff" buff="buffNerdOutfit"/>
-			</requirements>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/>
-		</effect_group>
-
-		<effect_group tiered="false">
-			<requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/>
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/>
-			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Extra Point!"/> -->
-		</effect_group>
-	</item>
 	</insertafter>
-
+	
 	<append xpath="/items">
 			
 		<item name="Mission_1_Army Depot">
@@ -1659,6 +266,52 @@
 			</property>
 		</item>
 
+		<item name="Mission_3_DD_62">
+			<property name="Extends" value="adminQuestTicketMaster"/>
+			<property name="DescriptionKey" value="Mission_3_DD_62 suppliesDesc"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIconTint" value="98FB98"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_CarrierChallengeDestroyer"/>
+			</property>
+		</item>
+		
+	<item name="SkillMagazine10">
+	<property name="Extends" value="masterSkillMagazine"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Tags" value="admin"/>
+	<property name="CustomIcon" value="bookTechPlanet"/>
+	<property name="CustomIconTint" value="98FB98"/>
+	<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
+	<property name="SoundPickup" value="magazine_grab"/>
+	<property name="SoundPlace" value="magazine_place"/>
+
+	<property class="Action0">
+		<property name="Sound_start" value="read_skillbook_final"/>
+		<property name="Sound_in_head" value="true"/>
+	</property> 
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="10" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="10" show_message="false"/>
+	</effect_group>
+</item> 
 		<!-- ARMOR SETS -->
 		
 		<item name="Armor">
@@ -1699,8 +352,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorLumberjackBoots,armorLumberjackGloves,armorLumberjackOutfit,armorLumberjackHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorLumberjackBoots,armorLumberjackGloves,armorLumberjackOutfit,armorLumberjackHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1720,8 +373,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorPreacherBoots,armorPreacherGloves,armorPreacherOutfit,armorPreacherHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorPreacherBoots,armorPreacherGloves,armorPreacherOutfit,armorPreacherHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1741,8 +394,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRogueBoots,armorRogueGloves,armorRogueOutfit,armorRogueHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRogueBoots,armorRogueGloves,armorRogueOutfit,armorRogueHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1762,8 +415,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorAthleticBoots,armorAthleticGloves,armorAthleticOutfit,armorAthleticHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorAthleticBoots,armorAthleticGloves,armorAthleticOutfit,armorAthleticHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1783,8 +436,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorEnforcerBoots,armorEnforcerGloves,armorEnforcerOutfit,armorEnforcerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorEnforcerBoots,armorEnforcerGloves,armorEnforcerOutfit,armorEnforcerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1804,8 +457,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorFarmerBoots,armorFarmerGloves,armorFarmerOutfit,armorFarmerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorFarmerBoots,armorFarmerGloves,armorFarmerOutfit,armorFarmerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1825,8 +478,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorBikerBoots,armorBikerGloves,armorBikerOutfit,armorBikerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorBikerBoots,armorBikerGloves,armorBikerOutfit,armorBikerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1846,8 +499,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorScavengerBoots,armorScavengerGloves,armorScavengerOutfit,armorScavengerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorScavengerBoots,armorScavengerGloves,armorScavengerOutfit,armorScavengerHelmet"/>
+				<property name="Create_item_count" value="1,2-3,2-3,2-3,2-3"/>
 			</property>
 		</item>
 
@@ -1867,8 +520,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRangerBoots,armorRangerGloves,armorRangerOutfit,armorRangerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRangerBoots,armorRangerGloves,armorRangerOutfit,armorRangerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1888,8 +541,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorCommandoBoots,armorCommandoGloves,armorCommandoOutfit,armorCommandoHelmet"/>
-				<property name="Create_item_count" value="1-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorCommandoBoots,armorCommandoGloves,armorCommandoOutfit,armorCommandoHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1909,8 +562,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorAssassinBoots,armorAssassinGloves,armorAssassinOutfit,armorAssassinHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorAssassinBoots,armorAssassinGloves,armorAssassinOutfit,armorAssassinHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 
@@ -1930,8 +583,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorMinerBoots,armorMinerGloves,armorMinerOutfit,armorMinerHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorMinerBoots,armorMinerGloves,armorMinerOutfit,armorMinerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1951,8 +604,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorNomadBoots,armorNomadGloves,armorNomadOutfit,armorNomadHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorNomadBoots,armorNomadGloves,armorNomadOutfit,armorNomadHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1972,8 +625,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorNerdBoots,armorNerdGloves,armorNerdOutfit,armorNerdHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorNerdBoots,armorNerdGloves,armorNerdOutfit,armorNerdHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -1993,8 +646,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,armorRaiderBoots,armorRaiderGloves,armorRaiderOutfit,armorRaiderHelmet"/>
-				<property name="Create_item_count" value="3-6,2,2,2,1-2,1-2,1-2,1-2"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRaiderBoots,armorRaiderGloves,armorRaiderOutfit,armorRaiderHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
 		
@@ -2037,8 +690,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeWpnSledgeT0StoneSledgehammer,meleeWpnClubT0WoodenClub,gunShotgunT0PipeShotgun,shotgunsSkillMagazine,sledgehammersSkillMagazine,clubsSkillMagazine,harvestingToolsSkillMagazine,ammoShotgunShell"/>
-				<property name="Create_item_count" value="5-6,5-6,5-6,5,5,5,5,15"/>
+				<property name="Create_item" value="meleeWpnSledgeT0StoneSledgehammer,meleeWpnClubT1BaseballBat,gunShotgunT0PipeShotgun,shotgunsSkillMagazine,sledgehammersSkillMagazine,clubsSkillMagazine,harvestingToolsSkillMagazine,ammoShotgunShell"/>
+				<property name="Create_item_count" value="5-6,1-2,5-6,5,5,5,5,15"/>
 			</property>
 		</item>
 
@@ -2079,8 +732,8 @@
 				<property name="Delay" value="0.5"/>
 				<property name="Use_time" value="1"/>
 				<property name="Sound_start" value="wrench_harvest"/>
-				<property name="Create_item" value="meleeWpnBladeT0BoneKnife,gunHandgunT0PipePistol,gunBowT0PrimitiveBow,handgunsSkillMagazine,bowsSkillMagazine,bladesSkillMagazine,ammo9mmBulletBall"/>
-				<property name="Create_item_count" value="5-6,5-6,5-6,5,5,5,30"/>
+				<property name="Create_item" value="meleeWpnBladeT1HuntingKnife,gunHandgunT0PipePistol,gunBowT0PrimitiveBow,handgunsSkillMagazine,bowsSkillMagazine,bladesSkillMagazine,ammo9mmBulletBall"/>
+				<property name="Create_item_count" value="1-2,5-6,5-6,10,10,10,100"/>
 			</property>
 		</item>
 

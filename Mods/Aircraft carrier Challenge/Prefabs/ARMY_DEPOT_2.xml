@@ -22,7 +22,7 @@
   <property name="SleeperIsQuestExclude" value="False,False" />
   <property name="SleeperVolumeFlags" value="0,0" />
   <property name="SleeperVolumeTriggeredBy" value=" # " />
-  <property name="ThemeTags" value="wildernesspoi, trader, traderJen" />
+  <property name="ThemeTags" value="trader, wildernesspoi, traderJen" />
   <property name="YOffset" value="-2" />
   <property class="IndexedBlockOffsets">
     <property class="TraderOnOff">

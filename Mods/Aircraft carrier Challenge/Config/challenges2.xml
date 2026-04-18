@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>
+	
+	<!-- Removing challenges via individual groups, since TFP doesn't want to implement Xpath wildcards -->
+
+	<remove xpath="/challenges/challenge_category[@name='Basics']"/>
+	<remove xpath="/challenges/challenge_category[@name='Advanced']"/>
+	<remove xpath="/challenges/challenge_category[@name='Biome Progression']"/>
+	<remove xpath="/challenges/challenge[@group='Basics']"/>
+	<remove xpath="/challenges/challenge[@group='Homesteading']"/>
+	<remove xpath="/challenges/challenge[@group='AdvancedSurvival']"/>
+	<remove xpath="/challenges/challenge[@group='Workstations']"/>
+	<remove xpath="/challenges/challenge[@group='Traders']"/>
+	<remove xpath="/challenges/challenge[@group='Harvesting']"/>
+	<remove xpath="/challenges/challenge[@group='Gatherer']"/>
+	<remove xpath="/challenges/challenge[@group='Farmer']"/>
+	<remove xpath="/challenges/challenge[@group='Healer']"/>
+	<remove xpath="/challenges/challenge[@group='Survivor']"/>
+	<remove xpath="/challenges/challenge[@group='Hunter']"/>
+	<remove xpath="/challenges/challenge[@group='Zombies']"/>
+	<remove xpath="/challenges/challenge[@group='Burnt Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Desert Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Snow Survival']"/>
+	<remove xpath="/challenges/challenge[@group='Wasteland Survival']"/>
+	<remove xpath="/challenges/challenge[@group='LearnTwitch']"/>
+	<remove xpath="/challenges/challenge[@group='Twitch']"/>
+	<remove xpath="/challenges/challenge[@group='Silly']"/>
+
+	<!-- ========================================
+	     CHALLENGE GROUPS 2
+	     ======================================== -->
+	
+	<!-- Group 1: Agility  -->
+	<challenge_group category="ACC High Seas 2" name="Agility" title_key="challengeGroupAgility"
+	                 reward_text_key="challengeGroupAgilityReward" reward_event="challenge_reward_Agility" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 2: Fortitude  -->
+	<challenge_group category="ACC High Seas 2" name="Fortitude" title_key="challengeGroupFortitude"
+	                 reward_text_key="challengeGroupFortitudeReward" reward_event="challenge_reward_Fortitude" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 3: Intellect  -->
+	<challenge_group category="ACC High Seas 2" name="Intellect" title_key="challengeGroupIntellect"
+	                 reward_text_key="challengeGroupIntellectReward" reward_event="challenge_reward_Intellect" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 4: Perception  -->
+	<challenge_group category="ACC High Seas 2" name="Perception" title_key="challengeGroupPerception"
+	                 reward_text_key="challengeGroupPerceptionReward" reward_event="challenge_reward_Perception" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 5: Perception  -->
+	<challenge_group category="ACC High Seas 2" name="Strength" title_key="challengeGroupStrength"
+                     reward_text_key="challengeGroupStrengthReward" reward_event="challenge_complete_Strength" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- ========================================
+	     AGILITY
+	     ======================================== -->
+
+	<challenge name="craftBow" title_key="challengeCraftBow" icon="ui_game_symbol_challenge_basics_craft_bow" group="Agility"
+			hint="challengeCraftBowHint1"
+			short_description_key="challengeCraftBowShort" description_key="challengeCraftBowDesc">
+		<objective type="Craft" item="gunBowT0PrimitiveBow"/>
+	</challenge>
+
+	<challenge name="killZombiesAGI50" title_key="Kill 50 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Agility"
+				   short_description_key="challengeKillZombiesAGI50Short" description_key="challengeKillZombiesAGI50Desc"
+				   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_AGI500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+	
+	<!-- ========================================
+	     FORTITUDE
+	     ======================================== -->
+	
+	<challenge name="killZombiesFOR50" title_key="Kill 50 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Fortitude"
+					   short_description_key="challengeKillZombiesFOR50Short" description_key="challengeKillZombiesFOR50Desc"
+					   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_FOR500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+	
+	<!-- ========================================
+	     INTELLECT
+	     ======================================== -->
+	
+	<challenge name="killZombiesINT50" title_key="Kill 50 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Intellect"
+					   short_description_key="challengeKillZombiesINT50Short" description_key="challengeKillZombiesINT50Desc"
+					   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_INT500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+	
+	<!-- ========================================
+	     PERCEPTION
+	     ======================================== -->
+	
+	<challenge name="killZombiesPER50" title_key="Kill 50 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Perception"
+					   short_description_key="challengeKillZombiesPER50Short" description_key="challengeKillZombiesPER50Desc"
+					   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_PER50O">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+	
+	<!-- ========================================
+	     STRENGTH
+	     ======================================== -->
+
+	<challenge name="craftWoodClub" title_key="challengeCraftWoodClub" icon="ui_game_symbol_challenge_basics_craft_club" group="Strength"
+			hint="challengeCraftWoodClubHint1"
+			short_description_key="challengeCraftWoodClubShort" description_key="challengeCraftWoodClubDesc">
+		<objective type="Craft" item="meleeWpnClubT0WoodenClub"/>
+	</challenge>
+	
+	<challenge name="killZombiesSTR50" title_key="Kill 50 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Strength"
+				   short_description_key="challengeKillZombiesSTR50Short" description_key="challengeKillZombiesSTR50Desc"
+				   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_STR500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+
+
+	<!-- ========================================
+	     CHALLENGE GROUPS 3
+	     ======================================== -->
+
+	<!-- Group 1: Athletic  -->
+	<challenge_group category="ACC High Seas 3" name="Athletic" title_key="challengeGroupAthletic"
+	                 reward_text_key="challengeGroupAthleticReward" reward_event="challenge_reward_Athletic" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 2: Assassin  -->
+	<challenge_group category="ACC High Seas 3" name="Assassin" title_key="challengeGroupAssassin"
+	                 reward_text_key="challengeGroupAssassinReward" reward_event="challenge_reward_Assassin" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 3: Biker  -->
+	<challenge_group category="ACC High Seas 3" name="Biker" title_key="challengeGroupBiker"
+	                 reward_text_key="challengeGroupBikerReward" reward_event="challenge_reward_Biker" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 4: Commando  -->
+	<challenge_group category="ACC High Seas 3" name="Commando" title_key="challengeGroupCommando"
+	                 reward_text_key="challengeGroupCommandoReward" reward_event="challenge_reward_Commando" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 5: Enforcer  -->
+	<challenge_group category="ACC High Seas 3" name="Enforcer" title_key="challengeGroupEnforcer"
+                     reward_text_key="challengeGroupEnforcerReward" reward_event="challenge_complete_Enforcer" link_challenges="true" hidden_by="Basics"/>
+	
+	<!-- Group 6: Nerd  -->
+	<challenge_group category="ACC High Seas 3" name="Nerd" title_key="challengeGroupNerd"
+                     reward_text_key="challengeGroupNerdReward" reward_event="challenge_complete_Nerd" link_challenges="true" hidden_by="Basics"/>
+	
+	<!-- ========================================
+	     Athletic
+	     ======================================== -->
+	
+
+
+	<!-- ========================================
+	     Assassin
+	     ======================================== -->
+	<challenge name="craftBow" title_key="challengeCraftBow" icon="ui_game_symbol_challenge_basics_craft_bow" group="Assassin"
+			hint="challengeCraftBowHint1"
+			short_description_key="challengeCraftBowShort" description_key="challengeCraftBowDesc">
+		<objective type="Craft" item="gunBowT0PrimitiveBow"/>
+	</challenge>
+
+	<!-- ========================================
+	     Biker
+	     ======================================== -->
+	<challenge name="craftWoodClub" title_key="challengeCraftWoodClub" icon="ui_game_symbol_challenge_basics_craft_club" group="Biker"
+			hint="challengeCraftWoodClubHint1"
+			short_description_key="challengeCraftWoodClubShort" description_key="challengeCraftWoodClubDesc">
+		<objective type="Craft" item="meleeWpnClubT0WoodenClub"/>
+	</challenge>
+
+	<!-- ========================================
+	     Commando
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Enforcer
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Nerd
+	     ======================================== -->
+	
+	
+	<!-- ========================================
+	     CHALLENGE GROUPS 4
+	     ======================================== -->
+
+	<!-- Group 1: Nomad  -->
+	<challenge_group category="ACC High Seas 4" name="Nomad" title_key="challengeGroupNomad"
+	                 reward_text_key="challengeGroupNomadReward" reward_event="challenge_reward_Nomad" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 2: Preacher  -->
+	<challenge_group category="ACC High Seas 4" name="Preacher" title_key="challengeGroupPreacher"
+	                 reward_text_key="challengeGroupPreacherReward" reward_event="challenge_reward_Preacher" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 3: Raider  -->
+	<challenge_group category="ACC High Seas 4" name="Raider" title_key="challengeGroupRaider"
+	                 reward_text_key="challengeGroupRaiderReward" reward_event="challenge_reward_Raider" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 4: Ranger -->
+	<challenge_group category="ACC High Seas 4" name="Ranger" title_key="challengeGroupRanger"
+	                 reward_text_key="challengeGroupRangerReward" reward_event="challenge_reward_Ranger" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 5: Rogue  -->
+	<challenge_group category="ACC High Seas 4" name="Rogue" title_key="challengeGroupRogue"
+                     reward_text_key="challengeGroupRogueReward" reward_event="challenge_complete_Rogue" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 6: Scavenger  -->
+	<challenge_group category="ACC High Seas 4" name="Scavenger" title_key="challengeGroupScavenger"
+                     reward_text_key="challengeGroupScavengerReward" reward_event="challenge_complete_Scavenger" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- ========================================
+	     Nomad
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Preacher
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Raider
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Ranger
+	     ======================================== -->
+
+
+	<!-- ========================================
+	     Rogue
+	     ======================================== -->
+
+	<!-- ========================================
+	     Scavenger
+	     ======================================== -
+</xml>

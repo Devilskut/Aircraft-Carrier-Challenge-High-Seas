@@ -59,13 +59,7 @@
 					<property name="message" value="tutorialTipQuest01"/>
 					<property name="delay" value="2"/>
 				</action>
-
-			   <objective type="EntityKill" value="10" phase="1">
-					<property name="target_tags" value="walker,feral,radiated,crawler" />
-				</objective>
-				
-				<reward type="SkillPoints" value="4" />
-				
+					
 				<objective type="GotoPOISDX, SCore" value="10-6000" phase="2">
 					<property name="PrefabName" value="Trader_Jen_2" />
 					<property name="nav_object" value="go_to_trader"/>
@@ -91,8 +85,7 @@
 
 				<!-- <reward type="SkillPoints" value="4" /> -->
 				
-				<reward type="Quest" id="quest_CarrierChallenge01" />
-				<reward type="Quest" id="quest_eliminatezombies10" />
+				<reward type="Quest" id="quest_CarrierChallenge01" />	
 			</quest> 
 	
 		<quest id="quest_CarrierChallenge01"> 
@@ -109,13 +102,14 @@
 
 			<action type="ShowMessageWindow">
 				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
-				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission. Should you fail this mission you may craft another by using [FFFF00]Dukes."/>
+				<property name="message" value="tutorialTipQuest04"/>
 				<property name="delay" value="2"/>
 			</action>
 			
 			<property name="completiontype" value="TurnIn"/>
 			<property name="completion_key" value="quest_fetch_completion"/>
-
+            <property name="reward_choices_count" value="5"/>    
+			
 			<action type="TrackQuest"/>
 
 			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
@@ -153,7 +147,7 @@
 
 			<reward type="Exp" value="5060"/>
 			<reward type="SkillPoints" value="2" />
-			<reward type="Quest" id="quest_CarrierChallenge04"/>
+			<reward type="Quest" id="quest_CarrierChallenge03"/>
 
 			<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
@@ -166,35 +160,7 @@
 			<reward type="LootItem" id="groupQuestT1MeleeMods" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestT1RangedMods" ischosen="true" value="2"/>
         </quest>
-		
-		<quest id="quest_CarrierChallenge04">
-			<property name="name_key" value="quest_CarrierChallenge04"/>
-			<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
-			<property name="description_key" value="quest_CarrierChallenge04_description"/>
-			<property name="icon" value="ui_game_symbol_gyrocopter"/>
-			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest"/>
-			<property name="offer_key" value="quest_CarrierChallenge04_offer"/>
-			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="true"/>
-
-			<action type="ShowMessageWindow">
-				<property name="title" value="[FFFF00] MultiPlayer [-]"/>
-				<property name="message" value="ONLY [FFFF00]ONE PLAYER [-]HAS TO COMPLETE THE [FFFF00]UH-60 CRAFTING QUESTS.[-]"/>
-				<property name="delay" value="2"/>
-			</action>
-
-			<action type="TrackQuest"/>
-
-			<objective type="FetchKeep" id="resourceForgedSteel" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
-			<objective type="FetchKeep" id="resourceLeather" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceElectricParts" value="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="10" phase="1"/>
-
-			<reward type="Exp" value="5000"/>
-			<reward type="Quest" id="quest_CarrierChallenge03"/>
-		</quest>
+			
 		<quest id="quest_CarrierChallenge03">
 			<property name="name_key" value="quest_CarrierChallenge03"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge03_subtitle"/>
@@ -210,10 +176,10 @@
 
 			<action type="ShowMessageWindow">
 				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
-				<property name="message" value="If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission.Should you fail this mission you may craft another by using [FFFF00]Dukes."/>
+				<property name="message" value="tutorialTipQuest05"/>
 				<property name="delay" value="2"/>
 			</action>
-
+				
 			<property name="login_rally_reset" value="true"/>
 	
 			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
@@ -243,78 +209,15 @@
 				<property name="phase" value="4"/>
 			</action>
 
-			<objective type="InteractWithNPC">
-				<property name="phase" value="4"/>
-				<property name="nav_object" value="return_to_trader"/>
-			</objective>
-
 			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="questRewardGyrocopterPartsBundle" />
 			<reward type="SkillPoints" value="4" />
-			<reward type="Quest" id="quest_CarrierChallenge05">
+			<reward type="Quest" id="quest_CarrierChallengeDestroyer">
 			</reward>
-			
-			<reward type="LootItem" id="questRewardUH60PartsBundle" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestAmmoCraftingBundle" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestWoodShapes" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestWrench" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestT1Traps" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestT1MeleeMods" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestT1RangedMods" ischosen="true" value="2"/>
-			
+		
 		</quest>
 		
-		<quest id="quest_CarrierChallenge05">
-			<property name="name_key" value="quest_CarrierChallenge05"/>
-			<property name="subtitle_key" value="quest_CarrierChallenge05_subtitle"/>
-			<property name="description_key" value="quest_CarrierChallenge05_description"/>
-			<property name="icon" value="ui_game_symbol_gyrocopter"/>
-			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest" />
-			<property name="offer_key" value="quest_CarrierChallenge05_offer" />
-			<property name="difficulty" value="medium" />
-			<property name="shareable" value="true"/>
-
-			<objective type="FetchKeep" id="resourceSpring" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceForgedSteel" value="350" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceDuctTape" value="40" phase="1"/>
-			<objective type="FetchKeep" id="resourceMetalPipe" value="50" phase="1"/>
-
-			<reward type="Exp" value="5000"/>
-			<reward type="Quest" id="quest_CarrierChallenge06">
-			</reward>
-		</quest>
-
-		<quest id="quest_CarrierChallenge06">
-			<property name="name_key" value="quest_CarrierChallenge06"/>
-			<property name="subtitle_key" value="quest_CarrierChallenge06"/>
-			<property name="description_key" value="quest_CarrierChallenge06_description"/>
-			<property name="icon" value="ui_game_symbol_gyrocopter"/>
-			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest"/>
-			<property name="offer_key" value="quest_CarrierChallenge06_offer"/>
-			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="false"/>
-
-			<action type="TrackQuest"/>
-			<objective type="FetchKeep" id="vehicleUH60chassis" value="1" phase="1"/>
-			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
-			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
-			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
-			<objective type="FetchKeep" id="vehicleUH60accessories" value="1" phase="1"/>
-
-			<objective type="FetchKeep" id="vehicleUH60placeable" value="1" phase="2"/>
-			
-
-			<reward type="Exp" value="5000"/>
-			<reward type="Quest" id="quest_CarrierChallengeDestroyer"/>
-		</quest>
-
-		<!-- Clear and restore power at the destroyer POI -->
+		<!-- Restore power at the Destroyer POI -->
 	
 		<quest id="quest_CarrierChallengeDestroyer">
 				<property name="name_key" value="quest_CarrierChallengeDestroyer"/>
@@ -328,14 +231,13 @@
 
 			<action type="ShowMessageWindow">
 				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
-				<property name="message" value="[FFFF00]STORAGE BOXES[-] will disappear on the [FFFF00]DESTROYER [-]once the mission is started, However items in the [FFFF00]UH-60 ARE SAFE[-] and will not disappear."/>
+				<property name="message" value="tutorialTipQuest03"/>
 				<property name="delay" value="2"/>
 			</action>
-
 				<property name="login_rally_reset" value="true"/>
-			
+		
 				<action type="TrackQuest"/>
-
+			
 				<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
 					<property name="completion_distance" value="50" />
 					<property name="phase" value="1" />
@@ -348,10 +250,6 @@
 					<property name="allowed_start_hour" value="22"/>
 					<property name="allowed_end_hour" value="4"/>
 					<property name="rally_marker_type" value="questRallyMarkerRestorePower"/>
-				</objective>
-				<objective type="ClearSleepers">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="sleeper_volume"/>
 				</objective>
 				<objective type="POIBlockActivate" >
 					<property name="phase" value="3"/>
@@ -366,7 +264,6 @@
 				<action type="UnlockPOI" >
 					<property name="phase" value="4"/>	
 				</action>	
-
 				<reward type="Exp" value="500"/>
 				<reward type="Quest" id="quest_CarrierChallengeDestroyer2">
 				</reward>
@@ -388,14 +285,13 @@
 
 		<action type="ShowMessageWindow">
 			<property name="title" value="[FFFF00]TRADER[-]"/>
-			<property name="message" value="Our [FFFF00]TRADER[-] has come under [FF0000]ASSAULT[-]! I have never seen so many zombies! Let's grab some more [FFFF00]AMMO AND PROVISIONS[-] and get this bird [FF0000]IN THE AIR![-] "/>
+			<property name="message" value="tutorialTipQuest02"/>
 			<property name="delay" value="2"/>
 		</action>
-		
 		<property name="login_rally_reset" value="true"/>
 
 		<action type="TrackQuest"/>
-
+		  
 		<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
 			<property name="completion_distance" value="50" />
 			<property name="phase" value="1" />
@@ -430,7 +326,7 @@
 			<property name="phase" value="4"/>
 		</action>
 		
-	     <objective type="Goto" id="trader" value="1" phase="4">
+     <objective type="Goto" id="trader" value="1" phase="4">
 			<property name="biome_filter_type" value="any"/>
 			<property name="Zoning" value="any"/>
 			<property name="nav_object" value="go_to_trader"/>
@@ -466,170 +362,6 @@
 
 
 <!-- END Aircraft Carrier Challenge main quest line -->
-
-<!-- BEGIN chained zombies kill repeatable quest line -->
-
-		<quest id="quest_eliminatezombies10">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="10 Zombies" />
-			<property name="subtitle_key" value="10 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="10" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Item" id="casinoCoin" value="20"/>
-			<reward type="Quest" id="quest_eliminatezombies15">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies15">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="15 Zombies" />
-			<property name="subtitle_key" value="15 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="15" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Exp" value="1500"/>
-			<reward type="Quest" id="quest_eliminatezombies25">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies25">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="25 Zombies" />
-			<property name="subtitle_key" value="25 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="25" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Exp" value="2500"/>
-			<reward type="Quest" id="quest_eliminatezombies50">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies50">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="50 Zombies" />
-			<property name="subtitle_key" value="50 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="50" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Exp" value="5000"/>
-			<reward type="Quest" id="quest_eliminatezombies75">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies75">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="75 Zombies" />
-			<property name="subtitle_key" value="75 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="75" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Exp" value="7500"/>
-			<reward type="Quest" id="quest_eliminatezombies125">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies125">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="125 Zombies" />
-			<property name="subtitle_key" value="125 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="125" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="Exp" value="12500"/>
-			<reward type="Quest" id="quest_eliminatezombies200">
-				<property name="chainquest" value="false"/>
-			</reward>
-
-		</quest>
-
-		<quest id="quest_eliminatezombies200">
-
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="name_key" value="200 Zombies" />
-			<property name="subtitle_key" value="200 Zombies" />
-			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 2500 XP, 50 for 5000 XP, 75 for 750O XP, 125 for 12500 XP, and 200 for 2 Skill Points and M-60 Machine Gun. This Quest repeats in an endless loop." />
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="Quest"/>
-			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
-
-			<objective type="EntityKill" value="200" phase="1">
-				<property name="target_tags" value="entity,zombie,walker,feral,radiated,charged,crawler" />
-			</objective>
-
-			<reward type="SkillPoints" value="2" chainreward="false"/>
-			<reward type="Item" id="gunMGT3M60" value="3-6"/>
-
-			<reward type="Quest" id="quest_eliminatezombies10">
-				<property name="chainquest" value="false"/>
-			</reward>
-		</quest>
 
 	</append>
 

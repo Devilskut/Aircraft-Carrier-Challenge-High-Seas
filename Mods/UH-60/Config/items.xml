@@ -37,9 +37,9 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
 			</effect_group>
 		</item>
-		<item name="questRewardUH60PartsBundle">
+	<!--	<item name="questRewardUH60PartsBundle">
 			<property name="Extends" value="questRewardBundleMaster"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="player"/>
 			<property name="CustomIcon" value="bundleVehicleGyro"/>
 			<property name="CustomIconTint" value="FFFFFF"/>
 			<property name="ItemTypeIcon" value="bundle"/>
@@ -49,9 +49,7 @@
 				<property name="Create_item_count" value="3,3,1"/>
 				<property name="Random_item" value="vehicleUH60chassis,vehicleUH60accessories"/>
 				<property name="Random_item_count" value="1,1"/>
-				<property name="Random_count" value="1"/>
-				<property name="Unique_random_only" value="true"/>
 			</property>
-		</item>
+		</item> -->
 	</append>
 </configs>

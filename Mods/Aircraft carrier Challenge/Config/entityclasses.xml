@@ -1,51 +1,51 @@
 <configs>
 	
 	<set xpath="//entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame')]/@value">Backpack</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">600</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">60</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">36</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">63</set>
 
 <!-- ZOMBIE_ARLENE ex. Regular, Feral, Radiated !-->
 	<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
 		<property name="LootListOnDeath" value="zombieArlene"/>
-		<property name="DeadBodyHitPoints" value="1000"/> 
+		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".25"/>        
 	</append>
 	<append xpath="/entity_classes/entity_class[@name='zombieArleneFeral']">
 		<property name="LootListOnDeath" value="zombieArleneFeral"/>
-		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>	        		
+		<property name="CorpseBlockChance" value=".25"/>	        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']">
 		<property name="LootListOnDeath" value="zombieArleneRadiated"/>
-		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".25"/>        
 	</append>
 
 <!-- ZOMBIE_MARLENE ex. Regular, Feral, Radiated !-->
 	<append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
 		<property name="LootListOnDeath" value="zombieMarlene"/>
-		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".25"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']">
 		<property name="LootListOnDeath" value="zombieMarleneFeral"/>
-		<property name="DeadBodyHitPoints" value="1000"/> 
+		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".25"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']">
 		<property name="LootListOnDeath" value="zombieMarleneRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".25"/>
 	</append>
 	
 <!-- ZOMBIE_PARTY_GIRL ex. Regular, Feral, Radiated !-->
@@ -53,21 +53,21 @@
 		<property name="LootListOnDeath" value="zombiePartyGirl"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".25"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']">
 		<property name="LootListOnDeath" value="zombiePartyGirlFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
 		<property name="LootListOnDeath" value="zombiePartyGirlRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>		
+		<property name="CorpseBlockChance" value=".2"/>		
 	</append>
 	
 <!-- ZOMBIE_NURSE ex. Regular, Feral, Radiated !-->
@@ -75,21 +75,21 @@
 		<property name="LootListOnDeath" value="zombieNurse"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieNurseFeral']">
 		<property name="LootListOnDeath" value="zombieNurseFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']">
 		<property name="LootListOnDeath" value="zombieNurseRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 <!-- ZOMBIE_JOE ex. Regular, Feral, Radiated !-->
@@ -97,21 +97,21 @@
 		<property name="LootListOnDeath" value="zombieJoe"/>
 		<property name="DeadBodyHitPoints" value="1000"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       		
+		<property name="CorpseBlockChance" value=".2"/>       		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieJoeFeral']">
 		<property name="LootListOnDeath" value="zombieJoeFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']">
 		<property name="LootListOnDeath" value="zombieJoeRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_STEVE ex. Regular, Feral, Radiated !-->
@@ -119,21 +119,21 @@
 		<property name="LootListOnDeath" value="zombieSteve"/>
 		<property name="DeadBodyHitPoints" value="1000"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>  		
+		<property name="CorpseBlockChance" value=".2"/>  		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSteveFeral']">
 		<property name="LootListOnDeath" value="zombieSteveFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']">
 		<property name="LootListOnDeath" value="zombieSteveRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>  
+		<property name="CorpseBlockChance" value=".2"/>  
 	</append>
 	
 <!-- ZOMBIE_TOM_CLARK ex. Regular, Feral, Radiated!-->
@@ -141,21 +141,21 @@
 		<property name="LootListOnDeath" value="zombieTomClark"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']">
 		<property name="LootListOnDeath" value="zombieTomClarkFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']">
 		<property name="LootListOnDeath" value="zombieTomClarkRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 <!-- ZOMBIE_BUSINESSMAN ex. Regular, Feral, Radiated !-->
@@ -163,21 +163,21 @@
 		<property name="LootListOnDeath" value="zombieBusinessMan"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>     		
+		<property name="CorpseBlockChance" value=".2"/>     		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']">
 		<property name="LootListOnDeath" value="zombieBusinessManFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']">
 		<property name="LootListOnDeath" value="zombieBusinessManRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 <!-- ZOMBIE_BURNT ex. Regular, Feral, Radiated!-->
@@ -185,21 +185,21 @@
 		<property name="LootListOnDeath" value="zombieBurnt"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']">
 		<property name="LootListOnDeath" value="zombieBurntFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']">
 		<property name="LootListOnDeath" value="zombieBurntRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_SPIDER ex. Regular, Feral, Radiated !-->
@@ -207,21 +207,21 @@
 		<property name="LootListOnDeath" value="zombieSpider"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']">
 		<property name="LootListOnDeath" value="zombieSpiderFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']">
 		<property name="LootListOnDeath" value="zombieSpiderRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_BOE ex. Regular, Feral, Radiated !-->
@@ -229,21 +229,21 @@
 		<property name="LootListOnDeath" value="zombieBoe"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBoeFeral']">
 		<property name="LootListOnDeath" value="zombieBoeFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
    	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']">
 		<property name="LootListOnDeath" value="zombieBoeRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       		
+		<property name="CorpseBlockChance" value=".2"/>       		
 	</append>
 	
 <!-- ZOMBIE_HAZMAT ex. Regular, Feral, Radiated !-->
@@ -251,21 +251,21 @@
 		<property name="LootListOnDeath" value="zombieMaleHazmat"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
 		<property name="LootListOnDeath" value="zombieMaleHazmatFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       		
+		<property name="CorpseBlockChance" value=".2"/>       		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
 		<property name="LootListOnDeath" value="zombieMaleHazmatRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 <!-- ZOMBIE_JANITOR ex. Regular, Feral, Radiated !-->
@@ -273,21 +273,21 @@
 		<property name="LootListOnDeath" value="zombieJanitor"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       		
+		<property name="CorpseBlockChance" value=".2"/>       		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']">
 		<property name="LootListOnDeath" value="zombieJanitorFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']">
 		<property name="LootListOnDeath" value="zombieJanitorRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 <!-- ZOMBIE_INMATE ex. Regular, Feral, Radiated !-->
@@ -295,21 +295,21 @@
 		<property name="LootListOnDeath" value="zombieInmate"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieInmateFeral']">
 		<property name="LootListOnDeath" value="zombieInmateFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']">
 		<property name="LootListOnDeath" value="zombieInmateRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_MOE ex. Regular, Feral, Radiated !-->
@@ -317,21 +317,21 @@
 		<property name="LootListOnDeath" value="zombieMoe"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMoeFeral']">
 		<property name="LootListOnDeath" value="zombieMoeFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']">
 		<property name="LootListOnDeath" value="zombieMoeRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 <!-- ZOMBIE_LAB ex. Regular, Feral, Radiated !-->
@@ -339,21 +339,21 @@
 		<property name="LootListOnDeath" value="zombieLab"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieLabFeral']">
 		<property name="LootListOnDeath" value="zombieLabFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieLabRadiated']">
 		<property name="LootListOnDeath" value="zombieLabRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>	    
+		<property name="CorpseBlockChance" value=".2"/>	    
 	</append>
 	
 <!-- ZOMBIE_DARLENE ex. Regular, Feral, Radiated !-->
@@ -361,21 +361,21 @@
 		<property name="LootListOnDeath" value="zombieDarlene"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']">
 		<property name="LootListOnDeath" value="zombieDarleneFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>    
+		<property name="CorpseBlockChance" value=".2"/>    
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']">
 		<property name="LootListOnDeath" value="zombieDarleneRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 <!-- ZOMBIE_YO ex. Regular, Feral, Radiated !-->
@@ -383,21 +383,21 @@
 		<property name="LootListOnDeath" value="zombieYo"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieYoFeral']">
 		<property name="LootListOnDeath" value="zombieYoFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieYoRadiated']">
 		<property name="LootListOnDeath" value="zombieYoRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 <!-- ZOMBIE_UTILITY_WORKER ex. Regular, Feral, Radiated !-->
@@ -405,21 +405,21 @@
 		<property name="LootListOnDeath" value="zombieUtilityWorker"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
 		<property name="LootListOnDeath" value="zombieUtilityWorker"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
 		<property name="LootListOnDeath" value="zombieUtilityWorkerRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 <!-- ZOMBIE_BIKER ex. Regular, Feral, Radiated !-->
@@ -427,21 +427,21 @@
 		<property name="LootListOnDeath" value="zombieBiker"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBikerFeral']">
 		<property name="LootListOnDeath" value="zombieBikerFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']">
 		<property name="LootListOnDeath" value="zombieBikerRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        	
+		<property name="CorpseBlockChance" value=".2"/>        	
 	</append>
 	
 <!-- ZOMBIE_LUMBERJACK ex. Regular, Feral, Radiated !-->
@@ -449,21 +449,21 @@
 		<property name="LootListOnDeath" value="zombieLumberjack"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']">
 		<property name="LootListOnDeath" value="zombieLumberjackFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']">
 		<property name="LootListOnDeath" value="zombieLumberjackRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>      
+		<property name="CorpseBlockChance" value=".2"/>      
 	</append>
 	
 <!-- ZOMBIE_FEMALE_FAT ex. Regular, Feral, Radiated !-->
@@ -471,21 +471,21 @@
 		<property name="LootListOnDeath" value="zombieFemaleFat"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>      	
+		<property name="CorpseBlockChance" value=".2"/>      	
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']">
 		<property name="LootListOnDeath" value="zombieFemaleFatFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
 		<property name="LootListOnDeath" value="zombieFemaleFatRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 <!-- ZOMBIE_FAT_HAWAIIAN ex. Regular, Feral, Radiated !-->
@@ -493,21 +493,21 @@
 		<property name="LootListOnDeath" value="zombieFatHawaiian"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
 		<property name="LootListOnDeath" value="zombieFatHawaiianFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
 		<property name="LootListOnDeath" value="zombieFatHawaiianRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 <!-- ZOMBIE_BOWLER ex. Regular, Feral, Radiated !-->
@@ -515,21 +515,21 @@
 		<property name="LootListOnDeath" value="zombieBowler"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>    
+		<property name="CorpseBlockChance" value=".2"/>    
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']">
 		<property name="LootListOnDeath" value="zombieBowlerFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']">
 		<property name="LootListOnDeath" value="zombieBowlerRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_FAT_COP ex. Regular, Feral, Radiated !-->
@@ -537,21 +537,21 @@
 		<property name="LootListOnDeath" value="zombieFatCop"/>
 		<property name="DeadBodyHitPoints" value="1000"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']">
 		<property name="LootListOnDeath" value="zombieFatCopFeral"/>
 		<property name="DeadBodyHitPoints" value="1000"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']">
 		<property name="LootListOnDeath" value="zombieFatCopRadiated"/>
 		<property name="DeadBodyHitPoints" value="1000"/>
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>        		
+		<property name="CorpseBlockChance" value=".2"/>        		
 	</append>
 	
 <!-- ZOMBIE_SKATEBOARDER ex. Regular, Feral, Radiated !-->
@@ -559,21 +559,21 @@
 		<property name="LootListOnDeath" value="zombieSkateboarder"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']">
 		<property name="LootListOnDeath" value="zombieSkateboarderFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
 		<property name="LootListOnDeath" value="zombieSkateboarderRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 <!-- ZOMBIE_SOLDIER ex. Regular, Feral, Radiated !-->
@@ -581,21 +581,21 @@
 		<property name="LootListOnDeath" value="zombieSoldier"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse1"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']">
 		<property name="LootListOnDeath" value="zombieSoldierFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>        
+		<property name="CorpseBlockChance" value=".2"/>        
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']">
 		<property name="LootListOnDeath" value="zombieSoldierRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse2"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 <!-- ZOMBIE_WIGHT_FERAL ex. Regular, Feral, Radiated !-->
@@ -603,14 +603,14 @@
 		<property name="LootListOnDeath" value="zombieWightFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
 		<property name="LootListOnDeath" value="zombieWightRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>   	
+		<property name="CorpseBlockChance" value=".2"/>   	
 	</append>
 	
 <!-- ZOMBIE_SCREAMER ex. Regular, Feral, Radiated !-->
@@ -618,21 +618,21 @@
 		<property name="LootListOnDeath" value="zombieScreamer"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>       		
+		<property name="CorpseBlockChance" value=".2"/>       		
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']">
 		<property name="LootListOnDeath" value="zombieScreamerFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>     
+		<property name="CorpseBlockChance" value=".2"/>     
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']">
 		<property name="LootListOnDeath" value="zombieScreamerRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
-		<property name="CorpseBlockChance" value=".5"/>   
+		<property name="CorpseBlockChance" value=".2"/>   
 	</append>
 	
 <!-- ZOMBIE_MUTATED ex. Regular, Feral, Radiated !-->
@@ -640,21 +640,21 @@
 		<property name="LootListOnDeath" value="zombieMutated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']">
 		<property name="LootListOnDeath" value="zombieMutatedFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']">
 		<property name="LootListOnDeath" value="zombieMutatedRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>		
+		<property name="CorpseBlockChance" value=".2"/>		
 	</append>
 	
 <!-- ZOMBIE_DEMOLITION ex. Regular, Feral, Radiated !-->
@@ -662,7 +662,7 @@
 		<property name="LootListOnDeath" value="zombieDemolition"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
-		<property name="CorpseBlockChance" value=".5"/>	
+		<property name="CorpseBlockChance" value=".2"/>	
 	</append>
 	
 <!-- ZOMBIE_CRAWLER ex. Regular, Feral, Radiated !-->
@@ -670,14 +670,14 @@
 		<property name="LootListOnDeath" value="zombieSteveCrawler"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>       
+		<property name="CorpseBlockChance" value=".2"/>       
 	</append>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
 		<property name="LootListOnDeath" value="zombieSteveCrawlerFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/> 
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>    		
+		<property name="CorpseBlockChance" value=".2"/>    		
 	</append>
 
 	<!-- ZOMBIE_CHUCK ex. Regular, Feral, Radiated !-->
@@ -685,21 +685,21 @@
 		<property name="LootListOnDeath" value="zombieChuck"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 	<append xpath="/entity_classes/entity_class[@name='zombieChuckFeral']">
 		<property name="LootListOnDeath" value="zombieChuckFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 	<append xpath="/entity_classes/entity_class[@name='zombieChuckRadiated']">
 		<property name="LootListOnDeath" value="zombieChuckRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 	<!-- ZOMBIE_RANCHER ex. Regular, Feral, Radiated !-->
@@ -707,21 +707,21 @@
 		<property name="LootListOnDeath" value="zombieChuck"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 	<append xpath="/entity_classes/entity_class[@name='zombieRancherFeral']">
 		<property name="LootListOnDeath" value="zombieChuckFeral"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 	<append xpath="/entity_classes/entity_class[@name='zombieRancherRadiated']">
 		<property name="LootListOnDeath" value="zombieChuckRadiated"/>
 		<property name="DeadBodyHitPoints" value="500"/>
 		<property name="CorpseBlock" value="goreHumanSkull"/>
-		<property name="CorpseBlockChance" value=".5"/>
+		<property name="CorpseBlockChance" value=".2"/>
 	</append>
 
 

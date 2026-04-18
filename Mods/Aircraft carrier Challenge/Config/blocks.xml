@@ -96,7 +96,7 @@
     <insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
 
 	<remove xpath="//block[@name='cntDewCollector']/drop[@event='Harvest']"></remove>
 

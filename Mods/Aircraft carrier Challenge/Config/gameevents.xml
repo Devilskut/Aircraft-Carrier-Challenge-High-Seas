@@ -204,4 +204,44 @@
 			 </action>
 		 </action_sequence>
 	 </insertBefore>
+
+	 <append xpath="/gameevents">
+
+		 <action_sequence name="ACCStarting">
+			 <property name="action_type" value="Game" />
+ 
+            <action class="AddItems">
+                <property name="added_items" value="Armor,SkillMagazine10" />
+                <property name="added_item_counts" value="1,1" />
+            </action>
+			 <action class="AddSkillPoints">
+				 <property name="skill_points" value="4" />
+			 </action>
+		 </action_sequence>
+		 
+	     <action_sequence name="ACCEnding">
+		 
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+
+			 <action class="Delay">
+				 <property name="time" value="5" />
+			 </action>
+		         <action class="AddQuest">
+			     <property name="phase" value="1" />
+			     <property name="quest" value="Completion" />
+		     </action>
+	     </action_sequence>
+	 </append>
+	 
+	 <append xpath="/gameevents/action_sequence[@name='challenge_reward_5000']">
+		 <action class="AddSkillPoints">
+			 <property name="skill_points" value="2" />
+		 </action>
+		 <action class="AddItems">
+			 <property name="added_items" value="gunMGT3M60" />
+			 <property name="added_item_counts" value="5-6" />
+		 </action>
+		 </append>
+	     
 	 </configs> 

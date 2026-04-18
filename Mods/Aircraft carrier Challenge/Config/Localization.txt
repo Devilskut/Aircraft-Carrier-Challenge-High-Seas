@@ -54,7 +54,11 @@ Mission_1_Army DepotDesc, "Did you run to far away or die trying?"
 
 Mission_2_Bridge suppliesDesc, "Did you run to far away or die trying?"
 
+Mission_3_DD_62 suppliesDesc, "Did you run to far away or die trying?"
+
 adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
+
+adminSkillMagazine2Desc,"Learn 10 Crafting Skills for weapons, tools and armor instantly!\n\nYou can now craft T1 weapons and tools."
 
 resourcePaper,"Classified Document" 
 resourcePaperDesc,"EAM\n FROM: USLANTFLT\n TO: USS SAN PAULO\n MESSAGE AS FOLLOWS:\n Movement to G.S. ATL-001 to acquire TP for bunghole (and other ""supplies"")"
@@ -107,6 +111,8 @@ vehiclesT3,Tier 3: Gas Cans
 vehiclesT4,Tier 4: Acid
 vehiclesT5,Tier 5: Flight
 
+
+questRewardGyrocopterPartsBundle,UH-60 Parts Bundle
 meleeWpnBladeT1HuntingKnife,Prison shank
 meleeWpnBladeT3Machete,Devils' Blade
 gunBowT0PrimitiveBow,Techie's Silent Sentinel
@@ -311,21 +317,157 @@ zombieMutatedRadiated,HamandLiz Radiated
 zombieMutatedCharged,Charged HamandLiz
 zombieMutatedInfernal,Infernal HamandLiz
 
+# ============================================================
+# CHALLENGES - GROUPS
+# ============================================================
 
-loadingTipAircraft1_title,Seeds asshole
-loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO useable farm plots in the ship ..."
+challengeGroupBasics,Start Mission
+challengeGroupBasicsReward,Find Trader
 
-loadingTipAircraft2_title,Zombie Loot
-loadingTipAircraft2,"All zombies will be loot able and have a chance to drop specific loot."
+challengeGroupKill,Kill some Zed heads!
+challengeGroupKillReward,Rewards XP
+
+challengeGroupGatherer,Gather Parts ,Find materials to build an UH-60
+challengeGroupGathererReward,Rewards XP
+
+challengeGroupGatherer2,Gather more Parts, Find materials to build an UH-60
+challengeGroupGatherer2Reward,Rewards XP
+
+challengeGroupEscape,Craft UH-60 and find TRADERS
+challengeGroupEscapeReward,Rewards XP
+
+
+# ============================================================
+# CHALLENGES - INDIVIDUAL
+# ============================================================
+
+# --- Start Mission ---
+challengeKillZombiesACC10Short,10 zombies
+challengeKillZombiesACC10Desc,"Kill 10 Zombies and find the Trader.\n\nThe trader is located in medical on Deck 10, just below the Mess Hall .\n\nThe Traders have rewards and missions for you to complete the Aircraft Carrier Challenge."
+
+# --- Kill some Zed heads! ---
+challengeKillZombiesACC100Short,100 zombies
+challengeKillZombiesACC100Desc,"Kill 100 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages the earn a M60 machine gun."
+
+challengeKillZombiesACC200Short,200 zombies
+challengeKillZombiesACC200Desc,"Kill 200 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages the earn a M60 machine gun."
+
+challengeKillZombiesACC300Short,300 zombies
+challengeKillZombiesACC300Desc,"Kill 300 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages the earn a M60 machine gun."
+
+challengeKillZombiesACC400Short,400 zombies
+challengeKillZombiesACC400Desc,"Kill 400 Zombies. \n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages the earn a M60 machine gun."
+
+challengeKillZombiesACC500Short,500 zombies
+challengeKillZombiesACC500Desc,"Kill 500 Zombies for a M60  Machine gun."
+
+challengeKillZombiesACC1000Short,1000 zombies
+challengeKillZombiesACC1000Desc,"Kill 1000 Zombies.\n\nNow you're just showing off!"
+
+# --- Gather Steel ---
+challengeGatherSteelShort,Collect 200 forged steel
+challengeGatherSteelDesc,"Gather or Forge 200 forged steel.\n\nForging Requires a crucible that unlocks with 50/50 workbench magazine."
+challengeGatherSteelHint,Gather or forge this item
+
+# --- Gather Springs  ---
+challengeGatherSpringsShort,Collect 50 Springs
+challengeGatherSpringsDesc,"Find 50 Springs"
+challengeGatherSpringsHint,Wrench vehicles and machinery
+
+# --- Gather Mechanical Parts ---
+challengeGatherMechanicalPartsShort,Collect 60 mechanical parts
+challengeGatherMechanicalPartsDesc,"Find 60 mechanical parts."
+challengeGatherMechanicalPartsHint,Wrench office chairs and tool boxes
+
+# --- Gather Electrical Parts ---
+challengeGatherElectricalPartsShort,Collect 40 electrical parts
+challengeGatherElectricalPartsDesc,"Find 40 electrical parts."
+challengeGatherElectricalPartsHint,Wrench electronics and computers
+
+# --- Gather Leather ---
+challengeGatherLeatherShort,Collect 50 Leather
+challengeGatherLeatherDesc,"Find 50 Leather."
+challengeGatherLeatherHint,Wrench or scrap Office chairs
+
+# --- Gather Duct Tape ---
+challengeGatherDuctTapeShort,Collect 40 Duct Tape
+challengeGatherDuctTapeDesc,"Find or craft 40 Duct Tape."
+challengeGatherDuctTapeHint,Loot or craft
+
+# --- Gather Headlights ---
+challengeGatherHeadlightsShort,Collect 10 Headlights
+challengeGatherHeadlightsDesc,"Find 10 Headlights."
+challengeGatherHeadlightsHint,Wrench vehicles, projectors or loot  
+
+# --- Gather Metal Pipes ---
+challengeGatherMetalPipesShort,Collect 50 Metal Pipes
+challengeGatherMetalPipesDesc, "Find or craft 50 Metal Pipes."
+challengeGatherMetalPipesHint,Wrench vehicles, plumbing or pipes
+
+# --- Gather Crucible ---
+challengeGatherCrucibleShort,Find or craft crucible
+challengeGatherCrucibleDesc,Find or craft crucible.\n\nThe crucible unlocks with 50/50 workbench magazines and is rarely found in loot.\n\nCompleting the bridge mission will give you a chance to obtain this item.
+challengeGatherCrucibleHint,Find or craft this item
+
+# --- Gather Wheels ---
+challengeGathervehicleWheelsShort,Collect 3 Wheels
+challengeGathervehicleWheelsDesc,"Find or craft 3 wheels for the UH-60"
+challengeGathervehicleWheelsHint,Loot or craft wheels
+
+# --- Gather Engines ---
+challengeGathersmallEngineShort,Collect 2 Engines
+challengeGathersmallEngineDesc,"Find 2 Engines for the UH-60"
+challengeGathersmallEngineHint,Wrench vehicles or engines
+
+# --- Gather Batteries ---
+challengeGatherBatteriesShort,Collect 2 batteries
+challengeGatherBatteriesDesc,"Find 2 batteries for the UH-60"
+challengeGatherBatteriesHint,Wrench vehicles or check battery banks
+
+# --- Craft UH-60 Accessories ---
+challengeGatherUH-60AccessoriesShort,Craft UH-60 Accessories
+challengeGatherUH-60AccessoriesDesc,"Use parts collected to craft UH-60 Accessories.\n\nRequires skill 50/50 in vehicle magazines to craft."
+challengeGatherUH-60AccessoriesHint,Craft UH-60 Accessories
+
+# --- Craft UH-60 Chassis  ---
+challengeGatherUH-60ChassisShort,Craft UH-60 Chassis
+challengeGatherUH-60ChassisDesc,"Use parts collected to craft UH-60 Chassis.\n\nRequires skill 50/50 in vehicle magazines to craft."
+challengeGatherUH-60ChassisHint,Craft UH-60 Chassis
+# --- Craft UH-60  ---
+challengeGatherUH-60Short,Craft UH-60
+challengeGatherUH-60Desc,"Use parts collected to craft UH-60.\n\nRequires skill 50/50 in vehicle magazines to craft.\n\nDont forget to gas it up."
+challengeGatherUH-60Hint,Craft UH-60
+
+# --- Trader Jen ---
+challengeMeetJenShort,Meet Trader Dawnrox
+challengeMeetJenDesc," You can find Trader Dawnrox in the makeshift sickbay at Jen's clinic. She is friendlier than Trader Rekt and deals mostly in Medical supplies."
+
+# --- Trader Hugh ---
+challengeMeetHughShort,Meet Trader Hugh
+challengeMeetHughDesc,"Trader Hugh is a grizzled veteran holed up in his Army Surplus Store in the front of the ship. Hugh Got It. He's the guy to talk to for Weapons and Ammunitions from his personal reserve."
+
+# --- Trader Joel ---
+challengeMeetJoelShort,Meet Trader Shadow_Floodlight
+challengeMeetJoelDesc,"Track down Trader Shadow_Floodlight at his heavily fortified Hunter's Camp. Try and not bring any of those zed heads with you."
+
+challenge_reward_5000xp,5000 XP + M60
+challenge_reward_ACCEnding,??
+challenge_ACCStarting_500xp,+4 SP Armor and +10 Magazine Skill
+
+loadingTipAircraft1_title,Seeds
+loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO useable farm plots on the ship ..."
+
+loadingTipAircraft2_title,Jars
+loadingTipAircraft2,"The jar return should be set to ZERO, They can be found or crafted in the forge. "
 
 loadingTipAircraft3_title,Skill Magazines
-loadingTipAircraft3,"Skill magazines can be found in their usual places, and zombies also have a chance to give certain types of magazines "
+loadingTipAircraft3,"Skill magazines are shared to all players and all zombies have a chance to give certain types of magazines. "
 
-loadingTipAircraft4_title,Looting
-loadingTipAircraft4,"Loot is an integral part to completing this challenge. Loot will NOT restock."
+loadingTipAircraft4_title,Cucumbered?
+loadingTipAircraft4,"Loot is an integral part to completing this challenge you have a larger backpack and a greater chance to become encumbered. Heavy bags is the common cause of death onboard the ship."
 
-loadingTipAircraft5_title,Zombie respawns
-loadingTipAircraft5,"Zombies can now be set to respawn after a time you decide. Check the 'Aircraft' tab on the main menu, and set the number of days (7) recommended, you want between zombies respawning on the ship."
+loadingTipAircraft5_title,Water Source
+loadingTipAircraft5,"Look for destroyed dew collectors they usually have a pool of water nearby."
 
 loadingTipAircraft6_title,Resources
 loadingTipAircraft6,"Resources are scarce in the ship, but you will be able to find or craft everything you need to complete the challenge. Some resources, like old cash, can be used in recipes - so make sure you check the recipes for EVERYTHING. Also, some of the rarer resources, like acid, can now be crafted. It can also be looted from zombies - along with antibiotics and beakers."
@@ -334,16 +476,16 @@ loadingTipAircraft7_title,Crafting
 loadingTipAircraft7,"Crafting workstations, and tools like the crucible, and vehicles themselves, take fewer magazines to read before they unlock."
 
 loadingTipAircraft8_title,Cheating
-loadingTipAircraft8,"Trying to leave the ship other than by an UH-60  helicopter  is not advised . The ground is SPICY and will end your challenge ...."
+loadingTipAircraft8,"Trying to leave the ship other than by an UH-60 helicopter is not advised . The ground is SPICY and will end your challenge ...."
 
 loadingTipAircraft9_title,Lost Are We?
-loadingTipAircraft9,"If you are lost on where to travel to next, there may have been a kind soul who left directions in the quest instructions. Let's be real though, men neither ask for directions nor read instructions!"
+loadingTipAircraft9,"If you are lost on where to travel to next, there may have been a kind soul who left directions in the quest instructions or use maps located through out the ship. Let's be real though, men neither ask for directions nor read instructions!"
 
 loadingTipAircraft10_title,Special Thanks
 loadingTipAircraft10,"Thanks to w00kien00kie for the custom code, Khelldon for the custom menu, Frantic_Dan for UI ideas."
 
 loadingTipAircraft11_title,Horde Night
-loadingTipAircraft11,"Horde nights, better suck it up, buttercup."
+loadingTipAircraft11,"Horde nights, better suck it up, buttercup. This should be set to 7 days , to die! "
 
 loadingTipAircraft12_title,Aircraft Resources
 loadingTipAircraft12,"There are many changes from vanilla for resource gathering. Clay soil, for example, can be found by harvesting potted plants, farm plots, and destroyed stone."
@@ -351,11 +493,11 @@ loadingTipAircraft12,"There are many changes from vanilla for resource gathering
 loadingTipAircraft13_title,Search Everywhere - Check Everything
 loadingTipAircraft13,"For a military vessel, there are considerable nooks, crannies, hidey holes and hidden stashes all over the place. Some say there are hidden shortcuts within the walls too! Navy brass would be rolling in their grave if they weren't ambling around in hordes of the reanimated dead..."
 
-loadingTipAircraft14_title,Fail Quest Reset
-loadingTipAircraft14,"Want to continue your mission you can craft a mission quest using Dukes."
+loadingTipAircraft14_title,Failed Quest ?
+loadingTipAircraft14,"Want to continue your mission after you have died?  You can continue your mission by crafting the Mission using Dukes."
 
-loadingTipAircraft15_title,Water Source 
-loadingTipAircraft15,"Fear not, there is a water source, just keep a lookout for a dingy."
+loadingTipAircraft15_title,Permadeath?
+loadingTipAircraft15,"Want to continue your mission after you have died? You may choose death penalties in the game options."
 
 dishongTowerBundle,Aircraft Carrier Challenge Starter Items,,
 dishongTowerBundleDesc,Starter items for the Aircraft carrier challenge.,,
@@ -365,57 +507,41 @@ Welcome,"Started The Aircraft Carrier Challenge"
 
 tutorialTipQuest01,"Don't know how I got in this U-boat but I'm glad I did, the ground outside messed me up real quick! Someone had to have helped me but where are they? Looks like I'm here to stay, If I can find them maybe we can help each other find a safe haven. No matter what, I need supplies, I have barely enough food and water for the rest of the day, glad I found this backpack with some basic tools and weapons to give me a fighting chance.\n\nYou must survive, by doing missions ,looting and crafting everything you need to build an UH-60 Helicopter to make your escape from the carrier to complete your [ff7f27]FINAL MISSION[-].\n\nIf  [ff7f27]ANYONE[-] dies the mission is over [cd5c5c]PERMADEATH CHALLENGE[-] [ff7f27] however[-], in a large group this is not practical so you may now come back [FFFF00]injured[-] to complete your mission. This is for bragging rights!" 
 
+tutorialTipQuest02,"Our [FFFF00]TRADER[-] has come under [FF0000]ASSAULT[-]! \n\nI have never seen so many zombies! \n\nLet's grab some more [FFFF00]AMMO AND PROVISIONS[-] and get this bird [FF0000]IN THE AIR![-]  \n\nThis Mission is optional, You can talk to Trader or finish the mission Soldier!! \n\nThis is just for bragging rights, and good luck!"/>
+
+tutorialTipQuest03,"[FFFF00]STORAGE BOXES[-] will disappear on the [FFFF00]DESTROYER [-]once the mission is started, however items in the [FFFF00]UH-60 ARE SAFE[-] and will not disappear."/>
+
+tutorialTipQuest04,"If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-]\n\nPlease make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission. \n\nShould you fail this mission you may craft another by using [FFFF00]Dukes."/>
+
+tutorialTipQuest05,"If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] \n\nPlease make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission.\n\nShould you fail this mission you may craft another by using [FFFF00]Dukes."/>
+
+Challenge_Starting,"Welcome aboard"
+Challenge_Starting_subtitle,"Play Nice!"
+Challenge_Starting_description,"This is a permadeath Challenge."
+
 challenge_StartingCarrier,"Welcome aboard Petty officer 2nd class!"
 challenge_StartingCarrier_subtitle,"Your first objective."
 challenge_StartingCarrier_description,"Head to medical on Deck 10, just below the Mess Hall, also if you are to survive and escape you will need to eliminate and loot zombies."
 
-quest_CarrierChallenge,"Find a survivor"
-quest_CarrierChallenge_subtitle,"Head to medical"
-quest_CarrierChallenge_description,"Head to medical on Deck 10 just below the Mess Hall. Also, get yourself healed, you look pretty messed up after all those zombies."
+quest_CarrierChallenge1,"Find a survivor"
+quest_CarrierChallenge1_subtitle,"Head to medical"
+quest_CarrierChallenge1_description,"Head to medical on Deck 10 just below the Mess Hall. Also, get yourself healed, you look pretty messed up after all those zombies."
 
 quest_CarrierChallenge01,"Mission Bob's Blueprint"
 quest_CarrierChallenge01_subtitle,"Find Bob's Blueprint"
 quest_CarrierChallenge01_description,"Bob told me he found plans for a chopper in the Army Depot, maybe you can head down there, he may have left it there.  Also, If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]ARMY DEPOT AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission."
-
-quest_CarrierChallenge02,"Gather AH-64 Parts 1/5 "
-quest_CarrierChallenge02_subtitle,"Build Apache Canopy"
-quest_CarrierChallenge02_description,"Gather parts and craft an Apache Canopy."
 
 quest_CarrierChallenge03,"Restore Power to the bridge"
 quest_CarrierChallenge03_subtitle,"Restore Bridge Operation Systems"
 quest_CarrierChallenge03_description,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems?  Also, If you have any [FFFF00]STORAGE BOXES[-] or [FFFF00]PLAYER BLOCKS[-] in the [FFFF00]BRIDGE AREA[-] they will [FFFF00]VANISH.[-] Please make sure they are [FFFF00]REMOVED[-] before you [FFFF00]PROCEED[-] with this mission. "
 quest_CarrierChallenge03_offer,"Just had a thought, we're going to need radar support, can you restore the power to the Bridge Operation Systems?"
 
-quest_CarrierChallenge04,"Gather UH-60 Parts 1/3 "
-quest_CarrierChallenge04_subtitle,"Build UH-60 Accessories"
-quest_CarrierChallenge04_description,"Gather parts and craft UH-60Accessories."
-
-quest_CarrierChallenge05,"Gather UH-60 Parts 2/3 "
-quest_CarrierChallenge05_subtitle,"Build UH-60 Chassis"
-quest_CarrierChallenge05_description,"Gather parts and craft UH-60 Chassis."
-
-quest_CarrierChallenge06,"Gather UH-60 Parts 3/3 "
-quest_CarrierChallenge06_subtitle,"Build UH-60 helicopter"
-quest_CarrierChallenge06_description,"Gather parts and craft UH-60 helicopter."
-
-quest_CarrierChallenge07,"Gather UH-60 Parts 5/5 "
-quest_CarrierChallenge07_subtitle,"How to build a helicopter"
-quest_CarrierChallenge07_description,"Gather parts and craft a Starting helicopter"
-
-quest_CarrierChallenge08,"Apache Impact Driver "
-quest_CarrierChallenge08_subtitle," Craft Apache Impact Driver"
-quest_CarrierChallenge08_description,"Craft an Apache Impact Driver in a workbench."
-
-quest_CarrierChallenge09,"USE Apache Impact Driver"
-quest_CarrierChallenge09_subtitle,"Place, Starting helicopter "
-quest_CarrierChallenge09_description,"Place Starting helicopter, with the parts crafted USE the Apache Impact Driver to upgrade to your new AH-64 helicopter!"
-
 quest_CarrierChallengeDestroyer,"Support ship needs assist!"
 quest_CarrierChallengeDestroyer_subtitle,"Night OPS: Destroyer"
-quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault. Clear the zombies, restore main power and wait for further orders. You may want to stock up on AMMO and gear up, now get loaded up and head out!"
+quest_CarrierChallengeDestroyer_description,"Our support ship has lost main power and has come under assault, restore main power and wait for further orders. You may want to stock up on AMMO and gear up, now get loaded up and head out! Just incase you do not finish this mission pick up you UH-60."
 
 quest_CarrierChallengeDestroyer2,"Head over to the Trader"
-quest_CarrierChallengeDestroyer2_subtitle,"Night OPS: Trader"
+quest_CarrierChallengeDestroyer2_subtitle,"Help our Trader"
 quest_CarrierChallengeDestroyer2_description,"Our Trader has come under assault! Clear the zombies, and then talk to the Trader. And Hey, try not to blow up to much ."
 
 Challenge_Completion,"Challenge Complete"
@@ -423,5 +549,5 @@ Challenge_Completion_subtitle,"Congrats!"
 Challenge_Completion_description,"Congrats."
 
 Congrats,"Carrier Challenge Complete"
-Congrats_message,"Congrats!  You have completed the Aircraft Carrier Challenge! GG!! Thank you for playing! If you are up for another challenge Please try the [FFFF00] Destroyer of Dreams High Seas [-] on the  7D2D Mod launcher by Sphereii"
+Congrats_message,"Congrats!  You have completed the Aircraft Carrier Challenge! GG!! Thank you for playing! If you are up for another challenge Please try the [FFFF00] Destroyer of Dreams High Seas [-] on the  7D2D Mod launcher by Sphereii or on 7daystodiemods.com"
 

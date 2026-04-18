@@ -7,3 +7,4 @@ vehicleUH60,UH-60
 vehicleUH60placeable,UH-60
 vehicleUH60placeableDesc,They can't kill you if they can't hit you!
 questRewardUH60PartsBundle,UH-60 Parts Bundle
+questRewardGyrocopterPartsBundle,UH-60 Parts Bundle
