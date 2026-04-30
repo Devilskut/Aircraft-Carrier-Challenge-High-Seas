@@ -258,8 +258,9 @@
 	</append>
 	  
 	<append xpath="/blocks/block[@name='treeMaster']">
+		<property name="FallOver" value="false" />
+		<property name="DowngradeBlock" value="treeStump"/>
 		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
-		<drop event="Destroy" name="treeStump" count="1"/>
 	</append>
 
 	<append xpath="/blocks/block[starts-with(@name, 'plantHanging')]">

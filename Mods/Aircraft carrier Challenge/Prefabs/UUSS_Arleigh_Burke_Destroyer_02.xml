@@ -32,6 +32,9 @@
     <property class="POILight">
       <property name="0" value="34, 11, 176" />
     </property>
+    <property class="QuestRestorePower">
+      <property name="0" value="22, 48, 81" />
+    </property>
     <property class="challenge_steel">
       <property name="0" value="25, 14, 130" />
       <property name="1" value="25, 14, 132" />
@@ -48,9 +51,6 @@
       <property name="1" value="28, 26, 87" />
       <property name="2" value="28, 26, 88" />
       <property name="3" value="28, 26, 89" />
-    </property>
-    <property class="QuestRestorePower">
-      <property name="0" value="16, 5, 168" />
     </property>
     <property class="challenge_mech_parts">
       <property name="0" value="28, 3, 176" />
@@ -81,16 +81,16 @@
     </property>
   </property>
   <property class="Stats">
-    <property name="LightsVolume" value="2408659" />
-    <property name="TotalVertices" value="6920562" />
-    <property name="TotalTriangles" value="2785848" />
+    <property name="LightsVolume" value="2408668" />
+    <property name="TotalVertices" value="6911384" />
+    <property name="TotalTriangles" value="2783108" />
     <property class="BlockEntities">
-      <property name="Vertices" value="6003901" />
-      <property name="Triangles" value="2152043" />
+      <property name="Vertices" value="5994699" />
+      <property name="Triangles" value="2149291" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="876673" />
-      <property name="Triangles" value="576671" />
+      <property name="Vertices" value="876697" />
+      <property name="Triangles" value="576683" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />

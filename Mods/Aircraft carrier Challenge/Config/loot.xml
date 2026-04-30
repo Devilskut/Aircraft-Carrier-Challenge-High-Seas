@@ -419,11 +419,13 @@
 		
 		<lootgroup name="groupFatZombieLoot" count="all">
 			<item name="resourceAnimalFat" prob=".1" force_prob="true"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item group="groupLooterBooks" prob=".2" force_prob="true"/>
 		</lootgroup>
 		
 		<lootgroup name="groupRadFatZombieLoot" count="all">
 			<item name="resourceAnimalFat" prob=".1" force_prob="true"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item group="groupLooterBooks" prob=".3" force_prob="true"/>
 		</lootgroup>
 
@@ -440,6 +442,7 @@
 		</lootgroup>
 
 		<lootgroup name="groupInmateLoot" count="all">
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
 			<item name="workstationSkillMagazine" prob=".1" force_prob="true" tags="WSLoot"/>
 			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
