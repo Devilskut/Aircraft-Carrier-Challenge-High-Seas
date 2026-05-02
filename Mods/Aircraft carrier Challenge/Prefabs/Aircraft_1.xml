@@ -30,16 +30,16 @@
   <property name="SVS121" value="spawn GroupZomPoliceCarHorde 6^waitalive 2^spawn GroupSpecialInfected 6^waitalive 1^spawn zombieUtilityWorkerRadiated 1^" />
   <property name="SVS5" value="spawn GroupZomPoliceCarHorde 6^waitalive 2^spawn GroupZomBadass 6^waitalive 1^spawn zombieScreamerRadiated 2^" />
   <property class="Stats">
-    <property name="LightsVolume" value="256838.7" />
-    <property name="TotalVertices" value="12900320" />
-    <property name="TotalTriangles" value="4982199" />
+    <property name="LightsVolume" value="256838.5" />
+    <property name="TotalVertices" value="12963140" />
+    <property name="TotalTriangles" value="5017309" />
     <property class="BlockEntities">
-      <property name="Vertices" value="10669426" />
-      <property name="Triangles" value="3566931" />
+      <property name="Vertices" value="10732266" />
+      <property name="Triangles" value="3602055" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1817676" />
-      <property name="Triangles" value="1111482" />
+      <property name="Vertices" value="1817656" />
+      <property name="Triangles" value="1111468" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="270912" />

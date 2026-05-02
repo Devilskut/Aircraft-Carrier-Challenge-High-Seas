@@ -1,0 +1,16 @@
+<configs>
+  <append xpath="/recipes">
+	<recipe name="ammoGrenade40mmFrag" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceBulletTip" count="5"/>
+		<ingredient name="resourceGunPowder" count="10"/>
+		<ingredient name="resourceBulletCasing" count="5"/>
+	</recipe>
+
+	  <recipe name="ammoGrenade40mmFragAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+		  <ingredient name="resourceBulletTip" count="10"/>
+		  <ingredient name="resourceGunPowder" count="20"/>
+		  <ingredient name="resourceBulletCasing" count="10"/>
+	  </recipe>
+
+	</append>
+</configs>

@@ -436,6 +436,7 @@
 
 		<lootgroup name="groupLumberjackLoot" count="all">
 			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item name="workstationSkillMagazine" prob=".1" force_prob="true" tags="WSLoot"/>
 			<item name="resourceBeeswax" count="1"/>
 			<item name="resourceSnowBall" count="5"/>
@@ -455,18 +456,21 @@
 
 		<lootgroup name="groupChuckLoot" count="all">
 			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
 			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
 		</lootgroup>
 
 		<lootgroup name="groupRadChuckLoot" count="all">
 			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
 			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
 		</lootgroup>
 
 		<lootgroup name="groupRadRancherLoot" count="all">
 			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="vehiclesSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
 			<item name="workstationSkillMagazine" prob=".2" force_prob="true" tags="WSLoot"/>
 			<item name="resourceBeeswax" count="1,2" />
 		</lootgroup>
@@ -478,502 +482,502 @@
 	<insertafter xpath="//lootcontainers//lootcontainer[@name='twitch_home_run_rewardsT5']">
 		
 		<!-- zombieChuck -->
-		<lootcontainer name="zombieChuck" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieChuck" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupChuckLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieChuckFeral -->
-		<lootcontainer name="zombieChuckFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieChuckFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupChuckLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieChuckRadiated -->
-		<lootcontainer name="zombieChuckRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieChuckRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadChuckLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieRancher -->
-		<lootcontainer name="zombieRancher" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieRancher" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadRancherLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieRancherFeral -->
-		<lootcontainer name="zombieRancherFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieRancherFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadRancherLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieRancherRadiated -->
-		<lootcontainer name="zombieRancherRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieRancherRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadRancherLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- ZombieArlene  -->
-		<lootcontainer name="zombieArlene" count="1" size="4,2"  sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5" force_prob="true">
+		<lootcontainer name="zombieArlene" count="1" size="6,1"  sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5" force_prob="true">
             <item group="groupZombieFemaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
     <!-- zombieArleneFeral -->
-		<lootcontainer name="zombieArleneFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieArleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieArleneRadiated -->
-		<lootcontainer name="zombieArleneRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieArleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieMarlene -->
-		<lootcontainer name="zombieMarlene" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMarlene" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieMarleneFeral -->
-		<lootcontainer name="zombieMarleneFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMarleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieMarleneRadiated -->
-		<lootcontainer name="zombieMarleneRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMarleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombiePartygirl -->
-		<lootcontainer name="zombiePartygirl" count="1" size="4,2" sound_open="UseActions/open_corpse" loot_quality_template="qualBaseTemplate" sound_close="UseActions/close_corpse" open_time="1.5">
+		<lootcontainer name="zombiePartygirl" count="1" size="6,1" sound_open="UseActions/open_corpse" loot_quality_template="qualBaseTemplate" sound_close="UseActions/close_corpse" open_time="1.5">
 			<item group="groupPartyGirlLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombiePartygirlFeral -->
-		<lootcontainer name="zombiePartygirlFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombiePartygirlFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupPartyGirlLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombiePartygirlRadiated -->
-		<lootcontainer name="zombiePartygirlRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombiePartygirlRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupPartyGirlLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieNurse -->
-		<lootcontainer name="zombieNurse" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieNurse" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupNurseLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieNurseFeral -->
-		<lootcontainer name="zombieNurseFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieNurseFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupNurseLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieNurseRadiated -->
-		<lootcontainer name="zombieNurseRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieNurseRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadNurseLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieJoe -->
-		<lootcontainer name="zombieJoe" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieJoeFeral -->
-		<lootcontainer name="zombieJoeFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieJoeRadiated -->
-		<lootcontainer name="zombieJoeRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSteve -->
-		<lootcontainer name="zombieSteve" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSteve" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSteveFeral -->
-		<lootcontainer name="zombieSteveFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSteveFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSteveRadiated -->
-		<lootcontainer name="zombieSteveRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSteveRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieTomClark -->
-		<lootcontainer name="zombieTomClark" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieTomClark" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>		    
 		</lootcontainer>
 		
     <!-- zombieTomClarkFeral -->
-		<lootcontainer name="zombieTomClarkFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieTomClarkFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieTomClarkRadiated -->
-		<lootcontainer name="zombieTomClarkRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieTomClarkRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBusinessMan -->
-		<lootcontainer name="zombieBusinessMan" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBusinessMan" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupBusinessmanLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBusinessManFeral -->
-		<lootcontainer name="zombieBusinessManFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBusinessManFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupBusinessmanLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBusinessManRadiated -->
-		<lootcontainer name="zombieBusinessManRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBusinessManRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadBusinessmanLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBurnt -->
-		<lootcontainer name="zombieBurnt" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBurnt" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBurntFeral -->
-		<lootcontainer name="zombieBurntFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBurntFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieBurntRadiated -->
-		<lootcontainer name="zombieBurntRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBurntRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSpider -->
-		<lootcontainer name="zombieSpider" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSpider" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSpiderFeral -->
-		<lootcontainer name="zombieSpiderFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSpiderFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieSpiderRadiated -->
-		<lootcontainer name="zombieSpiderRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSpiderRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- Zombie Boe -->
-		<lootcontainer name="ZombieBoe" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="ZombieBoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
     <!-- zombieBoeFeral -->
-		<lootcontainer name="zombieBoeFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
     <!-- zombieBoeRadiated -->
-		<lootcontainer name="zombieBoeRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
     <!-- zombieMaleHazmat -->
-		<lootcontainer name="zombieMaleHazmat" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">	
+		<lootcontainer name="zombieMaleHazmat" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">	
 			<item group="groupHazmatLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
     <!-- zombieMaleHazmatFeral -->
-		<lootcontainer name="zombieMaleHazmatFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMaleHazmatFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupHazmatLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieMaleHazmatRadiated -->
-		<lootcontainer name="zombieMaleHazmatRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMaleHazmatRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupHazmatLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieJanitor -->
-		<lootcontainer name="zombieJanitor" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJanitor" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupJanitorLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieJanitorFeral -->
-		<lootcontainer name="zombieJanitorFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJanitorFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupJanitorLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieJanitorRadiated -->
-		<lootcontainer name="zombieJanitorRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieJanitorRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadJanitorLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- *** ZOMBIE_INMATE -->
-		<lootcontainer name="zombieInmate" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieInmate" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadJanitorLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- *** ZOMBIE_INMATE_FERAL -->		
-		<lootcontainer name="zombieInmateFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieInmateFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupInmateLoot" count="1" prob="100"/>			
 		</lootcontainer>
 		
 	<!-- *** ZOMBIE_INMATE_RADIATED -->		
-		<lootcontainer name="zombieInmateRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieInmateRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupInmateLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieMoe -->
-		<lootcontainer name="zombieMoe" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieMoeFeral -->
-		<lootcontainer name="zombieMoeFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieMoeRadiated -->
-		<lootcontainer name="zombieMoeRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLab -->
-		<lootcontainer name="zombieLab" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLab" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupLabWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLabFeral -->
-		<lootcontainer name="zombieLabFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLabFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupLabWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLabRadiated -->
-		<lootcontainer name="zombieLabRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLabRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadLabWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieDarlene -->
-		<lootcontainer name="zombieDarlene" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieDarlene" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieDarleneFeral -->
-		<lootcontainer name="zombieDarleneFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieDarleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieDarleneRadiated -->
-		<lootcontainer name="zombieDarleneRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieDarleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieYo -->
-		<lootcontainer name="zombieYo" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieYo" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieYoFeral -->
-		<lootcontainer name="zombieYoFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieYoFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieYoRadiated -->
-		<lootcontainer name="zombieYoRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieYoRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieUtilityWorker -->
-		<lootcontainer name="zombieUtilityWorker" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieUtilityWorker" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupUtilityWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer> 
 		
 	<!-- zombieUtilityWorkerFeral -->
-		<lootcontainer name="zombieUtilityWorkerFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieUtilityWorkerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupUtilityWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer> 
 		
 	<!-- zombieUtilityWorkerRadiated -->
-		<lootcontainer name="zombieUtilityWorkerRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieUtilityWorkerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>	
 		</lootcontainer> 
 
 		<!-- zombieUtilityWorkerInfernal -->
-		<lootcontainer name="zombieUtilityWorkerInfernal" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieUtilityWorkerInfernal" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 		<!-- zombieUtilityWorkerCharged -->
-		<lootcontainer name="zombieUtilityWorkerCharged" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieUtilityWorkerCharged" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieBiker -->
-		<lootcontainer name="zombieBiker" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBiker" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupBikerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieBikerFeral -->
-		<lootcontainer name="zombieBikerFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBikerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupBikerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieBikerRadiated -->
-		<lootcontainer name="zombieBikerRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBikerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupBikerLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLumberjack -->
-		<lootcontainer name="zombieLumberjack" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLumberjack" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupLumberjackLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLumberjackFeral -->
-		<lootcontainer name="zombieLumberjackFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLumberjackFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupLumberjackLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieLumberjackRadiated -->
-		<lootcontainer name="zombieLumberjackRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieLumberjackRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupLumberjackLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieFemaleFat -->
-		<lootcontainer name="zombieFemaleFat" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFemaleFat" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieFemaleFatFeral -->
-		<lootcontainer name="zombieFemaleFatFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFemaleFatFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieFemaleFatRadiated -->
-		<lootcontainer name="zombieFemaleFatRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFemaleFatRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadFatZombieLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieFatHawaiian -->
-		<lootcontainer name="zombieFatHawaiian" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatHawaiian" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieFatHawaiianFeral -->
-		<lootcontainer name="zombieFatHawaiianFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatHawaiianFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieFatHawaiianRadiated -->
-		<lootcontainer name="zombieFatHawaiianRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatHawaiianRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadFatZombieLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- *** ZOMBIE_BOWLER -->	
-		<lootcontainer name="zombieBowler" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBowler" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>
 		</lootcontainer>
 
 	<!-- *** ZOMBIE_BOWLER_FERAL -->
-		<lootcontainer name="zombieBowlerFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBowlerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatZombieLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- *** ZOMBIE_BOWLER_RADIATED -->	
-		<lootcontainer name="zombieBowlerRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieBowlerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadFatZombieLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieFatCop -->
-		<lootcontainer name="zombieFatCop" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatCop" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatCopLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieFatCopFeral -->
-		<lootcontainer name="zombieFatCopFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatCopFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupFatCopLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieFatCopRadiated -->
-		<lootcontainer name="zombieFatCopRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieFatCopRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadFatCopLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieSkateboarder -->
-		<lootcontainer name="zombieSkateboarder" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSkateboarder" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupThugLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieSkateboarderFeral -->
-		<lootcontainer name="zombieSkateboarderFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSkateboarderFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupThugLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieSkateboarderRadiated -->
-		<lootcontainer name="zombieSkateboarderRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSkateboarderRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadThugLoot" count="1" prob="100"/>		
 		</lootcontainer>
 		
 	<!-- zombieSoldier -->
-		<lootcontainer name="zombieSoldier" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSoldier" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupSoldierLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieSoldierFeral -->
-		<lootcontainer name="zombieSoldierFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSoldierFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupSoldierLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieSoldierRadiated -->
-		<lootcontainer name="zombieSoldierRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSoldierRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupRadSoldierLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieWightFeral -->
-		<lootcontainer name="zombieWightFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieWightFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieWightLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieWightRadiated -->
-		<lootcontainer name="zombieWightRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">	
+		<lootcontainer name="zombieWightRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">	
 			<item group="groupRadZombieWightLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieScreamer -->
-		<lootcontainer name="zombieScreamer" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieScreamer" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>		
 		</lootcontainer>
 		
 	<!-- zombieScreamerFeral -->
-		<lootcontainer name="zombieScreamerFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieScreamerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieScreamerRadiated -->
-		<lootcontainer name="zombieScreamerRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieScreamerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieFemaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieMutated -->
-		<lootcontainer name="zombieMutated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMutated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupMutatedLoot" count="1" prob="100"/>
 		</lootcontainer>
 		
 	<!-- zombieMutatedFeral -->
-		<lootcontainer name="zombieMutatedFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMutatedFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupMutatedLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieMutatedRadiated -->
-		<lootcontainer name="zombieMutatedRadiated" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieMutatedRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupMutatedLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieDemolition  -->
-		<lootcontainer name="zombieDemolition" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieDemolition" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupSoldierLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieSteveCrawler -->
-		<lootcontainer name="zombieSteveCrawler" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSteveCrawler" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		
 	<!-- zombieSteveCrawlerFeral -->
-		<lootcontainer name="zombieSteveCrawlerFeral" count="1" size="4,2" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+		<lootcontainer name="zombieSteveCrawlerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
 			<item group="groupZombieMaleLoot" count="1" prob="100"/>	
 		</lootcontainer>
 		

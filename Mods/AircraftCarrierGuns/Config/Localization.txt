@@ -1,0 +1,12 @@
+﻿Key,english
+
+gunT4Minigun,Minigun
+MinigunDesc," Very beefy and heavy gun "You will be slowed" "
+gunExplosivesT3RG4Launcher,RG40 Grenade Launcher
+RG40LauncherDesc," Stand back not for CQC "
+gunT4Flamethrower,Flamethrower
+gunT4FlamethrowerDesc," Nothing smells better than BarBQ zombie "
+ammoGrenade40mmFrag,40mm Frag
+ammoGrenade40mmFragDesc,"Main Ammo for the RG40 Grenade Launcher "
+ammoGrenade40mmFragAP,40mm Frag
+ammoGrenade40mmFragAPDesc,"Ammo for the RG40 Grenade Launcher "
