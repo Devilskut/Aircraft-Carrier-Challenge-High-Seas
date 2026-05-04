@@ -220,8 +220,7 @@
 		 </action_sequence>
 		 
 	     <action_sequence name="ACCEnding">
-		 
-			 <property name="allow_user_trigger" value="false" />
+		     <property name="allow_user_trigger" value="false" />
 			 <property name="action_type" value="Game" />
 
 			 <action class="Delay">
@@ -232,16 +231,17 @@
 			     <property name="quest" value="Completion" />
 		     </action>
 	     </action_sequence>
+		 
+		 <action_sequence name="challenge_reward_MGT3M60">
+		     <action class="AddSkillPoints">
+			    <property name="skill_points" value="2" />
+		     </action>
+		     <action class="AddItems">
+			    <property name="added_items" value="gunMGT3M60" />
+			    <property name="added_item_counts" value="5-6" />
+		     </action>
+		 </action_sequence>
+		 
 	 </append>
-	 
-	 <append xpath="/gameevents/action_sequence[@name='challenge_reward_5000']">
-		 <action class="AddSkillPoints">
-			 <property name="skill_points" value="2" />
-		 </action>
-		 <action class="AddItems">
-			 <property name="added_items" value="gunMGT3M60" />
-			 <property name="added_item_counts" value="5-6" />
-		 </action>
-		 </append>
-	     
+	 	     
 	 </configs> 
